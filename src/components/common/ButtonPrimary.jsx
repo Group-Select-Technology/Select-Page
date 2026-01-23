@@ -10,16 +10,16 @@ import React from 'react'
  * @param {function} [props.onClick] - Handler opcional
  */
 const ButtonPrimary = ({
-  colorFrom = '#2EC6DF',
-  colorTo = '#1A2980',
-  children = 'AGENDA UNA DEMO',
-  className = '',
-  onClick,
-  ...rest
+	colorFrom = '#2EC6DF',
+	colorTo = '#1A2980',
+	children = 'AGENDA UNA DEMO',
+	className = '',
+	onClick,
+	...rest
 }) => {
-  return (
-    <button
-      className={`
+	return (
+		<button
+			className={`
         px-7 py-3
         rounded-3xl
         font-bold
@@ -36,17 +36,17 @@ const ButtonPrimary = ({
         ${!colorFrom.startsWith('from-') || !colorTo.startsWith('to-') ? '' : ''}
         ${className}
       `}
-      style={
-        !colorFrom.startsWith('from-') && !colorTo.startsWith('to-')
-          ? { backgroundImage: `linear-gradient(90deg, ${colorFrom}, ${colorTo})` }
-          : undefined
-      }
-      onClick={onClick}
-      {...rest}
-    >
-      {children}
-    </button>
-  )
+			style={
+				!colorFrom.startsWith('from-') && !colorTo.startsWith('to-')
+					? { backgroundImage: `linear-gradient(90deg, ${colorFrom}, ${colorTo})` }
+					: undefined
+			}
+			onClick={onClick}
+			{...rest}
+		>
+			{children}
+		</button>
+	)
 }
 
 export default ButtonPrimary
