@@ -90,7 +90,7 @@ const Footer = () => {
 			{/* Copyright Section */}
 			<div className="mt-8 pt-6 border-t border-white/20 mx-4 md:mx-8 lg:mx-32">
 				<p className="text-white text-center text-sm">
-					© {new Date().getFullYear()} Select Technology. Todos los derechos reservados.
+					&copy; {new Date().getFullYear()} Select Technology. Todos los derechos reservados.
 				</p>
 			</div>
 		</footer>
