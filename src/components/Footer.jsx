@@ -1,0 +1,100 @@
+import { useState } from 'react'
+
+const FooterAccordion = ({ title, children }) => {
+	const [isOpen, setIsOpen] = useState(false)
+
+	return (
+		<div className="border-b border-white/20 lg:border-none">
+			{/* Header - clickeable solo en móvil */}
+			<button
+				onClick={() => setIsOpen(!isOpen)}
+				className="w-full flex justify-between items-center py-3 lg:py-0 lg:cursor-default"
+			>
+				<h2 className="uppercase font-bold text-lg">{title}</h2>
+				{/* Flecha - solo visible en móvil */}
+				<svg
+					className={`w-5 h-5 lg:hidden transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`}
+					fill="none"
+					stroke="currentColor"
+					viewBox="0 0 24 24"
+				>
+					<path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+				</svg>
+			</button>
+			{/* Contenido - siempre visible en desktop, colapsable en móvil */}
+			<div className={`overflow-hidden transition-all duration-300 lg:overflow-visible lg:max-h-none ${isOpen ? 'max-h-96 pb-4' : 'max-h-0'} lg:pb-0`}>
+				{children}
+			</div>
+		</div>
+	)
+}
+
+const Footer = () => {
+	return (
+		<footer className="py-8 bg-primary">
+			<div className="flex flex-col lg:flex-row gap-4 lg:gap-[28rem] mx-4 md:mx-8 lg:mx-32 items-center lg:items-start">
+				{/* Logo Section */}
+				<div className="flex justify-center mb-4 lg:mb-0">
+					<img src="img/logo_vertical.png" alt="Logo Footer" className="w-40 md:w-52 lg:w-[270px]" />
+				</div>
+
+				{/* Links Section */}
+				<div className="w-full lg:w-auto lg:flex lg:gap-16 text-white">
+					<FooterAccordion title="Nosotros">
+						<ul className="pl-0 lg:mt-2">
+							<li className="mb-2">Inicio</li>
+							<li className="mb-2">Historia</li>
+							<li className="mb-2">Misión y Visión</li>
+						</ul>
+					</FooterAccordion>
+
+					<FooterAccordion title="Servicios">
+						<ul className="pl-0 lg:mt-2">
+							<li className="mb-2">Sistema</li>
+							<li className="mb-2">Planes</li>
+						</ul>
+					</FooterAccordion>
+
+					<FooterAccordion title="Soporte">
+						<ul className="pl-0 lg:mt-2 mb-4">
+							<li>+51 987 654 321</li>
+						</ul>
+						<h3 className="uppercase font-bold text-lg mb-1">Cobranzas</h3>
+						<ul className="pl-0">
+							<li>+51 987 654 321</li>
+						</ul>
+					</FooterAccordion>
+
+					<FooterAccordion title="Contáctanos">
+						<ul className="pl-0 lg:mt-2">
+							<li className="mb-2 flex items-center gap-2">
+								<img className="w-4" src="img/icono_mail.png" alt="Icono Mail" /> 
+								<span>proyectos@selectperu1.com</span>
+							</li>
+							<li className="mb-2 flex items-center gap-2">
+								<img className="w-4" src="img/icono_wsp.png" alt="Icono WhatsApp" /> 
+								<span>+51 923 195 683</span>
+							</li>
+							<li className="mb-2 flex items-center gap-2">
+								<img className="w-3" src="img/icono_ubicacion.png" alt="Icono Ubicación" /> 
+								<span>
+									Cal. Francisco Bolognesi <br />
+									Nro. 105 Urb. Lima - Independencia
+								</span>
+							</li>
+						</ul>
+					</FooterAccordion>
+				</div>
+			</div>
+
+			{/* Copyright Section */}
+			<div className="mt-8 pt-6 border-t border-white/20 mx-4 md:mx-8 lg:mx-32">
+				<p className="text-white text-center text-sm">
+					© {new Date().getFullYear()} Select Technology. Todos los derechos reservados.
+				</p>
+			</div>
+		</footer>
+	)
+}
+
+export default Footer
