@@ -38,14 +38,14 @@ const Rubros = () => {
     };
 
     return (
-        <section className="m-32">
+        <section className="mx-4 sm:mx-8 md:mx-16 lg:mx-32 my-16 lg:my-32">
             <div>
-                <h3 className="text-primary font-bold text-4xl xl:text-4xl mb-16 leading-tight uppercase text-center">Encuentra la solución perfecta
+                <h3 className="text-primary font-bold text-2xl sm:text-3xl lg:text-4xl xl:text-4xl mb-8 sm:mb-12 lg:mb-16 leading-tight uppercase text-center">Encuentra la solución perfecta
                     <br />
                     para tu tipo de negocio
                 </h3>
 
-                <div className="flex justify-center gap-16">
+                <div className="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-8 lg:gap-16">
                     {sistemas.map((sistema) => (
                         <Rubro
                             key={sistema.id}
