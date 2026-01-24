@@ -68,15 +68,15 @@ const Footer = () => {
 					<FooterAccordion title="Contáctanos">
 						<ul className="pl-0 lg:mt-2">
 							<li className="mb-2 flex items-center gap-2">
-								<img className="w-4" src="img/icono_mail.png" alt="Icono Mail" /> 
+								<img className="w-4" src="img/icono_mail.png" alt="Icono Mail" />
 								<span>proyectos@selectperu1.com</span>
 							</li>
 							<li className="mb-2 flex items-center gap-2">
-								<img className="w-4" src="img/icono_wsp.png" alt="Icono WhatsApp" /> 
+								<img className="w-4" src="img/icono_wsp.png" alt="Icono WhatsApp" />
 								<span>+51 923 195 683</span>
 							</li>
 							<li className="mb-2 flex items-center gap-2">
-								<img className="w-3" src="img/icono_ubicacion.png" alt="Icono Ubicación" /> 
+								<img className="w-3" src="img/icono_ubicacion.png" alt="Icono Ubicación" />
 								<span>
 									Cal. Francisco Bolognesi <br />
 									Nro. 105 Urb. Lima - Independencia
@@ -88,10 +88,19 @@ const Footer = () => {
 			</div>
 
 			{/* Copyright Section */}
-			<div className="mt-8 pt-6 border-t border-white/20 mx-4 md:mx-8 lg:mx-32">
-				<p className="text-white text-center text-sm">
+			<div className="mt-8 pt-6 border-t border-white/20 mx-4 md:mx-8 lg:mx-32 flex flex-col md:flex-row items-center">
+				{/* 1. Espaciador invisible para empujar el centro (solo en desktop) */}
+				<div className="hidden md:block flex-1"></div>
+
+				{/* 2. Texto Centrado */}
+				<p className="text-white text-sm text-center flex-1">
 					&copy; {new Date().getFullYear()} Select Technology. Todos los derechos reservados.
 				</p>
+
+				{/* 3. Texto a la Derecha */}
+				<div className="flex-1 text-center md:text-right mt-2 md:mt-0">
+					<span className='text-blue-200 text-sm'>Developed By {"<ERA/>"}</span>
+				</div>
 			</div>
 		</footer>
 	)

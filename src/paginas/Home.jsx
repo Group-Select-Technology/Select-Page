@@ -1,3 +1,4 @@
+import Beneficios from '../components/home/Beneficios'
 import Destacadas from '../components/home/Destacadas'
 import Hero from '../components/home/Hero'
 import Rubros from '../components/home/Rubros'
@@ -9,6 +10,7 @@ const Home = () => {
             <Hero />
             <Rubros />
             <Destacadas />
+            <Beneficios />
         </CategoriaProvider>
     )
 }

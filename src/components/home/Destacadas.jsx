@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Destacada from '../common/Destacada'
 import axios from 'axios';
 import useCategoria from '../../hooks/useCategoria';
+import ButtonPrimary from '../common/ButtonPrimary';
 
 const Destacadas = () => {
 
@@ -30,7 +31,7 @@ const Destacadas = () => {
     useEffect(() => {
         // Iniciar animación de salida
         setAnimating(true);
-        
+
         // Después de la animación, actualizar contenido
         const timer = setTimeout(() => {
             const filtradas = secciones.filter(
@@ -45,8 +46,8 @@ const Destacadas = () => {
 
     // Título dinámico según la categoría
     const getTitulo = () => {
-        return categoriaActiva === 'farmacia' 
-            ? 'Secciones destacadas - Farmacia' 
+        return categoriaActiva === 'farmacia'
+            ? 'Secciones destacadas - Farmacia'
             : 'Secciones destacadas - Generales';
     };
 
@@ -71,6 +72,17 @@ const Destacadas = () => {
                             isReversed={index % 2 !== 0}
                         />
                     ))}
+                </div>
+
+                <div className="flex justify-center">
+                    <ButtonPrimary
+                        to="/sistema"
+                        colorFrom={"#17359d"}
+                        colorTo={"#17359d"}
+                        className={"uppercase mx-auto mt-12 mb-16 px-8 py-3 text-sm sm:text-base"}
+                    >
+                        Ver Más
+                    </ButtonPrimary>
                 </div>
 
 
