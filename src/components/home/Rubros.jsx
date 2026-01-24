@@ -12,8 +12,10 @@ const Rubros = () => {
             try {
                 const response = await axios.get('/data/system.json');
                 setSistemas(response.data);
+
             } catch (error) {
-                console.log(error.response.data.msg);
+                console.error('Error al cargar sistemas:', error);
+                setSistemas([]);
             }
         }
 
@@ -24,14 +26,14 @@ const Rubros = () => {
     // Colores para cada sistema
     const getColors = (id) => {
         if (id === 1) {
-            return { 
-                colorFrom: '#33D5FF', 
+            return {
+                colorFrom: '#33D5FF',
                 colorTo: '#1D98B7',
                 overlayColor: 'rgba(6, 182, 212, 0.85)' // Celeste
             };
         }
-        return { 
-            colorFrom: '#2EC6DF', 
+        return {
+            colorFrom: '#2EC6DF',
             colorTo: '#1A2980',
             overlayColor: 'rgba(23, 53, 157, 0.85)' // Azul #17359d
         };
