@@ -32,9 +32,9 @@ const FooterAccordion = ({ title, children }) => {
 const Footer = () => {
 	return (
 		<footer className="py-8 bg-primary">
-			<div className="flex flex-col lg:flex-row gap-4 lg:gap-[28rem] mx-4 md:mx-8 lg:mx-32 items-center lg:items-start">
+			<div className="flex flex-col lg:flex-row gap-4 lg:gap-[28rem] mx-4 md:mx-8 lg:mx-32 items-center">
 				{/* Logo Section */}
-				<div className="flex justify-center mb-4 lg:mb-0">
+				<div className="flex justify-center mb-0 lg:mb-0">
 					<img src="img/logo_vertical.png" alt="Logo Footer" className="w-40 md:w-52 lg:w-[270px]" />
 				</div>
 

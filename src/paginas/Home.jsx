@@ -1,9 +1,13 @@
-import React from 'react'
+import Hero from '../components/home/Hero'
+import Rubros from '../components/home/Rubros'
 
 const Home = () => {
-  return (
-    <div>Home</div>
-  )
+    return (
+        <>
+            <Hero />
+            <Rubros />
+        </>
+    )
 }
 
 export default Home
