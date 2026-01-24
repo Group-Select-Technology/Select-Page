@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "title": "Compras Sugeridas",
+        "description": "Optimiza tu inversión con pedidos inteligentes. Analizamos tu historial de ventas para sugerirte qué productos reponer, evitando el sobrestock y asegurando que nunca te falte lo que más vendes.",
+        "image": "img/seccion_destacada_1.png",
+        "category": "farmacia"
+    },
+    {
+        "id": 2,
+        "title": "Gestión de Pedidos",
+        "description": "Conecta tus sucursales con el almacén en tiempo real. Registra pedidos de clientes en tienda y envíalos a preparación al instante, eliminando errores de comunicación y acelerando la fabricación.",
+        "image": "img/seccion_destacada_1.png",
+        "category": "generales"
+    },
+    {
+        "id": 3,
+        "title": "Compras XML",
+        "description": "Automatiza el ingreso de mercadería procesando tus facturas electrónicas. Carga archivos XML de proveedores para actualizar tu inventario y precios de costo en segundos, sin errores manuales.",
+        "image": "img/seccion_destacada_1.png",
+        "category": "farmacia"
+    },
+    {
+        "id": 4,
+        "title": "Medicamentos PreCargados",
+        "description": "Ahorra semanas de trabajo con nuestra base de datos lista para usar. Incluye miles de productos farmacéuticos con nombres, concentraciones y laboratorios ya configurados para empezar a vender de inmediato.",
+        "image": "img/seccion_destacada_1.png",
+        "category": "farmacia"
+    },
+    {
+        "id": 5,
+        "title": "Transferencias entre Sucursales",
+        "description": "Mueve mercadería de forma segura y controlada entre tus locales. Equilibra tu stock enviando productos de una sucursal a otra según la demanda, manteniendo un historial detallado de cada movimiento.",
+        "image": "img/seccion_destacada_1.png",
+        "category": "generales"
+    },
+    {
+        "id": 6,
+        "title": "Reportes avanzados de Compras",
+        "description": "Toma decisiones basadas en datos reales. Analiza tus costos históricos, compara precios entre proveedores y obtén una visión clara de tus márgenes de ganancia para negociar mejores condiciones.",
+        "image": "img/seccion_destacada_1.png",
+        "category": "generales"
+    }
+]

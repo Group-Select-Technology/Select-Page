@@ -4,18 +4,18 @@ import ButtonPrimary from './ButtonPrimary';
 
 const Rubro = (props) => {
     // Usar los nombres de props tal como llegan (en inglés)
-    const { title, description, features, image, colorFrom, colorTo, overlayColor } = props;
+    const { title, description, features, image, colorFrom, colorTo, overlayColor, onClick, isActive } = props;
     // Preferir los props en inglés si existen
     const displayTitle = title;
     const displayDescription = description;
     const displayFeatures = features;
 
     return (
-        <div className="flex flex-col items-center">
-            <div className="relative w-[280px] h-[280px] sm:w-[350px] sm:h-[350px] lg:w-[450px] lg:h-[450px] rounded-[2rem] lg:rounded-[2.5rem] overflow-hidden shadow-lg group">
+        <div className="flex flex-col items-center cursor-pointer" onClick={onClick}>
+            <div className={`relative w-[280px] h-[280px] sm:w-[350px] sm:h-[350px] lg:w-[450px] lg:h-[450px] rounded-[2rem] lg:rounded-[2.5rem] overflow-hidden shadow-lg group transition-all duration-300 ${isActive ? ' ring-offset-4  scale-[1.02]' : 'hover:scale-[1.01]'}`}>
                 {/* Imagen de fondo */}
                 <img
-                    src={`img/${image}.png`}
+                    src={image}
                     alt={displayTitle}
                     className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
                 />
@@ -45,7 +45,7 @@ const Rubro = (props) => {
             <ButtonPrimary
                 colorFrom={colorFrom}
                 colorTo={colorTo}
-                className="mt-4 sm:mt-6 px-8 sm:px-12 py-2 sm:py-3 text-sm sm:text-base"
+                className={`mt-4 sm:mt-6 px-8 sm:px-12 py-2 sm:py-3 text-sm sm:text-base transition-all duration-300 ${isActive ? 'scale-105 shadow-lg' : ''}`}
             >
                 {displayTitle}
             </ButtonPrimary>
