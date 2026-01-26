@@ -75,14 +75,26 @@ const Destacadas = () => {
                 </div>
 
                 <div className="flex justify-center">
-                    <ButtonPrimary
-                        to="/sistema"
-                        colorFrom={"#17359d"}
-                        colorTo={"#17359d"}
-                        className={"uppercase mx-auto mt-12 mb-16 px-8 py-3 text-sm sm:text-base"}
-                    >
-                        Ver Más
-                    </ButtonPrimary>
+                    {categoriaActiva === 'farmacia' ? (
+                        <ButtonPrimary
+                            to="/sistema"
+                            colorFrom={"#33D5FF"}
+                            colorTo={"#1D98B7"}
+                            className={"uppercase mx-auto mt-12 mb-16 px-8 py-3 text-sm sm:text-base"}
+                        >
+                            Ver Más
+                        </ButtonPrimary>
+                    ) : (
+                        <ButtonPrimary
+                            to="/sistema"
+                            colorFrom={"#17359d"}
+                            colorTo={"#17359d"}
+                            className={"uppercase mx-auto mt-12 mb-16 px-8 py-3 text-sm sm:text-base"}
+                        >
+                            Ver Más
+                        </ButtonPrimary>
+                    )}
+
                 </div>
 
 
