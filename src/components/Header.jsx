@@ -34,7 +34,7 @@ const Header = () => {
                     <Link to="/sistema" className="hover:underline">Sistema</Link>
                     <Link to="/planes" className="hover:underline">Planes</Link>
                     <Link to="/contacto" className="hover:underline">Contacto</Link>
-                    <ButtonPrimary colorFrom="#2EC6DF" colorTo="#1A2980">
+                    <ButtonPrimary colorFrom="#2EC6DF" colorTo="#1A2980" to="/demo">
                         AGENDA UNA DEMO
                     </ButtonPrimary>
                 </nav>

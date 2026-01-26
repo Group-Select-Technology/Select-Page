@@ -19,10 +19,10 @@ const Hero = () => {
                         de manera eficiente y precisa.
                     </p>
                     <div className="flex gap-6">
-                        <ButtonPrimary colorFrom="#2EC6DF" colorTo="#1A2980">
+                        <ButtonPrimary colorFrom="#2EC6DF" colorTo="#1A2980" to="/demo">
                             AGENDA UNA DEMO
                         </ButtonPrimary>
-                        <ButtonSecondary colorBack="#FFF" colorBorder="#17359d">
+                        <ButtonSecondary colorBack="#FFF" colorBorder="#17359d" to="/planes">
                             VER PLANES
                         </ButtonSecondary>
                     </div>
