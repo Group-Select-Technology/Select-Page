@@ -158,8 +158,20 @@
   background-color: #17359d;
 }
 
+.bg-secondary {
+  background-color: #2ec6df;
+}
+
+.bg-terciary {
+  background-color: #F3FAFF;
+}
+
 .text-primary {
   color: #17359d;
+}
+
+.text-secondary {
+  color: #2ec6df;
 }
 
 body {
@@ -171,4 +183,31 @@ body {
 
 .monserrat {
   font-family: "Montserrat", sans-serif !important;
+}
+
+/* Animaciones del carrusel de logos */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scroll-right {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animate-scroll-left {
+  animation: scroll-left 20s linear infinite;
+}
+
+.animate-scroll-right {
+  animation: scroll-right 20s linear infinite;
 }

@@ -15,10 +15,10 @@ function App() {
         <>
             <BrowserRouter>
                 <Routes>
-                    //! AREA PUBLICA
+                    //* AREA PUBLICA
                     //? Ruta del componente padre
                     <Route path="/" element={<MainLayout />}>
-                    //? Rutas Hijas
+                        //? Rutas Hijas
                         <Route index element={<Home />} />//* Pagina principal con index
                         <Route path="nosotros" element={<Nosotros />} />
                         <Route path="sistema" element={<Sistema />} />
