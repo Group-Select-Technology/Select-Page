@@ -2,19 +2,43 @@
   {
     "id": 1,
     "pregunta": "¿El sistema es difícil de usar o no sé mucho de computación?",
-    "respuesta":
-      "No te preocupes, Select está diseñado para ser muy intuitivo. La mayoría de usuarios aprenden a usarlo en menos de 2 horas. Además, ofrecemos capacitación personalizada para que tú y tu equipo se sientan cómodos desde el primer día."
+    "respuesta": "No te preocupes, Select está diseñado para ser muy intuitivo. La mayoría de usuarios aprenden a usarlo en menos de 2 horas. Además, ofrecemos capacitación personalizada para que tú y tu equipo se sientan cómodos desde el primer día.",
+    "mostrarEnHome": true
   },
   {
     "id": 2,
     "pregunta": "¿Qué pasa si se cae el internet, puedo seguir vendiendo?",
-    "respuesta":
-      "¡Sí! Select funciona incluso sin conexión a internet. Puedes seguir registrando ventas y todos los cambios se sincronizarán automáticamente cuando la conexión se restablezca. Tu negocio nunca se detiene."
+    "respuesta": "¡Sí! Select funciona incluso sin conexión a internet. Puedes seguir registrando ventas y todos los cambios se sincronizarán automáticamente cuando la conexión se restablezca. Tu negocio nunca se detiene.",
+    "mostrarEnHome": true
   },
   {
     "id": 3,
     "pregunta": "¿Incluye la facturación electrónica y declaración a SUNAT?",
-    "respuesta":
-      "Absolutamente. Select está completamente integrado con SUNAT para facturación electrónica. Genera boletas, facturas, notas de crédito y más, todo cumpliendo con las normativas peruanas. Tus declaraciones estarán siempre listas y organizadas."
+    "respuesta": "Absolutamente. Select está completamente integrado con SUNAT para facturación electrónica. Genera boletas, facturas, notas de crédito y más, todo cumpliendo con las normativas peruanas. Tus declaraciones estarán siempre listas y organizadas.",
+    "mostrarEnHome": true
+  },
+  {
+    "id": 4,
+    "pregunta": "¿Mi información actual se puede migrar al nuevo sistema?",
+    "respuesta": "Sí, contamos con un equipo especializado en migración de datos. Nos encargamos de transferir toda tu información de manera segura: productos, clientes, historial de ventas y más. El proceso es transparente y te acompañamos en cada paso.",
+    "mostrarEnHome": false
+  },
+  {
+    "id": 5,
+    "pregunta": "¿El soporte técnico tiene algún costo adicional?",
+    "respuesta": "El soporte técnico está incluido en todos nuestros planes. Contamos con un equipo disponible para resolver tus dudas y problemas de manera rápida. Además, ofrecemos actualizaciones constantes sin costo extra.",
+    "mostrarEnHome": false
+  },
+  {
+    "id": 6,
+    "pregunta": "¿El sistema se actualiza con los cambios de SUNAT?",
+    "respuesta": "Sí, nuestro equipo de desarrollo está constantemente monitoreando las actualizaciones y cambios en las regulaciones de SUNAT. Todas las actualizaciones necesarias se implementan automáticamente para que siempre estés cumpliendo con la normativa vigente.",
+    "mostrarEnHome": false
+  },
+  {
+    "id": 7,
+    "pregunta": "¿El sistema es difícil de usar o no sé mucho de computación?",
+    "respuesta": "No te preocupes, Select está diseñado para ser muy intuitivo. La mayoría de usuarios aprenden a usarlo en menos de 2 horas. Además, ofrecemos capacitación personalizada para que tú y tu equipo se sientan cómodos desde el primer día.",
+    "mostrarEnHome": false
   }
 ]

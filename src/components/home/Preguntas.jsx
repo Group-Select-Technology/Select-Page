@@ -10,7 +10,8 @@ const Preguntas = () => {
         const getFaq = async () => {
             try {
                 const response = await axios.get('/data/faq.json');
-                setFaq(response.data);
+                const faqHome = response.data.filter(f => f.mostrarEnHome === true);
+                setFaq(faqHome);
             } catch (error) {
                 console.log("Error al cargar faq:", error);
                 setFaq([]);
@@ -39,6 +40,7 @@ const Preguntas = () => {
                             colorFrom="#17359d"
                             colorTo="#17359d"
                             className="uppercase px-7 py-3"
+                            to="/preguntas-frecuentes"
                         >
                             Ver más
                         </ButtonPrimary>

@@ -18,7 +18,7 @@ const Pregunta = (props) => {
             {pregunta}
           </span>
           <img
-            src="/img/faq_arrow.png"
+            src="/img/faq_arrow.svg"
             alt="Toggle"
             className={`
               w-6 h-6 flex-shrink-0

@@ -61,6 +61,7 @@ const Intro = () => {
             colorFrom="#2EC6DF"
             colorTo="#1A2980"
             className="uppercase px-8 py-3"
+            to="/planes"
           >
             Conoce nuestros planes
           </ButtonPrimary>
