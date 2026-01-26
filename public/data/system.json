@@ -3,7 +3,7 @@
     "id": 1,
     "title": "SELECT FARMA",
     "description": "El sistema perfecto para tu botica, farmacia y/o droguería",
-    "image": "selectfarma",
+    "image": "img/selectfarma.png",
     "features": [
       "Control de Lotes y Vencimientos",
       "Facturación Directa SUNAT",
@@ -15,7 +15,7 @@
     "id": 2,
     "title": "SELECT POS",
     "description": "El sistema ideal para tu rubro, textileria o market",
-    "image": "selectpos",
+    "image": "img/selectpos.png",
     "features": [
       "Gestión de Pedidos y Mesas",
       "Facturación Electrónica SUNAT",
