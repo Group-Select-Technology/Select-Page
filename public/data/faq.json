@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "pregunta": "¿El sistema es difícil de usar o no sé mucho de computación?",
+    "respuesta":
+      "No te preocupes, Select está diseñado para ser muy intuitivo. La mayoría de usuarios aprenden a usarlo en menos de 2 horas. Además, ofrecemos capacitación personalizada para que tú y tu equipo se sientan cómodos desde el primer día."
+  },
+  {
+    "id": 2,
+    "pregunta": "¿Qué pasa si se cae el internet, puedo seguir vendiendo?",
+    "respuesta":
+      "¡Sí! Select funciona incluso sin conexión a internet. Puedes seguir registrando ventas y todos los cambios se sincronizarán automáticamente cuando la conexión se restablezca. Tu negocio nunca se detiene."
+  },
+  {
+    "id": 3,
+    "pregunta": "¿Incluye la facturación electrónica y declaración a SUNAT?",
+    "respuesta":
+      "Absolutamente. Select está completamente integrado con SUNAT para facturación electrónica. Genera boletas, facturas, notas de crédito y más, todo cumpliendo con las normativas peruanas. Tus declaraciones estarán siempre listas y organizadas."
+  }
+]

@@ -4,6 +4,7 @@ import Hero from '../components/home/Hero'
 import Planes from '../components/home/Planes'
 import Rubros from '../components/home/Rubros'
 import Trayectoria from '../components/home/Trayectoria'
+import Preguntas from "../components/home/Preguntas"
 import { CategoriaProvider } from '../context/CategoriaContext'
 
 const Home = () => {
@@ -15,6 +16,7 @@ const Home = () => {
             <Beneficios />
             <Planes />
             <Trayectoria />
+            <Preguntas />
         </CategoriaProvider>
     )
 }
