@@ -2,7 +2,7 @@ import React from 'react'
 
 const Presencia = () => {
   return (
-    <section className="py-12 lg:pb-0 lg:pt-0 px-6 sm:px-10 lg:px-32 xl:px-64">
+    <section className="pb-12 lg:pb-0 lg:pt-0 px-6 sm:px-10 lg:px-32 xl:px-64">
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           <div className="order-2 lg:order-1">

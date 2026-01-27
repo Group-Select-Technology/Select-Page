@@ -27,22 +27,19 @@ const Ayuda = () => {
           </a>
         </div>
         
-        <div className="flex flex-col md:flex-row items-center justify-center gap-y-2 gap-x-6 text-center text-gray-500 text-sm mt-6">
-          <p>
+        <div className="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr_auto_1fr] gap-4 text-center text-gray-600 text-sm sm:text-base items-center">
+          <p className="text-gray-400">
             Si tienes alguna consulta, nuestro equipo comercial está disponible las 24hs
           </p>
-          
-          <span className="hidden md:block text-gray-300">|</span>
-          
-          <p>
+          <span className="hidden md:block text-gray-400">|</span>
+          <p className="text-gray-400">
             Más de 9 años brindando una solución profesional
           </p>
-          
-          <span className="hidden md:block text-gray-300">|</span>
-          
-          <p>
+          <span className="hidden md:block text-gray-400">|</span>
+          <p className="text-gray-400">
             En plan perfecto para tu proyecto
           </p>
+
         </div>
       </div>
     </section>
