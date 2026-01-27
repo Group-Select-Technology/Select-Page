@@ -4,7 +4,7 @@ import { useParams } from 'react-router-dom';
 import PlanCard from '../common/PlanCard';
 
 
-const ComparacionPlanes = () => {
+const IntroPlanes = () => {
     const [planes, setPlanes] = useState([]);
     const [moneda, setMoneda] = useState('soles');
     const [periodo, setPeriodo] = useState('mensual');
@@ -136,4 +136,4 @@ const ComparacionPlanes = () => {
     )
 }
 
-export default ComparacionPlanes
+export default IntroPlanes
