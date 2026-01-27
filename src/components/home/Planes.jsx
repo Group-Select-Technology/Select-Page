@@ -39,6 +39,7 @@ const Planes = () => {
                             {planes.map((plan) => (
                                 <BasicPlan
                                     key={plan.id}
+                                    categoria={categoriaActiva}
                                     {...plan}
                                 />
                             ))}
@@ -56,6 +57,7 @@ const Planes = () => {
                             {planes.map((plan) => (
                                 <BasicPlan
                                     key={plan.id}
+                                    categoria={categoriaActiva}
                                     {...plan}
                                 />
                             ))}
