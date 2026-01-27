@@ -1,17 +1,49 @@
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { Link } from "react-router-dom"
 import ButtonPrimary from "./common/ButtonPrimary"
 
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
+    const [isVisible, setIsVisible] = useState(true)
+    const [lastScrollY, setLastScrollY] = useState(0)
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen)
     }
 
+    useEffect(() => {
+        const handleScroll = () => {
+            const currentScrollY = window.scrollY
+
+            // Solo aplicar en desktop (lg y superior)
+            if (window.innerWidth >= 1024) {
+                if (currentScrollY > lastScrollY && currentScrollY > 100) {
+                    // Scrolling hacia abajo y pasó los 100px
+                    setIsVisible(false)
+                } else if (currentScrollY < lastScrollY) {
+                    // Scrolling hacia arriba
+                    setIsVisible(true)
+                }
+            } else {
+                // En móvil siempre visible
+                setIsVisible(true)
+            }
+
+            setLastScrollY(currentScrollY)
+        }
+
+        window.addEventListener('scroll', handleScroll, { passive: true })
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll)
+        }
+    }, [lastScrollY])
+
     return (
-        <header className="py-7">
+        <header className={`py-7 bg-[#f9fafb] lg:fixed lg:top-0 lg:left-0 lg:right-0 lg:z-40 lg:transition-transform lg:duration-300 lg:ease-in-out ${
+            isVisible ? 'lg:translate-y-0' : 'lg:-translate-y-full'
+        }`}>
             <div className="container mx-auto px-4 flex justify-between items-center">
                 <Link to="/">
                     <img src="/img/logo_full.png" alt="Logo" className="p-0 m-0 w-48" />
