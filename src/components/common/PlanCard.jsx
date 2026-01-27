@@ -15,7 +15,7 @@ const Plan = ({ tier, moneda, periodo }) => {
             className={`
                 bg-white rounded-3xl shadow-lg p-6 sm:p-8 lg:py-10
                 transition-all duration-300 ease-in-out 
-                hover:scale-100 hover:shadow-xl
+                hover:scale-105 hover:shadow-xl
                 flex flex-col relative
                 ${isHighlighted
                     ? 'scale-95 lg:scale-100 z-10'
