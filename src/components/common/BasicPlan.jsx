@@ -4,7 +4,7 @@ import ButtonSecondary from './ButtonSecondary';
 
 const BasicPlan = (props) => {
 
-    const { title, description, features, isHighlighted } = props;
+    const { title, description, features, isHighlighted, categoria } = props;
 
     return (
         <div
@@ -64,9 +64,9 @@ const BasicPlan = (props) => {
 
             {/* <div className='mx-5'> */}
                 {isHighlighted ? (
-                    <ButtonPrimary colorFrom='#33D5FF' colorTo='#0095FF' to='/planes' className='w-auto text-center m-5 uppercase' children='Ver Precios'/>
+                    <ButtonPrimary colorFrom='#33D5FF' colorTo='#0095FF' to={categoria === "farmacia" ? "/planes/farma" : "/planes/pos"} className='w-auto text-center m-5 uppercase' children='Ver Precios'/>
                 ) : (
-                    <ButtonSecondary colorBack='#FFF' colorBorder='#33D5FF' to='/planes' className='w-auto text-center m-5 uppercase' children='Ver Precios'/>
+                    <ButtonSecondary colorBack='#FFF' colorBorder='#33D5FF' to={categoria === "farmacia" ? "/planes/farma" : "/planes/pos"} className='w-auto text-center m-5 uppercase' children='Ver Precios'/>
                 )}
             {/* </div> */}
 

@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "imagen": "/img/calidad.png",
+    "valor": "CALIDAD",
+    "descripcion": "Nos comprometemos a ofrecer soluciones de software de la más alta calidad, cumpliendo con los estándares más exigentes del mercado."
+  },
+  {
+    "id": 2,
+    "imagen": "/img/compromiso.png",
+    "valor": "COMPROMISO",
+    "descripcion": "Estamos dedicados al éxito de nuestros clientes, trabajando incansablemente para superar sus expectativas y metas."
+  },
+  {
+    "id": 3,
+    "imagen": "/img/confianza.png",
+    "valor": "CONFIANZA",
+    "descripcion": "Construimos relaciones duraderas basadas en la transparencia, honestidad y cumplimiento de nuestras promesas."
+  },
+  {
+    "id": 4,
+    "imagen": "/img/innovacion.png",
+    "valor": "INNOVACIÓN",
+    "descripcion": "Impulsamos la transformación digital con soluciones tecnológicas innovadoras y a la vanguardia del sector."
+  },
+  {
+    "id": 5,
+    "imagen": "/img/responsabilidad.png",
+    "valor": "RESPONSABILIDAD",
+    "descripcion": "Asumimos con seriedad nuestro compromiso con cada proyecto, garantizando resultados efectivos y sostenibles."
+  },
+  {
+    "id": 6,
+    "imagen": "/img/personalizacion.png",
+    "valor": "PERSONALIZACIÓN",
+    "descripcion": "Adaptamos nuestras soluciones a las necesidades específicas de cada cliente, ofreciendo un servicio único y especializado."
+  }
+]

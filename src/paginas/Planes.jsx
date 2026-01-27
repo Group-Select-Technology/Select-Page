@@ -1,11 +1,14 @@
-import React from 'react'
-import { CategoriaProvider } from '../context/CategoriaContext'
+import WhatsAppIcon from "../components/common/WhatsappIcon"
+import ComparisonPlanes from "../components/Planes/ComparisonPlanes"
+import IntroPlanes from "../components/Planes/IntroPlanes"
 
 const Planes = () => {
     return (
-        <CategoriaProvider>
-            <div>Planes</div>
-        </CategoriaProvider>
+        <>
+            <IntroPlanes />
+            <ComparisonPlanes />
+            <WhatsAppIcon />
+        </>
     )
 }
 

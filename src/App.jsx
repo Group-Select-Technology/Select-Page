@@ -7,6 +7,7 @@ import Sistema from "./paginas/Sistema";
 import Contacto from "./paginas/Contacto";
 import Planes from "./paginas/Planes";
 import Demo from "./paginas/Demo";
+import PreguntasFrecuentes from "./paginas/PreguntasFrecuentes";
 import MainLayout from "./layout/MainLayout";
 
 
@@ -22,9 +23,10 @@ function App() {
                         <Route index element={<Home />} />//* Pagina principal con index
                         <Route path="nosotros" element={<Nosotros />} />
                         <Route path="sistema" element={<Sistema />} />
-                        <Route path="planes" element={<Planes />} />
+                        <Route path="planes/:tipo" element={<Planes />} />
                         <Route path="contacto" element={<Contacto />} />
                         <Route path="demo" element={<Demo />} />
+                        <Route path="preguntas-frecuentes" element={<PreguntasFrecuentes />} />
                     </Route>
                 </Routes>
             </BrowserRouter>

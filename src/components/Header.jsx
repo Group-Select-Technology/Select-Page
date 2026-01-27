@@ -1,20 +1,52 @@
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { Link } from "react-router-dom"
 import ButtonPrimary from "./common/ButtonPrimary"
 
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
+    const [isVisible, setIsVisible] = useState(true)
+    const [lastScrollY, setLastScrollY] = useState(0)
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen)
     }
 
+    useEffect(() => {
+        const handleScroll = () => {
+            const currentScrollY = window.scrollY
+
+            // Solo aplicar en desktop (lg y superior)
+            if (window.innerWidth >= 1024) {
+                if (currentScrollY > lastScrollY && currentScrollY > 100) {
+                    // Scrolling hacia abajo y pasó los 100px
+                    setIsVisible(false)
+                } else if (currentScrollY < lastScrollY) {
+                    // Scrolling hacia arriba
+                    setIsVisible(true)
+                }
+            } else {
+                // En móvil siempre visible
+                setIsVisible(true)
+            }
+
+            setLastScrollY(currentScrollY)
+        }
+
+        window.addEventListener('scroll', handleScroll, { passive: true })
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll)
+        }
+    }, [lastScrollY])
+
     return (
-        <header className="py-7">
+        <header className={`py-7 bg-[#f9fafb] lg:fixed lg:top-0 lg:left-0 lg:right-0 lg:z-40 lg:transition-transform lg:duration-300 lg:ease-in-out ${
+            isVisible ? 'lg:translate-y-0' : 'lg:-translate-y-full'
+        }`}>
             <div className="container mx-auto px-4 flex justify-between items-center">
                 <Link to="/">
-                    <img src="img/logo_full.png" alt="Logo" className="p-0 m-0 w-48" />
+                    <img src="/img/logo_full.png" alt="Logo" className="p-0 m-0 w-48" />
                 </Link>
 
                 {/* Botón hamburguesa - visible solo en móvil */}
@@ -29,10 +61,62 @@ const Header = () => {
                 </button>
 
                 {/* Navegación desktop */}
-                <nav className="hidden lg:flex gap-10 text-xl items-center text-primary font-medium">
+                <nav className="hidden lg:flex gap-10 text-lg items-center text-primary font-semibold uppercase">
                     <Link to="/nosotros" className="hover:underline">Nosotros</Link>
-                    <Link to="/sistema" className="hover:underline">Sistema</Link>
-                    <Link to="/planes" className="hover:underline">Planes</Link>
+
+                    {/* Dropdown Sistema */}
+                    <div className="relative group">
+                        <button className="hover:underline flex items-center gap-1 bg-transparent border-none cursor-pointer text-primary text-lg font-semibold uppercase">
+                            Sistema
+                            <svg className="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div className="absolute top-full left-0 mt-2 w-auto min-w-max bg-white shadow-lg rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 border border-gray-100">
+                            <div className="py-4 px-5">
+                                <div className="font-bold text-black text-sm mb-3 tracking-wide">SISTEMA</div>
+                                <Link to="/sistema" className="block py-1.5 hover:bg-gray-50 transition-colors rounded px-1">
+                                    <span className="font-bold text-fourthary text-sm">SELECT FARMA</span>
+                                    <span className="text-gray-400 mx-1">-</span>
+                                    <span className="text-sm text-gray-500 font-normal">Farmacias, boticas o droguería</span>
+                                </Link>
+                                <Link to="/sistema" className="block py-1.5 hover:bg-gray-50 transition-colors rounded px-1">
+                                    <span className="font-bold text-primary text-sm">SELECT POS</span>
+                                    <span className="text-gray-400 mx-1">-</span>
+                                    <span className="text-sm text-gray-500 font-normal">Tiendas de rubro general</span>
+                                </Link>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Dropdown Planes */}
+                    <div className="relative group">
+                        <button className="hover:underline flex items-center gap-1 bg-transparent border-none cursor-pointer text-primary text-lg font-semibold uppercase">
+                            Planes
+                            <svg className="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div className="absolute top-full left-0 mt-2 w-auto min-w-max bg-white shadow-lg rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 border border-gray-100">
+                            <div className="py-4 px-5">
+                                <div className="font-bold text-black text-sm mb-3 tracking-wide">PLANES</div>
+                                <Link to="/planes/farma" className="block py-1.5 hover:bg-gray-50 transition-colors rounded px-1">
+                                    <span className="font-bold text-fourthary text-sm">SELECT FARMA</span>
+                                    <span className="text-gray-400 mx-1">-</span>
+
+                                    <span className="text-sm text-gray-500 font-normal">Farmacias, boticas o droguería</span>
+
+                                </Link>
+                                <Link to="/planes/pos" className="block py-1.5 hover:bg-gray-50 transition-colors rounded px-1">
+                                    <span className="font-bold text-primary text-sm">SELECT POS</span>
+                                    <span className="text-gray-400 mx-1">-</span>
+                                    <span className="text-sm text-gray-500 font-normal">Tiendas de rubro general</span>
+
+                                </Link>
+                            </div>
+                        </div>
+                    </div>
+
                     <Link to="/contacto" className="hover:underline">Contacto</Link>
                     <ButtonPrimary colorFrom="#2EC6DF" colorTo="#1A2980" to="/demo">
                         AGENDA UNA DEMO

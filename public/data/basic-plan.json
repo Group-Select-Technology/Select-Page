@@ -1,0 +1,46 @@
+[
+    {
+        "id": 1,
+        "title": "Básico",
+        "description": "Obtén las herramientas esenciales para gestionar tu negocio de manera eficiente y optimizada.",
+        "category": "farmacia",
+        "isHighlighted": false,
+        "features": [
+            "Nota de Ventas ILIMITADAS",
+            "3 Usuarios",
+            "Dispositivos ilimitados (web)",
+            "Lista de medicamentos (precargados)",
+            "Y muchas funciones más..."
+        ]
+    },
+    {
+        "id": 2,
+        "title": "Emprendedor",
+        "description": "Disfruta de funciones adicionales diseñadas para impulsar el crecimiento de tu empresa.",
+        "image": "img/seccion_destacada_1.png",
+        "category": "farmacia",
+        "isHighlighted": true,
+        "features": [
+            "Todas las funciones del Plan Empresarial +",
+            "Hasta 2000 boletas o facturas",
+            "6 Usuarios",
+            "Reporte de stock crítico y vencimientos",
+            "Y muchas funciones más..."
+        ]
+    },
+    {
+        "id": 3,
+        "title": "Ejecutivo",
+        "description": "Disfruta de herramientas y funciones avanzadas para gestionar tu empresa a gran escala.",
+        "image": "img/seccion_destacada_1.png",
+        "category": "farmacia",
+        "isHighlighted": false,
+        "features": [
+            "Todas las funciones del Plan Ejecutivo +",
+            "Boletas o facturas ilimitadas",
+            "12 Usuarios",
+            "Compras XML",
+            "Y muchas funciones más..."
+        ]
+    }
+]

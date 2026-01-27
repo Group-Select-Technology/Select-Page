@@ -12,7 +12,7 @@ const Planes = () => {
     useEffect(() => {
         const getPlanes = async () => {
             try {
-                const response = await axios.get('/data/basicPlan.json');
+                const response = await axios.get('/data/basic-plan.json');
                 setPlanes(response.data);
             } catch (error) {
                 console.log("Error al cargar planes:", error);
@@ -39,6 +39,7 @@ const Planes = () => {
                             {planes.map((plan) => (
                                 <BasicPlan
                                     key={plan.id}
+                                    categoria={categoriaActiva}
                                     {...plan}
                                 />
                             ))}
@@ -56,6 +57,7 @@ const Planes = () => {
                             {planes.map((plan) => (
                                 <BasicPlan
                                     key={plan.id}
+                                    categoria={categoriaActiva}
                                     {...plan}
                                 />
                             ))}

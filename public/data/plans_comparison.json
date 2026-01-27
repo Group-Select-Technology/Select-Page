@@ -1,0 +1,370 @@
+{
+    "plans": [
+        {
+            "id": 1,
+            "name": "Empresarial"
+        },
+        {
+            "id": 2,
+            "name": "Ejecutivo"
+        },
+        {
+            "id": 3,
+            "name": "Corporativo"
+        }
+    ],
+    "features": [
+        {
+            "label": "Notas de ventas",
+            "values": [
+                "ILIMITADO",
+                "ILIMITADO",
+                "ILIMITADO"
+            ]
+        },
+        {
+            "label": "N° Usuarios",
+            "values": [
+                "3",
+                "6",
+                "12"
+            ]
+        },
+        {
+            "label": "Dispositivos ilimitados (web)",
+            "values": [
+                true,
+                true,
+                true
+            ]
+        },
+        {
+            "label": "Capacitación virtual y presencial*",
+            "values": [
+                true,
+                true,
+                true
+            ]
+        },
+        {
+            "label": "Lista de medicamentos (precargado)",
+            "values": [
+                true,
+                true,
+                true
+            ]
+        },
+        {
+            "label": "Videos tutoriales",
+            "values": [
+                true,
+                true,
+                true
+            ]
+        },
+        {
+            "label": "Cotización",
+            "values": [
+                true,
+                true,
+                true
+            ]
+        },
+        {
+            "label": "Envío de comprobantes (vía Whatsapp/correo)",
+            "values": [
+                true,
+                true,
+                true
+            ]
+        },
+        {
+            "label": "Presentación Unidad/Caja/Blíster",
+            "values": [
+                true,
+                true,
+                true
+            ]
+        },
+        {
+            "label": "Observatorio de precios",
+            "values": [
+                true,
+                true,
+                true
+            ]
+        },
+        {
+            "label": "Alertas de caducidad y agotados",
+            "values": [
+                true,
+                true,
+                true
+            ]
+        },
+        {
+            "label": "Alerta de venta con receta",
+            "values": [
+                true,
+                true,
+                true
+            ]
+        },
+        {
+            "label": "Reportes de ventas/compras/cajas/productos",
+            "values": [
+                true,
+                true,
+                true
+            ]
+        },
+        {
+            "label": "Multi-lotes",
+            "values": [
+                true,
+                true,
+                true
+            ]
+        },
+        {
+            "label": "Incentivos por vendedor",
+            "values": [
+                true,
+                true,
+                true
+            ]
+        },
+        {
+            "label": "Caja ciega",
+            "values": [
+                true,
+                true,
+                true
+            ]
+        },
+        {
+            "label": "Caja bóveda",
+            "values": [
+                true,
+                true,
+                true
+            ]
+        },
+        {
+            "label": "Inventario (entrada y salida)",
+            "values": [
+                true,
+                true,
+                true
+            ]
+        },
+        {
+            "label": "Acceso a comunidades Select",
+            "values": [
+                true,
+                true,
+                true
+            ]
+        },
+        {
+            "label": "Módulo de ventas y compras",
+            "values": [
+                true,
+                true,
+                true
+            ]
+        },
+        {
+            "label": "Soporte (Whatsapp+Meet)",
+            "values": [
+                true,
+                true,
+                true
+            ]
+        },
+        {
+            "label": "Servidores activos 24/7 en Amazon Web Services \"AWS\"",
+            "values": [
+                true,
+                true,
+                true
+            ]
+        },
+        {
+            "label": "Boletas o facturas",
+            "values": [
+                false,
+                2000,
+                "ILIMITADO"
+            ]
+        },
+        {
+            "label": "Reporte de stock crítico y vencimientos",
+            "values": [
+                false,
+                true,
+                true
+            ]
+        },
+        {
+            "label": "Notas de crédito/débito",
+            "values": [
+                false,
+                true,
+                true
+            ]
+        },
+        {
+            "label": "Acumulación de puntos",
+            "values": [
+                false,
+                true,
+                true
+            ]
+        },
+        {
+            "label": "Transferencias entre locales",
+            "values": [
+                false,
+                true,
+                true
+            ]
+        },
+        {
+            "label": "Guía de remisión",
+            "values": [
+                false,
+                true,
+                true
+            ]
+        },
+        {
+            "label": "Módulo de inventario (avanzado)",
+            "values": [
+                false,
+                true,
+                true
+            ]
+        },
+        {
+            "label": "Reporte multisucursal",
+            "values": [
+                false,
+                true,
+                true
+            ]
+        },
+        {
+            "label": "Notificación + alerta de no enviados",
+            "values": [
+                false,
+                true,
+                true
+            ]
+        },
+        {
+            "label": "Transferencias de fondos (cajas/bóvedas)",
+            "values": [
+                false,
+                true,
+                true
+            ]
+        },
+        {
+            "label": "Cuentas por pagar",
+            "values": [
+                false,
+                true,
+                true
+            ]
+        },
+        {
+            "label": "Módulo de punto de venta",
+            "values": [
+                false,
+                true,
+                true
+            ]
+        },
+        {
+            "label": "Reporte de gestión III",
+            "values": [
+                false,
+                false,
+                true
+            ]
+        },
+        {
+            "label": "Cuentas por cobrar (crédito)",
+            "values": [
+                false,
+                false,
+                true
+            ]
+        },
+        {
+            "label": "Campañas de descuento (eventos)",
+            "values": [
+                false,
+                false,
+                true
+            ]
+        },
+        {
+            "label": "Campaña de kits personalizados",
+            "values": [
+                false,
+                false,
+                true
+            ]
+        },
+        {
+            "label": "Requerimiento de almacén",
+            "values": [
+                false,
+                false,
+                true
+            ]
+        },
+        {
+            "label": "Hoja organoléptica",
+            "values": [
+                false,
+                false,
+                true
+            ]
+        },
+        {
+            "label": "Proyección de compras sugeridas",
+            "values": [
+                false,
+                false,
+                true
+            ]
+        },
+        {
+            "label": "Compras XML",
+            "values": [
+                false,
+                false,
+                true
+            ]
+        },
+        {
+            "label": "Seguimiento de documentos no enviados",
+            "values": [
+                false,
+                false,
+                true
+            ]
+        },
+        {
+            "label": "Módulo de punto de venta (Offline)",
+            "values": [
+                false,
+                false,
+                true
+            ]
+        }
+    ]
+}

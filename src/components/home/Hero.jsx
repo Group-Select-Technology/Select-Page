@@ -1,7 +1,13 @@
 import ButtonPrimary from "../common/ButtonPrimary"
 import ButtonSecondary from "../common/ButtonSecondary"
+import useCategoria from "../../hooks/useCategoria";
 
 const Hero = () => {
+
+    const {categoriaActiva} = useCategoria('farmacia');
+
+    console.log("Categoría activa en Hero:", categoriaActiva);
+
     return (
         <section className="relative overflow-hidden">
             {/* Versión Desktop */}
@@ -22,7 +28,7 @@ const Hero = () => {
                         <ButtonPrimary colorFrom="#2EC6DF" colorTo="#1A2980" to="/demo">
                             AGENDA UNA DEMO
                         </ButtonPrimary>
-                        <ButtonSecondary colorBack="#FFF" colorBorder="#17359d" to="/planes">
+                        <ButtonSecondary colorBack="#FFF" colorBorder="#17359d" to={categoriaActiva === "farmacia" ? "planes/farma" : "planes/pos"}>
                             VER PLANES
                         </ButtonSecondary>
                     </div>
@@ -67,10 +73,10 @@ const Hero = () => {
 
                     {/* Botones con mejor espaciado */}
                     <div className="flex flex-col gap-3 max-w-xs mx-auto">
-                        <ButtonPrimary colorFrom="#2EC6DF" colorTo="#1A2980" className="w-full py-4 text-base">
+                        <ButtonPrimary colorFrom="#2EC6DF" colorTo="#1A2980" className="w-full py-4 text-center" to="demo">
                             AGENDA UNA DEMO
                         </ButtonPrimary>
-                        <ButtonSecondary colorBack="#FFF" colorBorder="#17359d" className="w-full py-4 text-base">
+                        <ButtonSecondary colorBack="#FFF" colorBorder="#17359d" to={categoriaActiva === "farmacia" ? "planes/farma" : "planes/pos"} className="w-full py-4 text-center">
                             VER PLANES
                         </ButtonSecondary>
                     </div>

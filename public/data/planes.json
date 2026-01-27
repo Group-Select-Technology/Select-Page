@@ -1,0 +1,235 @@
+[
+    {
+        "farma": {
+            "name": "SELECT FARMA",
+            "title": "Planes que impulsan tu crecimiento",
+            "description": "Descubre soluciones diseñadas estratégicamente para adaptarse a las necesidades de tu negocio. Desde tu primera botica hasta la gestión de grandes cadenas farmacéuticas.",
+            "tiers": [
+                {
+                    "id": "1",
+                    "title": "Empresarial",
+                    "subtitle": "Ideal para tu primera botica",
+                    "isHighlighted": false,
+                    "prices": {
+                        "mensual": {
+                            "soles": 65,
+                            "dolares": 18
+                        },
+                        "anual": {
+                            "soles": 650,
+                            "dolares": 180
+                        }
+                    },
+                    "features": [
+                        "Notas de ventas ILIMITADAS",
+                        "3 Usuarios",
+                        "Dispositivos ilimitados (web)",
+                        "Capacitación virtual y presencial*",
+                        "Lista de medicamentos (precargados)",
+                        "Videos tutoriales",
+                        "Envío de comprobantes (vía Whatsapp/correo)",
+                        "Presentación Unidad/Caja/Blíster",
+                        "Observatorio de precios",
+                        "Alerta de caducidad y agotados",
+                        "Alerta de venta con receta",
+                        "Reporte de ventas/compras/cajas/productos",
+                        "Multi-lotes",
+                        "Incentivos por vendedor",
+                        "Caja ciega",
+                        "Caja bóveda",
+                        "Inventario (entrada y salida)",
+                        "Acceso a comunidades Select",
+                        "Modulo de ventas y compras",
+                        "Soporte (Whatsapp + Meet)",
+                        "Servidores activos 24/7 en Amazon Web Services “AWS”"
+                    ]
+                },
+                {
+                    "id": "2",
+                    "title": "Ejecutivo",
+                    "subtitle": "Ideal para tu farmacia o botica",
+                    "isHighlighted": true,
+                    "prices": {
+                        "mensual": {
+                            "soles": 99,
+                            "dolares": 28
+                        },
+                        "anual": {
+                            "soles": 990,
+                            "dolares": 280
+                        }
+                    },
+                    "features": [
+                        "Todas las funciones del Plan Empresarial +",
+                        "Hasta 2000 boletas o facturas",
+                        "6 Usuarios",
+                        "Reporte de stock crítico y vencimientos",
+                        "Notas de crédito/débito",
+                        "Acumulación de puntos",
+                        "Transferencias entre locales",
+                        "Guía de remisión",
+                        "Módulo de inventario (avanzado)",
+                        "Reporte multisucursal",
+                        "Notificación + alerta de no enviados",
+                        "Transferencias de fondos (cajas/bovedas)",
+                        "Cuentas por pagar",
+                        "Módulo de punto de venta"
+                    ]
+                },
+                {
+                    "id": "3",
+                    "title": "Corporativo",
+                    "subtitle": "Ideal para tu cadena de boticas o farmacias",
+                    "isHighlighted": false,
+                    "prices": {
+                        "mensual": {
+                            "soles": 149,
+                            "dolares": 28
+                        },
+                        "anual": {
+                            "soles": 1490,
+                            "dolares": 280
+                        }
+                    },
+                    "features": [
+                        "Todas las funciones del Plan Ejecutivo +",
+                        "Boletas o facturas ilimitadas",
+                        "12 Usuarios",
+                        "Reporte de gestión BI",
+                        "Cuentas por cobrar (crédito)",
+                        "Campaña de descuento (eventos)",
+                        "Campaña de kits personalizadas",
+                        "Requerimiento de almacén",
+                        "Hoja organoléptica",
+                        "Proyección de compras sugeridas",
+                        "Compras XML",
+                        "Seguimiento de documentos no enviados",
+                        "Módulo de punto de venta Offline"
+                    ]
+                }
+            ]
+        },
+        "pos": {
+            "name": "SELECT POS",
+            "title": "Planes diseñados para la potencia de tu comercio",
+            "description": "Soluciones versátiles que se adaptan al ritmo de tu negocio. Desde un punto de venta ágil hasta la administración compleja de múltiples sucursales e inventarios.",
+            "tiers": [
+                {
+                    "id": "1",
+                    "title": "Empresarial",
+                    "subtitle": "Ideal para tu punto de venta",
+                    "isHighlighted": false,
+                    "prices": {
+                        "mensual": {
+                            "soles": 59,
+                            "dolares": 18
+                        },
+                        "anual": {
+                            "soles": 590,
+                            "dolares": 180
+                        }
+                    },
+                    "features": [
+                        "Notas de ventas ILIMITADAS",
+                        "3 Usuarios",
+                        "Dispositivos ilimitados (web)",
+                        "Capacitación virtual",
+                        "Videos tutoriales",
+                        "Vinculación a SUNAT",
+                        "Notas de crédito/débito",
+                        "Multiprecio (hasta 5 precios)",
+                        "Venta por unidades de medida",
+                        "Cotización/plataforma",
+                        "Alerta de caducidad y agotados",
+                        "Reporte de gestión (inicial)",
+                        "Catálogo de productos",
+                        "Multi-lotes",
+                        "Incentivos por vendedor"
+                    ]
+                },
+                {
+                    "id": "2",
+                    "title": "Ejecutivo",
+                    "subtitle": "Ideal para tu punto de venta",
+                    "isHighlighted": true,
+                    "prices": {
+                        "mensual": {
+                            "soles": 99,
+                            "dolares": 28
+                        },
+                        "anual": {
+                            "soles": 990,
+                            "dolares": 280
+                        }
+                    },
+                    "features": [
+                        "Hasta 2000 boletas o facturas",
+                        "6 Usuarios",
+                        "Dispositivos ilimitados (web)",
+                        "Capacitación virtual",
+                        "Videos tutoriales",
+                        "Vinculación a SUNAT",
+                        "Notas de crédito/débito",
+                        "Multiprecio (hasta 5 precios)",
+                        "Venta por unidades de medida",
+                        "Cotización/plataforma",
+                        "Alerta de caducidad y agotados",
+                        "Reporte de gestión (inicial)",
+                        "Catálogo de productos",
+                        "Multi-lotes",
+                        "Incentivos por vendedor",
+                        "Acumulación de puntos",
+                        "Caja ciega",
+                        "Inventario general",
+                        "Transferencias entre locales",
+                        "Guía de remisión",
+                        "Cuentas por pagar (proveedores)"
+                    ]
+                },
+                {
+                    "id": "3",
+                    "title": "Corporativo",
+                    "subtitle": "Ideal para tu cadena de puntos de venta",
+                    "isHighlighted": false,
+                    "prices": {
+                        "mensual": {
+                            "soles": 119,
+                            "dolares": 28
+                        },
+                        "anual": {
+                            "soles": 1190,
+                            "dolares": 280
+                        }
+                    },
+                    "features": [
+                        "Hasta 2000 boletas o facturas",
+                        "12 Usuarios",
+                        "Dispositivos ilimitados (web)",
+                        "Capacitación virtual",
+                        "Videos tutoriales",
+                        "Vinculación a SUNAT",
+                        "Notas de crédito/débito",
+                        "Multiprecio (hasta 5 precios)",
+                        "Venta por unidades de medida",
+                        "Cotización/plataforma",
+                        "Alerta de caducidad y agotados",
+                        "Reporte de gestión (inicial)",
+                        "Catálogo de productos",
+                        "Multi-lotes",
+                        "Incentivos por vendedor",
+                        "Acumulación de puntos",
+                        "Caja ciega",
+                        "Inventario general",
+                        "Transferencias entre locales",
+                        "Guía de remisión",
+                        "Cuentas por pagar (proveedores)",
+                        "Cuentas por cobrar (crédito)",
+                        "Creación de its personalizados",
+                        "Emisión de comprobantes de retención",
+                        "Comisiones vender"
+                    ]
+                }
+            ]
+        }
+    }
+]

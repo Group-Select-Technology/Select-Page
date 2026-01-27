@@ -35,7 +35,7 @@ const Footer = () => {
 			<div className="flex flex-col lg:flex-row gap-4 lg:gap-[28rem] mx-4 md:mx-8 lg:mx-32 items-center">
 				{/* Logo Section */}
 				<div className="flex justify-center mb-0 lg:mb-0">
-					<img src="img/logo_vertical.png" alt="Logo Footer" className="w-40 md:w-52 lg:w-[270px]" />
+					<img src="/img/logo_vertical.png" alt="Logo Footer" className="w-40 md:w-52 lg:w-[270px]" />
 				</div>
 
 				{/* Links Section */}
@@ -68,15 +68,15 @@ const Footer = () => {
 					<FooterAccordion title="Contáctanos">
 						<ul className="pl-0 lg:mt-2">
 							<li className="mb-2 flex items-center gap-2">
-								<img className="w-4" src="img/icono_mail.png" alt="Icono Mail" />
+								<img className="w-4" src="/img/icono_mail.png" alt="Icono Mail" />
 								<span>proyectos@selectperu1.com</span>
 							</li>
 							<li className="mb-2 flex items-center gap-2">
-								<img className="w-4" src="img/icono_wsp.png" alt="Icono WhatsApp" />
+								<img className="w-4" src="/img/icono_wsp.png" alt="Icono WhatsApp" />
 								<span>+51 923 195 683</span>
 							</li>
 							<li className="mb-2 flex items-center gap-2">
-								<img className="w-3" src="img/icono_ubicacion.png" alt="Icono Ubicación" />
+								<img className="w-3" src="/img/icono_ubicacion.png" alt="Icono Ubicación" />
 								<span>
 									Cal. Francisco Bolognesi <br />
 									Nro. 105 Urb. Lima - Independencia
