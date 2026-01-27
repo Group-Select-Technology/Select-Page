@@ -74,9 +74,13 @@ const IntroPlanes = () => {
                             className={`px-5 py-2.5 rounded-full font-semibold text-sm tracking-wide transition-all duration-300
                             ${moneda === 'soles'
                                     ? 'text-white shadow-md'
-                                    : 'bg-white text-gray-400 hover:text-secondary'
+                                    : 'text-gray-400 hover:text-secondary'
                                 }`}
-                            style={moneda === 'soles' ? { background: 'linear-gradient(90deg, #2ec6df, #34B1D1)' } : {}}
+                            style={moneda === 'soles' 
+                                ? { background: tipo === 'farma' 
+                                    ? 'linear-gradient(90deg, #2ec6df, #34B1D1)' 
+                                    : 'linear-gradient(90deg, #17359d, #486de1)' } 
+                                : {}}
                         >
                             S/
                         </button>
@@ -85,9 +89,13 @@ const IntroPlanes = () => {
                             className={`px-5 py-2.5 rounded-full font-semibold text-sm tracking-wide transition-all duration-300
                             ${moneda === 'dolares'
                                     ? 'text-white shadow-md'
-                                    : 'bg-white text-gray-400 hover:text-secondary'
+                                    : 'text-gray-400 hover:text-secondary'
                                 }`}
-                            style={moneda === 'dolares' ? { background: 'linear-gradient(90deg, #2BCCFF, #17359D)' } : {}}
+                            style={moneda === 'dolares' 
+                                ? { background: tipo === 'farma' 
+                                    ? 'linear-gradient(90deg, #17359d, #486de1)' 
+                                    : 'linear-gradient(90deg, #2ec6df, #34B1D1)' } 
+                                : {}}
                         >
                             $
                         </button>
@@ -102,7 +110,11 @@ const IntroPlanes = () => {
                                     ? 'text-white shadow-md'
                                     : 'bg-transparent text-gray-500 hover:text-secondary'
                                 }`}
-                            style={periodo === 'mensual' ? { background: 'linear-gradient(90deg, #2ec6df, #34B1D1)' } : {}}
+                            style={periodo === 'mensual' 
+                                ? { background: tipo === 'farma' 
+                                    ? 'linear-gradient(90deg, #2ec6df, #34B1D1)' 
+                                    : 'linear-gradient(90deg, #17359d, #486de1)' } 
+                                : {}}
                         >
                             MENSUAL
                         </button>
@@ -113,7 +125,11 @@ const IntroPlanes = () => {
                                     ? 'text-white shadow-md'
                                     : 'bg-transparent text-gray-500 hover:text-secondary'
                                 }`}
-                            style={periodo === 'anual' ? { background: 'linear-gradient(90deg, #2BCCFF, #17359D)' } : {}}
+                            style={periodo === 'anual' 
+                                ? { background: tipo === 'farma' 
+                                    ? 'linear-gradient(90deg, #17359d, #486de1)' 
+                                    : 'linear-gradient(90deg, #2ec6df, #34B1D1)' } 
+                                : {}}
                         >
                             ANUAL
                         </button>
@@ -128,6 +144,7 @@ const IntroPlanes = () => {
                             tier={tier}
                             moneda={moneda}
                             periodo={periodo}
+                            tipo={tipo}
                         />
                     ))}
                 </div>

@@ -29,7 +29,7 @@ const ComparisonPlanes = () => {
 
     return (
         <section className='my-20 px-4 lg:px-20'>
-            <h2 className={`font-bold text-center text-3xl lg:text-4xl mb-10 uppercase ${tipo === "farma" ? "text-fourthary" : "text-primary"}`}>
+            <h2 className={`font-bold text-center text-3xl lg:text-4xl mb-28 uppercase ${tipo === "farma" ? "text-fourthary" : "text-primary"}`}>
                 Compara los planes
             </h2>
 

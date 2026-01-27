@@ -2,7 +2,7 @@ import React from 'react'
 import ButtonPrimary from './ButtonPrimary';
 import ButtonSecondary from './ButtonSecondary';
 
-const Plan = ({ tier, moneda, periodo }) => {
+const Plan = ({ tier, moneda, periodo, tipo }) => {
 
     const { title, subtitle, isHighlighted, prices, features } = tier;
 
@@ -15,7 +15,7 @@ const Plan = ({ tier, moneda, periodo }) => {
             className={`
                 bg-white rounded-3xl shadow-lg p-6 sm:p-8 lg:py-10
                 transition-all duration-300 ease-in-out 
-                hover:scale-105 hover:shadow-xl
+                hover:scale-100 lg:hover:scale-105 hover:shadow-xl
                 flex flex-col relative
                 ${isHighlighted
                     ? 'scale-95 lg:scale-100 z-10'
@@ -25,7 +25,10 @@ const Plan = ({ tier, moneda, periodo }) => {
         >
             {/* Badge destacado */}
             {isHighlighted && (
-                <div className="absolute -z-10 -top-3 left-1/2 -translate-x-1/2 bg-primary text-white text-xs font-bold px-4 py-1.5 rounded-full shadow-md uppercase tracking-wide">
+                <div className={`absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1.5 rounded-full shadow-md uppercase
+                                ${tipo === 'farma' ? 'bg-fourthary' : 'bg-primary'} 
+                                text-white text-xs font-bold`}
+                >
                     <span>Recomendado</span>
                 </div>
             )}
