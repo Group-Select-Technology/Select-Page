@@ -64,7 +64,7 @@ const Destacadas = () => {
                     </p>
                 </div>
 
-                <div className={`mx-4 sm:mx-8 md:mx-16 lg:mx-32 xl:mx-64 transition-all duration-300 ${animating ? 'opacity-0 translate-y-4' : 'opacity-100 translate-y-0'}`}>
+                <div className={`w-full max-w-7xl mx-auto px-4 sm:px-8 transition-all duration-300 ${animating ? 'opacity-0 translate-y-4' : 'opacity-100 translate-y-0'}`}>
                     {seccionesFiltradas.map((seccion, index) => (
                         <Destacada
                             key={seccion.id}
