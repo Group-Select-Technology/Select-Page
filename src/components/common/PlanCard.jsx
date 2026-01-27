@@ -1,6 +1,6 @@
 import React from 'react'
-import ButtonPrimary from '../common/ButtonPrimary';
-import ButtonSecondary from '../common/ButtonSecondary';
+import ButtonPrimary from './ButtonPrimary';
+import ButtonSecondary from './ButtonSecondary';
 
 const Plan = ({ tier, moneda, periodo }) => {
 

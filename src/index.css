@@ -163,15 +163,15 @@
 }
 
 .bg-terciary {
-  background-color: #0095FF;
+  background-color: #0095ff;
 }
 
 .bg-fourthary {
-  background-color: #1D98B7;
+  background-color: #1d98b7;
 }
 
 .bg-fifthary {
-  background-color: #F3FAFF;
+  background-color: #f3faff;
 }
 
 .text-primary {
@@ -183,11 +183,11 @@
 }
 
 .text-terciary {
-  color: #0095FF;
+  color: #0095ff;
 }
 
 .text-fourthary {
-  color: #1D98B7;
+  color: #1d98b7;
 }
 
 body {
@@ -226,4 +226,15 @@ body {
 
 .animate-scroll-right {
   animation: scroll-right 20s linear infinite;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
