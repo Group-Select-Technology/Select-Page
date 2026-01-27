@@ -11,7 +11,7 @@ const Vision = () => {
               <h2 className='text-primary font-bold text-2xl sm:text-3xl lg:text-4xl mb-4 uppercase'>
                 Nuestra Misión
               </h2>
-              <p className='text-gray-700 text-sm sm:text-base leading-relaxed'>
+              <p className='text-sm sm:text-base leading-relaxed'>
                 Optimizar la eficiencia y productividad de las empresas mediante
                 soluciones innovadoras de software, ofreciendo herramientas intuitivas
                 y personalizables que se adapten a las necesidades específicas de cada
@@ -44,7 +44,7 @@ const Vision = () => {
               <h2 className='text-primary font-bold text-2xl sm:text-3xl lg:text-4xl mb-4 uppercase'>
                 Nuestra Visión
               </h2>
-              <p className='text-gray-700 text-sm sm:text-base leading-relaxed'>
+              <p className='text-sm sm:text-base leading-relaxed'>
                 Consolidarnos como la empresa líder en soluciones de software en el
                 Perú, siendo reconocido por nuestra innovación, calidad y compromiso
                 con nuestros clientes. Aspiramos a ser el aliado estratégico de las

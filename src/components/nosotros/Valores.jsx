@@ -1,34 +1,52 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import axios from 'axios'
 
 const Valores = () => {
+  const [valores, setValores] = useState([]);
+
+  useEffect(() => {
+    const getValores = async () => {
+      try {
+        const response = await axios.get('/data/valores.json');
+        setValores(response.data);
+      } catch (error) {
+        console.log("Error al cargar valores:", error);
+        setValores([]);
+      }
+    }
+    getValores();
+  }, []);
+
   return (
-    <section className='py-12 lg:py-16 px-6 sm:px-10 lg:px-32 xl:px-64 bg-gray-50'>
-      <div className='max-w-6xl mx-auto'>
-        <h2 className='text-primary font-bold text-2xl sm:text-3xl lg:text-4xl mb-10 lg:mb-12 uppercase text-center'>
+    <section className='py-12 lg:py-20 px-4 sm:px-8 lg:px-20 xl:px-40 bg-gray-50'>
+      <div className='max-w-7xl mx-auto'>
+        <h2 className='text-primary font-bold text-2xl sm:text-3xl lg:text-4xl mb-12 lg:mb-16 uppercase text-center'>
           Nuestros Valores
         </h2>
 
-        <div className='grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-24'>
-          <div className='bg-cyan-400 rounded-3xl aspect-square flex items-center justify-center shadow-lg hover:shadow-xl transition-shadow duration-300'>
-            <h3 className='text-white font-bold text-xl sm:text-2xl uppercase'>
-              Innovación
-            </h3>
-          </div>
-
-          <div className='bg-blue-600 rounded-3xl aspect-square flex items-center justify-center shadow-lg hover:shadow-xl transition-shadow duration-300'>
-            <h3 className='text-white font-bold text-xl sm:text-2xl uppercase'>
-              Confiabilidad
-            </h3>
-          </div>
-
-          <div className='bg-primary rounded-3xl aspect-square flex items-center justify-center shadow-lg hover:shadow-xl transition-shadow duration-300'>
-            <h3 className='text-white font-bold text-xl sm:text-2xl uppercase text-center px-4'>
-              Servicio al
-              <br />
-              Cliente
-            </h3>
-          </div>
-
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10'>
+          {valores.map((valor) => (
+            <div 
+              key={valor.id} 
+              className='bg-white rounded-[40px] px-8 py-12 shadow-[0_0_15px_rgba(0,0,0,0.25)] hover:shadow-[0_0_15px_rgba(0,0,0,0.25)] transition-all duration-300 flex flex-col items-center text-center transform hover:-translate-y-2'
+            >
+              <div className='w-20 h-20 mb-6 flex items-center justify-center'>
+                <img 
+                  src={valor.imagen} 
+                  alt={valor.valor} 
+                  className='w-full h-full object-contain'
+                />
+              </div>
+              
+              <h3 className='text-primary font-extrabold text-xl lg:text-2xl xl:text-3xl mb-4 uppercase tracking-wide'>
+                {valor.valor}
+              </h3>
+              
+              <p className='text-base leading-relaxed px-2'>
+                {valor.descripcion}
+              </p>
+            </div>
+          ))}
         </div>
       </div>
     </section>

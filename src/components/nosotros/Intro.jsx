@@ -21,7 +21,7 @@ const Intro = () => {
         </div>
       </div>
 
-      <div className='mx-6 sm:mx-10 lg:mx-32 xl:mx-64 relative z-10 -mt-20 lg:-mt-32'>
+      <div className='w-full max-w-4xl mx-auto px-6 relative z-10 -mt-20 lg:-mt-32'>
         <div className='bg-white rounded-2xl py-8 px-6 sm:px-10 lg:px-16 shadow-lg'>
           <div className='flex flex-col lg:flex-row justify-around gap-8 lg:gap-10 text-center'>
             <div className='flex-1'>
