@@ -14,7 +14,7 @@ const Header = () => {
         <header className="py-7">
             <div className="container mx-auto px-4 flex justify-between items-center">
                 <Link to="/">
-                    <img src="img/logo_full.png" alt="Logo" className="p-0 m-0 w-48" />
+                    <img src="/img/logo_full.png" alt="Logo" className="p-0 m-0 w-48" />
                 </Link>
 
                 {/* Botón hamburguesa - visible solo en móvil */}
@@ -44,12 +44,12 @@ const Header = () => {
                             <div className="py-4 px-5">
                                 <div className="font-bold text-black text-sm mb-3 tracking-wide">SISTEMA</div>
                                 <Link to="/sistema" className="block py-1.5 hover:bg-gray-50 transition-colors rounded px-1">
-                                    <span className="font-bold text-primary text-sm">SELECT FARMA</span>
+                                    <span className="font-bold text-fourthary text-sm">SELECT FARMA</span>
                                     <span className="text-gray-400 mx-1">-</span>
                                     <span className="text-sm text-gray-500 font-normal">Farmacias, boticas o droguería</span>
                                 </Link>
                                 <Link to="/sistema" className="block py-1.5 hover:bg-gray-50 transition-colors rounded px-1">
-                                    <span className="font-bold text-secondary text-sm">SELECT POS</span>
+                                    <span className="font-bold text-primary text-sm">SELECT POS</span>
                                     <span className="text-gray-400 mx-1">-</span>
                                     <span className="text-sm text-gray-500 font-normal">Tiendas de rubro general</span>
                                 </Link>
@@ -68,15 +68,15 @@ const Header = () => {
                         <div className="absolute top-full left-0 mt-2 w-auto min-w-max bg-white shadow-lg rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 border border-gray-100">
                             <div className="py-4 px-5">
                                 <div className="font-bold text-black text-sm mb-3 tracking-wide">PLANES</div>
-                                <Link to="/planes" className="block py-1.5 hover:bg-gray-50 transition-colors rounded px-1">
-                                    <span className="font-bold text-primary text-sm">SELECT FARMA</span>
+                                <Link to="/planes/farma" className="block py-1.5 hover:bg-gray-50 transition-colors rounded px-1">
+                                    <span className="font-bold text-fourthary text-sm">SELECT FARMA</span>
                                     <span className="text-gray-400 mx-1">-</span>
 
                                     <span className="text-sm text-gray-500 font-normal">Farmacias, boticas o droguería</span>
 
                                 </Link>
-                                <Link to="/planes" className="block py-1.5 hover:bg-gray-50 transition-colors rounded px-1">
-                                    <span className="font-bold text-secondary text-sm">SELECT POS</span>
+                                <Link to="/planes/pos" className="block py-1.5 hover:bg-gray-50 transition-colors rounded px-1">
+                                    <span className="font-bold text-primary text-sm">SELECT POS</span>
                                     <span className="text-gray-400 mx-1">-</span>
                                     <span className="text-sm text-gray-500 font-normal">Tiendas de rubro general</span>
 

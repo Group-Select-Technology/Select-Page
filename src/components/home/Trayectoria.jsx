@@ -10,7 +10,7 @@ const Trayectoria = () => {
     ];
 
     return (
-        <section className='mt-12 mb-10 bg-terciary p-6 sm:p-8 md:p-10 md:py-16 md:pb-32'>
+        <section className='mt-12 mb-10 bg-fifthary p-6 sm:p-8 md:p-10 md:py-16 md:pb-32'>
             <div className='mx-4 sm:mx-8 md:mx-16 lg:mx-32 xl:mx-64 mt-8'>
                 <h2 className='uppercase text-center text-primary font-bold text-2xl sm:text-3xl lg:text-4xl mb-8 sm:mb-12 lg:mb-16 leading-tight'>Únete a la red del software más eficiente</h2>
 

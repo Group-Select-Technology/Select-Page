@@ -163,6 +163,14 @@
 }
 
 .bg-terciary {
+  background-color: #0095FF;
+}
+
+.bg-fourthary {
+  background-color: #1D98B7;
+}
+
+.bg-fifthary {
   background-color: #F3FAFF;
 }
 
@@ -176,6 +184,10 @@
 
 .text-terciary {
   color: #0095FF;
+}
+
+.text-fourthary {
+  color: #1D98B7;
 }
 
 body {

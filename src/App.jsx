@@ -23,7 +23,7 @@ function App() {
                         <Route index element={<Home />} />//* Pagina principal con index
                         <Route path="nosotros" element={<Nosotros />} />
                         <Route path="sistema" element={<Sistema />} />
-                        <Route path="planes" element={<Planes />} />
+                        <Route path="planes/:tipo" element={<Planes />} />
                         <Route path="contacto" element={<Contacto />} />
                         <Route path="demo" element={<Demo />} />
                         <Route path="preguntas-frecuentes" element={<PreguntasFrecuentes />} />
