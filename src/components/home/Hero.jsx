@@ -6,12 +6,10 @@ const Hero = () => {
 
     const {categoriaActiva} = useCategoria('farmacia');
 
-    console.log("Categoría activa en Hero:", categoriaActiva);
-
     return (
         <section className="relative overflow-hidden">
             {/* Versión Desktop */}
-            <div className="hidden lg:flex justify-between items-center mt-32 mb-10 mx-32 xl:mx-64 relative">
+            <div className="hidden lg:flex justify-between items-center mt-32 mb-10 w-full max-w-7xl mx-auto px-8 relative">
                 <div>
                     <h1 className="text-primary font-bold text-5xl xl:text-6xl mb-6 leading-tight">
                         <span>UN SISTEMA DE</span> <br />
