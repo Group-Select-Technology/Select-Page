@@ -19,7 +19,7 @@ const Canales = () => {
   }, []);
 
   return (
-    <section className='w-full min-h-screen flex flex-col items-center justify-center py-16 px-4 bg-gray-50'>
+    <section className='w-full min-h-[80vh] flex flex-col items-center justify-center py-16 px-4 bg-gray-50'>
       
       <div className='max-w-4xl w-full text-center mb-4'>
         <h1 className='text-4xl md:text-5xl lg:text-6xl font-bold text-primary font-montserrat uppercase leading-tight'>
