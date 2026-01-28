@@ -6,7 +6,6 @@ import Rubros from '../components/home/Rubros'
 import Trayectoria from '../components/home/Trayectoria'
 import Preguntas from "../components/home/Preguntas"
 import { CategoriaProvider } from '../context/CategoriaContext'
-import WhatsappIcon from '../components/common/WhatsappIcon'
 
 const Home = () => {
     return (
@@ -18,7 +17,6 @@ const Home = () => {
             <Planes />
             <Trayectoria />
             <Preguntas />
-            <WhatsappIcon />
         </CategoriaProvider>
     )
 }

@@ -75,12 +75,12 @@ const Header = () => {
                         <div className="absolute top-full left-0 mt-2 w-auto min-w-max bg-white shadow-lg rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 border border-gray-100">
                             <div className="py-4 px-5">
                                 <div className="font-bold text-black text-sm mb-3 tracking-wide">SISTEMA</div>
-                                <Link to="/sistema" className="block py-1.5 hover:bg-gray-50 transition-colors rounded px-1">
+                                <Link to="/sistema/farma" className="block py-1.5 hover:bg-gray-50 transition-colors rounded px-1">
                                     <span className="font-bold text-fourthary text-sm">SELECT FARMA</span>
                                     <span className="text-gray-400 mx-1">-</span>
                                     <span className="text-sm text-gray-500 font-normal">Farmacias, boticas o droguería</span>
                                 </Link>
-                                <Link to="/sistema" className="block py-1.5 hover:bg-gray-50 transition-colors rounded px-1">
+                                <Link to="/sistema/pos" className="block py-1.5 hover:bg-gray-50 transition-colors rounded px-1">
                                     <span className="font-bold text-primary text-sm">SELECT POS</span>
                                     <span className="text-gray-400 mx-1">-</span>
                                     <span className="text-sm text-gray-500 font-normal">Tiendas de rubro general</span>

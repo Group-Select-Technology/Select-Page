@@ -36,7 +36,8 @@ const Destacadas = () => {
         const timer = setTimeout(() => {
             const filtradas = secciones.filter(
                 (seccion) => seccion.category === categoriaActiva
-            );
+            ).filter(seccion => seccion.isHighlighted === true );
+            
             setSeccionesFiltradas(filtradas);
             setAnimating(false);
         }, 300);

@@ -4,7 +4,7 @@ import ButtonPrimary from './ButtonPrimary';
 
 const Rubro = (props) => {
     // Usar los nombres de props tal como llegan (en inglés)
-    const { title, description, features, image, colorFrom, colorTo, overlayColor, onClick, isActive } = props;
+    const { id, title, description, features, image, colorFrom, colorTo, overlayColor, onClick, isActive } = props;
     // Preferir los props en inglés si existen
     const displayTitle = title;
     const displayDescription = description;
@@ -34,10 +34,14 @@ const Rubro = (props) => {
                             </li>
                         ))}
                     </ul>
-                    <button
-                        className="bg-white text-cyan-500 font-bold px-8 py-2 rounded-full shadow-md">
-                        VER MÁS
-                    </button>
+
+                    <ButtonPrimary
+                        colorFrom="#ffffff"
+                        colorTo="#ffffff" 
+                        className={`uppercase font-bold px-8 py-2 rounded-full shadow-md ${id === 1 ? 'text-secondary' : 'text-primary'}`}
+                        children='Ver Más'
+                        to={`/sistema/${id === 1 ? 'farma' : 'pos'}`}
+                        />
                 </div>
             </div>
 

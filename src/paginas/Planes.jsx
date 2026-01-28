@@ -1,13 +1,11 @@
-import WhatsAppIcon from "../components/common/WhatsappIcon"
-import ComparisonPlanes from "../components/Planes/ComparisonPlanes"
-import IntroPlanes from "../components/Planes/IntroPlanes"
+import ComparisonPlanes from "../components/planes/ComparisonPlanes"
+import IntroPlanes from "../components/planes/IntroPlanes"
 
 const Planes = () => {
     return (
         <>
             <IntroPlanes />
             <ComparisonPlanes />
-            <WhatsAppIcon />
         </>
     )
 }
