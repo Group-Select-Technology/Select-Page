@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "nombre": "Asesor comercial 1",
+    "link": "https://wa.link/5f8h8h"
+  },
+  {
+    "id": 2,
+    "nombre": "Asesor comercial 2",
+    "link": "https://wa.link/5f8h8h"
+  },
+  {
+    "id": 3,
+    "nombre": "Asesor comercial 3",
+    "link": "https://wa.link/5f8h8h"
+  },
+  {
+    "id": 4,
+    "nombre": "Asesor comercial 4",
+    "link": "https://wa.link/5f8h8h"
+  },
+  {
+    "id": 5,
+    "nombre": "Asesor comercial 5",
+    "link": "https://wa.link/5f8h8h"
+  }
+]
