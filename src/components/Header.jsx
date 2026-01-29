@@ -7,9 +7,16 @@ const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
     const [isVisible, setIsVisible] = useState(true)
     const [lastScrollY, setLastScrollY] = useState(0)
+    const [isSistemaOpen, setIsSistemaOpen] = useState(false)
+    const [isPlanesOpen, setIsPlanesOpen] = useState(false)
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen)
+        // Reset dropdowns when closing menu
+        if (isMenuOpen) {
+            setIsSistemaOpen(false)
+            setIsPlanesOpen(false)
+        }
     }
 
     useEffect(() => {
@@ -141,11 +148,87 @@ const Header = () => {
                     </button>
 
                     {/* Links del menú móvil */}
-                    <nav className="flex flex-col gap-6 pt-20 px-8 text-lg text-primary font-medium">
+                    <nav className="flex flex-col gap-4 pt-20 px-8 text-lg text-primary font-semibold uppercase">
                         <Link to="/nosotros" className="py-2 border-b border-gray-100 hover:text-cyan-500 transition-colors" onClick={toggleMenu}>Nosotros</Link>
-                        <Link to="/sistema" className="py-2 border-b border-gray-100 hover:text-cyan-500 transition-colors" onClick={toggleMenu}>Sistema</Link>
-                        <Link to="/planes" className="py-2 border-b border-gray-100 hover:text-cyan-500 transition-colors" onClick={toggleMenu}>Planes</Link>
+                        
+                        {/* Dropdown Sistema - Mobile */}
+                        <div className="border-b border-gray-100">
+                            <button 
+                                onClick={() => setIsSistemaOpen(!isSistemaOpen)}
+                                className="w-full py-2 flex items-center justify-between hover:text-cyan-500 transition-colors text-left"
+                            >
+                                <span className="font-semibold uppercase">Sistema</span>
+                                <svg 
+                                    className={`w-5 h-5 transition-transform duration-200 ${isSistemaOpen ? 'rotate-180' : ''}`} 
+                                    fill="none" 
+                                    stroke="currentColor" 
+                                    viewBox="0 0 24 24"
+                                >
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </button>
+                            <div className={`overflow-hidden transition-all duration-300 ${isSistemaOpen ? 'max-h-48 mb-3' : 'max-h-0'}`}>
+                                <div className="pl-4 space-y-2">
+                                    <Link 
+                                        to="/sistema/farma" 
+                                        className="block py-2 px-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
+                                        onClick={toggleMenu}
+                                    >
+                                        <div className="font-bold text-fourthary text-sm">SELECT FARMA</div>
+                                        <div className="text-xs text-gray-500 mt-0.5">Farmacias, boticas o droguería</div>
+                                    </Link>
+                                    <Link 
+                                        to="/sistema/pos" 
+                                        className="block py-2 px-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
+                                        onClick={toggleMenu}
+                                    >
+                                        <div className="font-bold text-primary text-sm">SELECT POS</div>
+                                        <div className="text-xs text-gray-500 mt-0.5">Tiendas de rubro general</div>
+                                    </Link>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Dropdown Planes - Mobile */}
+                        <div className="border-b border-gray-100">
+                            <button 
+                                onClick={() => setIsPlanesOpen(!isPlanesOpen)}
+                                className="w-full py-2 flex items-center justify-between hover:text-cyan-500 transition-colors text-left"
+                            >
+                                <span className="font-semibold uppercase">Planes</span>
+                                <svg 
+                                    className={`w-5 h-5 transition-transform duration-200 ${isPlanesOpen ? 'rotate-180' : ''}`} 
+                                    fill="none" 
+                                    stroke="currentColor" 
+                                    viewBox="0 0 24 24"
+                                >
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </button>
+                            <div className={`overflow-hidden transition-all duration-300 ${isPlanesOpen ? 'max-h-48 mb-3' : 'max-h-0'}`}>
+                                <div className="pl-4 space-y-2">
+                                    <Link 
+                                        to="/planes/farma" 
+                                        className="block py-2 px-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
+                                        onClick={toggleMenu}
+                                    >
+                                        <div className="font-bold text-fourthary text-sm">SELECT FARMA</div>
+                                        <div className="text-xs text-gray-500 mt-0.5">Farmacias, boticas o droguería</div>
+                                    </Link>
+                                    <Link 
+                                        to="/planes/pos" 
+                                        className="block py-2 px-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
+                                        onClick={toggleMenu}
+                                    >
+                                        <div className="font-bold text-primary text-sm">SELECT POS</div>
+                                        <div className="text-xs text-gray-500 mt-0.5">Tiendas de rubro general</div>
+                                    </Link>
+                                </div>
+                            </div>
+                        </div>
+
                         <Link to="/contacto" className="py-2 border-b border-gray-100 hover:text-cyan-500 transition-colors" onClick={toggleMenu}>Contacto</Link>
+                        
                         <div className="pt-4">
                             <ButtonPrimary colorFrom="#2EC6DF" colorTo="#1A2980" onClick={toggleMenu}>
                                 AGENDA UNA DEMO
