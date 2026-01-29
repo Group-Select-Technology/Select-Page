@@ -2,9 +2,9 @@ import React from 'react'
 
 const Beneficios = () => {
     return (
-        <section className='lg:flex justify-center gap-[14rem] items-center my-10 lg:mx-32 mx-12'>
-            <div className='pb-10 lg:pb-0'>
-                <img src="img/seccion_beneficios.png" alt="Beneficios" width="500" />
+        <section className='flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-16 my-10 w-full max-w-7xl mx-auto px-8'>
+            <div className='pb-10 lg:pb-0 flex-shrink-0'>
+                <img src="img/seccion_beneficios.png" alt="Beneficios" width="500" className="max-w-full h-auto" />
             </div>
             <div>
                 <h3 className='text-primary font-bold text-xl sm:text-2xl lg:text-3xl mb-4 uppercase'>
