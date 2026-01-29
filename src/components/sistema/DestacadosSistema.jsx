@@ -37,17 +37,19 @@ const DestacadosSistema = () => {
     };
 
     return (
-        <section className='mt-8 mb-20 mx-2 md:mx-16 lg:mx-32 xl:mx-48'>
-            <h3 className={`text-3xl font-bold uppercase text-center mb-8 ${tipo === "farma" ? "text-fourthary" : "text-primary"}`}>
-                ¿Qué puedo hacer con el sistema?
-            </h3>
-            
-            <SeccionCard
-                tipo={tipo}
-                secciones={secciones}
-                seccionSeleccionada={seccionSeleccionada}
-                onSeleccionSeccion={handleSeleccionSeccion}
-            />
+        <section className='mt-8 mb-20'>
+            <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-12">
+                <h3 className={`text-3xl font-bold uppercase text-center mb-8 ${tipo === "farma" ? "text-fourthary" : "text-primary"}`}>
+                    ¿Qué puedo hacer con el sistema?
+                </h3>
+                
+                <SeccionCard
+                    tipo={tipo}
+                    secciones={secciones}
+                    seccionSeleccionada={seccionSeleccionada}
+                    onSeleccionSeccion={handleSeleccionSeccion}
+                />
+            </div>
         </section>
     )
 }
