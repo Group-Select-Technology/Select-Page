@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 const FooterAccordion = ({ title, children }) => {
 	const [isOpen, setIsOpen] = useState(false)
@@ -32,26 +33,27 @@ const FooterAccordion = ({ title, children }) => {
 const Footer = () => {
 	return (
 		<footer className="py-8 bg-primary">
-			<div className="flex flex-col lg:flex-row gap-4 lg:gap-[28rem] mx-4 md:mx-8 lg:mx-32 items-center">
-				{/* Logo Section */}
-				<div className="flex justify-center mb-0 lg:mb-0">
-					<img src="/img/logo_vertical.png" alt="Logo Footer" className="w-40 md:w-52 lg:w-[270px]" />
-				</div>
+			<div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-12">
+				<div className="flex flex-col lg:flex-row gap-8 lg:gap-12 xl:gap-16 items-center lg:justify-between">
+					{/* Logo Section */}
+					<div className="flex justify-center lg:justify-start mb-0 lg:mb-0 shrink-0">
+						<img src="/img/logo_vertical.png" alt="Logo Footer" className="w-40 md:w-52 lg:w-48 xl:w-56" />
+					</div>
 
-				{/* Links Section */}
-				<div className="w-full lg:w-auto lg:flex lg:gap-16 text-white">
+					{/* Links Section */}
+					<div className="w-full lg:flex-1 lg:flex lg:gap-8 xl:gap-12 text-white lg:justify-end">
 					<FooterAccordion title="Nosotros">
 						<ul className="pl-0 lg:mt-2">
-							<li className="mb-2">Inicio</li>
-							<li className="mb-2">Historia</li>
-							<li className="mb-2">Misión y Visión</li>
+							<li className="mb-2"><Link to="/" className="mb-2">Inicio</Link></li>
+							<li className="mb-2"><Link to="/nosotros" className="mb-2">Historia</Link></li>
+							<li className="mb-2"><Link to="/nosotros" className="mb-2">Misión y Visión</Link></li>
 						</ul>
 					</FooterAccordion>
 
 					<FooterAccordion title="Servicios">
 						<ul className="pl-0 lg:mt-2">
-							<li className="mb-2">Sistema</li>
-							<li className="mb-2">Planes</li>
+							<li className="mb-2"><Link to="/sistema/farma" className="mb-2">Sistema</Link></li>
+							<li className="mb-2"><Link to="/planes/farma" className="mb-2">Planes</Link></li>
 						</ul>
 					</FooterAccordion>
 
@@ -86,9 +88,11 @@ const Footer = () => {
 					</FooterAccordion>
 				</div>
 			</div>
+		</div>
 
 			{/* Copyright Section */}
-			<div className="mt-8 pt-6 border-t border-white/20 mx-4 md:mx-8 lg:mx-32 flex flex-col md:flex-row items-center">
+		<div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-12">
+			<div className="mt-8 pt-6 border-t border-white/20 flex flex-col md:flex-row items-center">
 				{/* 1. Espaciador invisible para empujar el centro (solo en desktop) */}
 				<div className="hidden md:block flex-1"></div>
 
@@ -102,7 +106,8 @@ const Footer = () => {
 					<span className='text-blue-200 text-sm'>Developed By {"<ERA/>"}</span>
 				</div>
 			</div>
-		</footer>
+		</div>
+	</footer>
 	)
 }
 
