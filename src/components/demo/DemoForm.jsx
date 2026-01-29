@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { toast } from 'react-toastify'
+import emailjs from '@emailjs/browser'
 import useCategoria from '../../hooks/useCategoria'
 
 const DemoForm = () => {
@@ -15,6 +16,56 @@ const DemoForm = () => {
     const [correo, setCorreo] = useState('');
     const [numeroLocales, setNumeroLocales] = useState('');
     const [mostrarOpciones, setMostrarOpciones] = useState(false);
+    const [enviandoCorreo, setEnviandoCorreo] = useState(false);
+    
+    // Honeypot - campo trampa para bots
+    const [honeypot, setHoneypot] = useState('');
+    
+    // Cooldown - tiempo mínimo entre envíos (en segundos)
+    const COOLDOWN_SEGUNDOS = 60;
+
+    // Verificar si el usuario puede enviar (cooldown)
+    const puedeEnviar = () => {
+        const ultimoEnvio = localStorage.getItem('ultimoEnvioDemo');
+        if (!ultimoEnvio) return true;
+        
+        const tiempoTranscurrido = (Date.now() - parseInt(ultimoEnvio)) / 1000;
+        return tiempoTranscurrido >= COOLDOWN_SEGUNDOS;
+    };
+
+    // Obtener tiempo restante para poder enviar
+    const getTiempoRestante = () => {
+        const ultimoEnvio = localStorage.getItem('ultimoEnvioDemo');
+        if (!ultimoEnvio) return 0;
+        
+        const tiempoTranscurrido = (Date.now() - parseInt(ultimoEnvio)) / 1000;
+        const restante = Math.ceil(COOLDOWN_SEGUNDOS - tiempoTranscurrido);
+        return restante > 0 ? restante : 0;
+    };
+
+    // Registrar envío exitoso
+    const registrarEnvio = () => {
+        localStorage.setItem('ultimoEnvioDemo', Date.now().toString());
+    };
+
+    // Validar anti-spam (honeypot + cooldown)
+    const validarAntiSpam = () => {
+        // Verificar honeypot (si tiene valor, es un bot)
+        if (honeypot) {
+            console.log('Bot detectado - honeypot activado');
+            toast.success('¡Mensaje enviado correctamente!'); // Mensaje falso para el bot
+            return false;
+        }
+
+        // Verificar cooldown
+        if (!puedeEnviar()) {
+            const restante = getTiempoRestante();
+            toast.warning(`Por favor espera ${restante} segundos antes de enviar otro mensaje.`);
+            return false;
+        }
+
+        return true;
+    };
 
     // Determinar estilos según categoría
     const esFarmacia = categoriaActiva === 'farmacia';
@@ -77,6 +128,7 @@ const DemoForm = () => {
         e.preventDefault();
 
         if (!validarFormulario()) return;
+        if (!validarAntiSpam()) return;
 
         const tipoNegocioFinal = getTipoNegocioFinal();
 
@@ -100,19 +152,69 @@ const DemoForm = () => {
 
         window.open(urlWhatsApp, '_blank');
 
+        // Registrar envío para cooldown
+        registrarEnvio();
+        
         // Limpiar formulario después de enviar
         limpiarFormulario();
+        setHoneypot('');
         toast.success('Mensaje enviado correctamente');
     };
 
-    // Función para enviar por correo (sin funcionalidad por ahora)
-    const enviarCorreo = (e) => {
+    // Función para enviar por correo con EmailJS
+    const enviarCorreo = async (e) => {
         e.preventDefault();
 
         if (!validarFormulario()) return;
+        if (!validarAntiSpam()) return;
 
-        // Sin funcionalidad por ahora
-        toast.info('Funcionalidad de correo próximamente');
+        setEnviandoCorreo(true);
+
+        // Formatear fecha y hora actual
+        const ahora = new Date();
+        const fechaFormateada = ahora.toLocaleDateString('es-PE', {
+            day: '2-digit',
+            month: '2-digit',
+            year: 'numeric',
+            hour: '2-digit',
+            minute: '2-digit'
+        });
+
+        // Combinar tipo de negocio (si es "Otro", mostrar el valor especificado)
+        const tipoNegocioCompleto = tipoNegocio === 'Otro' 
+            ? `Otro (${tipoNegocioOtro})` 
+            : tipoNegocio;
+
+        // Parámetros para la plantilla de EmailJS (nombres exactos del template)
+        const templateParams = {
+            nombresApellidos: nombresApellidos,
+            time: fechaFormateada,
+            ruc: ruc,
+            nombreComercial: nombreComercial,
+            celular: celular,
+            correo: correo || 'No proporcionado',
+            tipoNegocioCompleto: tipoNegocioCompleto,
+            numeroLocales: numeroLocales || 'No especificado',
+        };
+
+        try {
+            await emailjs.send(
+                import.meta.env.VITE_EMAILJS_SERVICE_ID,
+                import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+                templateParams,
+                import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+            );
+
+            toast.success('¡Correo enviado correctamente!');
+            registrarEnvio();
+            limpiarFormulario();
+            setHoneypot('');
+        } catch (error) {
+            console.error('Error al enviar correo:', error);
+            toast.error('Error al enviar el correo. Intente nuevamente.');
+        } finally {
+            setEnviandoCorreo(false);
+        }
     };
 
     return (
@@ -127,7 +229,7 @@ const DemoForm = () => {
 
             {/* Contenido */}
             <div className="relative z-10 container mx-auto px-4">
-                <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12">
+                <div className="flex flex-col lg:flex-row items-center justify-around gap-8 lg:gap-12">
 
                     {/* Lado izquierdo - Texto */}
                     <div className="text-white lg:w-5/12">
@@ -162,6 +264,20 @@ const DemoForm = () => {
 
                             {/* Campo oculto con el producto seleccionado */}
                             <input type="hidden" name="producto" value={productoSeleccionado} />
+                            
+                            {/* Honeypot - Campo trampa invisible para bots */}
+                            <div style={{ position: 'absolute', left: '-9999px', opacity: 0, height: 0, overflow: 'hidden' }} aria-hidden="true">
+                                <label htmlFor="website">Website</label>
+                                <input
+                                    type="text"
+                                    id="website"
+                                    name="website"
+                                    value={honeypot}
+                                    onChange={(e) => setHoneypot(e.target.value)}
+                                    tabIndex={-1}
+                                    autoComplete="off"
+                                />
+                            </div>
 
                             {/* Toggle SELECT FARMA / SELECT POS */}
                             <div className="flex mb-5 border border-primary rounded-full overflow-hidden">
@@ -192,7 +308,7 @@ const DemoForm = () => {
                                 {/* RUC y Nombre Comercial */}
                                 <div className="grid grid-cols-2 gap-3">
                                     <div>
-                                        <label className="block text-[10px] font-semibold text-gray-500 mb-1 uppercase tracking-wide">
+                                        <label className="block text-[10px] font-semibold text-gray-700 mb-1 uppercase tracking-wide">
                                             RUC
                                         </label>
                                         <input
@@ -204,7 +320,7 @@ const DemoForm = () => {
                                         />
                                     </div>
                                     <div>
-                                        <label className="block text-[10px] font-semibold text-gray-500 mb-1 uppercase tracking-wide">
+                                        <label className="block text-[10px] font-semibold text-gray-700 mb-1 uppercase tracking-wide">
                                             Nombre Comercial
                                         </label>
                                         <input
@@ -219,7 +335,7 @@ const DemoForm = () => {
 
                                 {/* Nombres y Apellidos */}
                                 <div>
-                                    <label className="block text-[10px] font-semibold text-gray-500 mb-1 uppercase tracking-wide">
+                                    <label className="block text-[10px] font-semibold text-gray-700 mb-1 uppercase tracking-wide">
                                         Nombres y Apellidos
                                     </label>
                                     <input
@@ -234,7 +350,7 @@ const DemoForm = () => {
                                 {/* Celular y Tipo de Negocio */}
                                 <div className="grid grid-cols-2 gap-3">
                                     <div>
-                                        <label className="block text-[10px] font-semibold text-gray-500 mb-1 uppercase tracking-wide">
+                                        <label className="block text-[10px] font-semibold text-gray-700 mb-1 uppercase tracking-wide">
                                             Celular
                                         </label>
                                         <div className="flex">
@@ -251,7 +367,7 @@ const DemoForm = () => {
                                         </div>
                                     </div>
                                     <div>
-                                        <label className="block text-[10px] font-semibold text-gray-500 mb-1 uppercase tracking-wide">
+                                        <label className="block text-[10px] font-semibold text-gray-700 mb-1 uppercase tracking-wide">
                                             Tipo de Negocio
                                         </label>
                                         <select
@@ -277,7 +393,7 @@ const DemoForm = () => {
                                 {/* Campo para especificar "Otro" tipo de negocio */}
                                 {tipoNegocio === 'Otro' && (
                                     <div className="animate-fadeIn">
-                                        <label className="block text-[10px] font-semibold text-gray-500 mb-1 uppercase tracking-wide">
+                                        <label className="block text-[10px] font-semibold text-gray-700 mb-1 uppercase tracking-wide">
                                             Especifique el tipo de negocio
                                         </label>
                                         <input
@@ -309,7 +425,7 @@ const DemoForm = () => {
                                     <div className="space-y-3 animate-fadeIn">
                                         {/* Correo */}
                                         <div>
-                                            <label className="block text-[10px] font-semibold text-gray-500 mb-1 uppercase tracking-wide">
+                                            <label className="block text-[10px] font-semibold text-gray-700 mb-1 uppercase tracking-wide">
                                                 Correo
                                             </label>
                                             <input
@@ -323,7 +439,7 @@ const DemoForm = () => {
 
                                         {/* Número de Locales */}
                                         <div>
-                                            <label className="block text-[10px] font-semibold text-gray-500 mb-1 uppercase tracking-wide">
+                                            <label className="block text-[10px] font-semibold text-gray-700 mb-1 uppercase tracking-wide">
                                                 Números de Locales
                                             </label>
                                             <div className="space-y-1">
@@ -383,12 +499,25 @@ const DemoForm = () => {
                                     <button
                                         type="button"
                                         onClick={enviarCorreo}
-                                        className="flex-1 flex items-center justify-center gap-2 bg-primary hover:bg-blue-800 text-white font-semibold py-2.5 px-4 rounded-lg transition-all duration-300 shadow-md hover:shadow-lg"
+                                        disabled={enviandoCorreo}
+                                        className={`flex-1 flex items-center justify-center gap-2 ${enviandoCorreo ? 'bg-gray-400 cursor-not-allowed' : 'bg-primary hover:bg-blue-800'} text-white font-semibold py-2.5 px-4 rounded-lg transition-all duration-300 shadow-md hover:shadow-lg`}
                                     >
-                                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                                        </svg>
-                                        <span className="text-xs">Enviar Correo</span>
+                                        {enviandoCorreo ? (
+                                            <>
+                                                <svg className="animate-spin w-4 h-4" fill="none" viewBox="0 0 24 24">
+                                                    <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                                                    <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"></path>
+                                                </svg>
+                                                <span className="text-xs">Enviando...</span>
+                                            </>
+                                        ) : (
+                                            <>
+                                                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                                </svg>
+                                                <span className="text-xs">Enviar Correo</span>
+                                            </>
+                                        )}
                                     </button>
                                 </div>
                             </div>
