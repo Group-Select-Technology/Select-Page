@@ -22,7 +22,7 @@ function App() {
                         //? Rutas Hijas
                         <Route index element={<Home />} />//* Pagina principal con index
                         <Route path="nosotros" element={<Nosotros />} />
-                        <Route path="sistema" element={<Sistema />} />
+                        <Route path="sistema/:tipo" element={<Sistema />} />
                         <Route path="planes/:tipo" element={<Planes />} />
                         <Route path="contacto" element={<Contacto />} />
                         <Route path="demo" element={<Demo />} />

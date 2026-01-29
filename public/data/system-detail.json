@@ -1,0 +1,16 @@
+[
+    {
+        "farma": {
+            "title": "Select Farma",
+            "subtitle": "El sistema de gestión y facturación líder para boticas",
+            "description": "Más que un software, es la central de inteligencia para tu negocio farmacéutico. Una plataforma integral que une la normativa de SUNAT con el control total de tu inventario.",
+            "image": "/img/system-selectfarma.png"
+        },
+        "pos": {
+            "title": "Select pos",
+            "subtitle": "La solución integral para el éxito de tu comercio",
+            "description": "Más que un punto de venta, es el motor que impulsa la rentabilidad de tu negocio. Una plataforma robusta que combina la agilidad de la facturación electrónica con el control inteligente de inventarios multirrubro.",
+            "image": "/img/system-selectpos.png"
+        }
+    }
+]

@@ -31,7 +31,7 @@ const Vision = () => {
         </div>
 
         <div>
-          <div className='lg:grid lg:grid-cols-2 lg:gap-12 items-center'>
+          <div className='flex flex-col lg:grid lg:grid-cols-2 lg:gap-12 items-center'>
             <div className='flex justify-center lg:justify-start order-2 lg:order-1 mb-8 lg:mb-0'>
               <img 
                 src="/img/vision.png" 

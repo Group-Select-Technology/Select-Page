@@ -4,41 +4,242 @@
         "title": "Compras Sugeridas",
         "description": "Optimiza tu inversión con pedidos inteligentes. Analizamos tu historial de ventas para sugerirte qué productos reponer, evitando el sobrestock y asegurando que nunca te falte lo que más vendes.",
         "image": "img/seccion_destacada_1.png",
-        "category": "farmacia"
+        "isHighlighted": true,
+        "category": "farmacia",
+        "detailed": [
+            {
+                "title": "Monitoreo de Lotes y Vencimientos",
+                "description": "Controla cada producto por su registro sanitario y fecha de expiración. El sistema te avisa antes de que pierdas dinero.",
+                "img": "/img/seccion_destacada_1.png"
+            },
+            {
+                "title": "Alertas de Stock Mínimo",
+                "description": "Nunca te quedes sin los medicamentos más solicitados. Recibe alertas de reposición automáticas.",
+                "img": "/img/seccion_destacada_1.png"
+            }
+        ]
     },
     {
         "id": 2,
         "title": "Gestión de Pedidos",
         "description": "Conecta tus sucursales con el almacén en tiempo real. Registra pedidos de clientes en tienda y envíalos a preparación al instante, eliminando errores de comunicación y acelerando la fabricación.",
         "image": "img/seccion_destacada_1.png",
-        "category": "generales"
+                "isHighlighted": true,
+        "category": "generales",
+        "detailed": [
+            {
+                "title": "Sincronización en Tiempo Real",
+                "description": "Visualiza el estado de cada pedido desde que se toma en caja hasta que sale de almacén.",
+                "img": "/img/seccion_destacada_1.png"
+            },
+            {
+                "title": "Reducción de Tiempos de Espera",
+                "description": "Optimiza el flujo de trabajo interno para que el cliente reciba su producto mucho más rápido.",
+                "img": "/img/seccion_destacada_1.png"
+            }
+        ]
     },
     {
         "id": 3,
         "title": "Compras XML",
         "description": "Automatiza el ingreso de mercadería procesando tus facturas electrónicas. Carga archivos XML de proveedores para actualizar tu inventario y precios de costo en segundos, sin errores manuales.",
         "image": "img/seccion_destacada_1.png",
-        "category": "farmacia"
+        
+        "isHighlighted": true,
+        "category": "farmacia",
+        "detailed": [
+            {
+                "title": "Carga Masiva Automática",
+                "description": "Importa cientos de productos y sus costos actuales simplemente arrastrando el archivo XML.",
+                "img": "/img/seccion_destacada_1.png"
+            },
+            {
+                "title": "Precisión en Precios de Costo",
+                "description": "Evita errores humanos al digitar precios, asegurando que tus márgenes de ganancia sean exactos.",
+                "img": "/img/seccion_destacada_1.png"
+            }
+        ]
     },
     {
         "id": 4,
         "title": "Medicamentos PreCargados",
         "description": "Ahorra semanas de trabajo con nuestra base de datos lista para usar. Incluye miles de productos farmacéuticos con nombres, concentraciones y laboratorios ya configurados para empezar a vender de inmediato.",
         "image": "img/seccion_destacada_1.png",
-        "category": "farmacia"
+        
+        "isHighlighted": true,
+        "category": "farmacia",
+        "detailed": [
+            {
+                "title": "Diccionario Farmacéutico Completo",
+                "description": "Accede a una base de datos con nombres genéricos y comerciales actualizados constantemente.",
+                "img": "/img/seccion_destacada_1.png"
+            },
+            {
+                "title": "Configuración Express",
+                "description": "Solo necesitas asignar tu stock y precio; nosotros ya hicimos el trabajo pesado de catalogación.",
+                "img": "/img/seccion_destacada_1.png"
+            }
+        ]
     },
     {
         "id": 5,
         "title": "Transferencias entre Sucursales",
         "description": "Mueve mercadería de forma segura y controlada entre tus locales. Equilibra tu stock enviando productos de una sucursal a otra según la demanda, manteniendo un historial detallado de cada movimiento.",
         "image": "img/seccion_destacada_1.png",
-        "category": "generales"
+        
+        "isHighlighted": true,
+        "category": "generales",
+        "detailed": [
+            {
+                "title": "Control de Tránsito",
+                "description": "Rastrea la mercadería desde que sale de la sucursal de origen hasta que es recibida en destino.",
+                "img": "/img/seccion_destacada_1.png"
+            },
+            {
+                "title": "Balance de Inventarios",
+                "description": "Evita que falte stock en un local cuando tienes excedentes en otro, maximizando tus ventas.",
+                "img": "/img/seccion_destacada_1.png"
+            }
+        ]
     },
     {
         "id": 6,
         "title": "Reportes avanzados de Compras",
         "description": "Toma decisiones basadas en datos reales. Analiza tus costos históricos, compara precios entre proveedores y obtén una visión clara de tus márgenes de ganancia para negociar mejores condiciones.",
         "image": "img/seccion_destacada_1.png",
-        "category": "generales"
+        "isHighlighted": true,
+        "category": "generales",
+        "detailed": [
+            {
+                "title": "Histórico de Variación de Precios",
+                "description": "Identifica tendencias de alza en tus proveedores para anticiparte y proteger tu rentabilidad.",
+                "img": "/img/seccion_destacada_1.png"
+            },
+            {
+                "title": "Análisis de Rentabilidad por Proveedor",
+                "description": "Descubre con quién ganas más dinero analizando descuentos y bonificaciones acumuladas.",
+                "img": "/img/seccion_destacada_1.png"
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "title": "Control de Psicotrópicos",
+        "description": "Gestiona medicamentos controlados bajo normativas legales estrictas. Genera reportes automáticos de ingresos y salidas para cumplir con las auditorías de salud sin complicaciones manuales.",
+        "image": "img/seccion_destacada_1.png",
+        "isHighlighted": false,
+        "category": "farmacia",
+        "detailed": [
+            {
+                "title": "Libro de Control Digital",
+                "description": "Mantén un registro digitalizado de cada receta retenida y el médico que la prescribe.",
+                "img": "/img/seccion_destacada_1.png"
+            },
+            {
+                "title": "Cuadre de Balances Mensuales",
+                "description": "Genera el balance de sustancias controladas con un solo clic, listo para presentar a la autoridad.",
+                "img": "/img/seccion_destacada_1.png"
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "title": "Venta por Fraccionamiento",
+        "description": "Optimiza la venta por unidades o pastillas individuales sin perder el control de tus cajas cerradas. El sistema recalcula automáticamente el stock restante en todas las presentaciones.",
+        "image": "img/seccion_destacada_1.png",
+        "isHighlighted": false,
+        "category": "farmacia",
+        "detailed": [
+            {
+                "title": "Conversión Automática de Unidades",
+                "description": "Define cuántas unidades trae cada caja y deja que el sistema maneje el desglose por ti.",
+                "img": "/img/seccion_destacada_1.png"
+            },
+            {
+                "title": "Precios Diferenciados",
+                "description": "Configura márgenes distintos para la venta por blister o por unidad de forma independiente.",
+                "img": "/img/seccion_destacada_1.png"
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "title": "Búsqueda por Sustancia Activa",
+        "description": "Ayuda a tus clientes a encontrar alternativas económicas. Encuentra medicamentos no solo por marca, sino por su componente genérico para ofrecer opciones de bioequivalencia.",
+        "image": "img/seccion_destacada_1.png",
+        "isHighlighted": false,
+        "category": "farmacia",
+        "detailed": [
+            {
+                "title": "Filtro de Genéricos",
+                "description": "Localiza rápidamente todos los productos que comparten el mismo principio activo en tu inventario.",
+                "img": "/img/seccion_destacada_1.png"
+            },
+            {
+                "title": "Comparativa de Precios",
+                "description": "Visualiza en una sola pantalla los precios de la marca líder frente a los genéricos disponibles.",
+                "img": "/img/seccion_destacada_1.png"
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "title": "Gestión de Múltiples Cajas",
+        "description": "Administra el flujo de efectivo de varios puntos de venta de forma independiente. Realiza cierres de caja parciales y finales con total transparencia y seguridad.",
+        "image": "img/seccion_destacada_1.png",
+        "isHighlighted": false,
+        "category": "generales",
+        "detailed": [
+            {
+                "title": "Arqueo de Caja Detallado",
+                "description": "Desglose por método de pago (efectivo, tarjeta, billeteras digitales) para evitar descuadres.",
+                "img": "/img/seccion_destacada_1.png"
+            },
+            {
+                "title": "Permisos por Cajero",
+                "description": "Controla quién puede realizar anulaciones, descuentos o aperturas de cajón.",
+                "img": "/img/seccion_destacada_1.png"
+            }
+        ]
+    },
+    {
+        "id": 11,
+        "title": "Programa de Lealtad y Puntos",
+        "description": "Fideliza a tus clientes premiando sus compras. Configura sistemas de acumulación de puntos canjeables por descuentos o productos específicos en futuras visitas.",
+        "image": "img/seccion_destacada_1.png",
+        "isHighlighted": false,
+        "category": "generales",
+        "detailed": [
+            {
+                "title": "Base de Datos de Clientes",
+                "description": "Registra el historial de consumo para ofrecer promociones personalizadas según sus hábitos.",
+                "img": "/img/seccion_destacada_1.png"
+            },
+            {
+                "title": "Canje Automatizado",
+                "description": "El sistema descuenta automáticamente los puntos al aplicar beneficios en el checkout.",
+                "img": "/img/seccion_destacada_1.png"
+            }
+        ]
+    },
+    {
+        "id": 12,
+        "title": "Kardex de Inventario Integral",
+        "description": "Mantén una auditoría permanente de cada producto. Visualiza el historial completo de entradas, salidas, devoluciones y ajustes de stock con fecha, hora y responsable.",
+        "image": "img/seccion_destacada_1.png",
+        "isHighlighted": false,
+        "category": "generales",
+        "detailed": [
+            {
+                "title": "Rastreabilidad Total",
+                "description": "Identifica exactamente dónde y cuándo se originó una diferencia de inventario.",
+                "img": "/img/seccion_destacada_1.png"
+            },
+            {
+                "title": "Valorización de Almacén",
+                "description": "Calcula el valor de tu mercadería actual utilizando métodos como el Promedio Ponderado.",
+                "img": "/img/seccion_destacada_1.png"
+            }
+        ]
     }
 ]
