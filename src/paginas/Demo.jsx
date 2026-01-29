@@ -1,9 +1,13 @@
 import React from 'react'
+import { CategoriaProvider } from '../context/CategoriaContext'
+import DemoForm from '../components/demo/DemoForm'
 
 const Demo = () => {
-  return (
-    <div>Demo</div>
-  )
+    return (
+        <CategoriaProvider>
+            <DemoForm />
+        </CategoriaProvider>
+    )
 }
 
 export default Demo

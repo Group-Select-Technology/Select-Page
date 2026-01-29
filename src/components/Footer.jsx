@@ -45,8 +45,8 @@ const Footer = () => {
 					<FooterAccordion title="Nosotros">
 						<ul className="pl-0 lg:mt-2">
 							<li className="mb-2"><Link to="/" className="mb-2">Inicio</Link></li>
-							<li className="mb-2"><Link to="/nosotros" className="mb-2">Historia</Link></li>
 							<li className="mb-2"><Link to="/nosotros" className="mb-2">Misión y Visión</Link></li>
+							<li className="mb-2"><Link to="/preguntas-frecuentes" className="mb-2">Preguntas Frecuentes</Link></li>
 						</ul>
 					</FooterAccordion>
 

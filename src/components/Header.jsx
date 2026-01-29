@@ -69,8 +69,6 @@ const Header = () => {
 
                 {/* Navegación desktop */}
                 <nav className="hidden lg:flex gap-10 text-lg items-center text-primary font-semibold uppercase">
-                    <Link to="/nosotros" className="hover:underline">Nosotros</Link>
-
                     {/* Dropdown Sistema */}
                     <div className="relative group">
                         <button className="hover:underline flex items-center gap-1 bg-transparent border-none cursor-pointer text-primary text-lg font-semibold uppercase">
@@ -124,6 +122,8 @@ const Header = () => {
                         </div>
                     </div>
 
+                    <Link to="/nosotros" className="hover:underline">Nosotros</Link>
+
                     <Link to="/contacto" className="hover:underline">Contacto</Link>
                     <ButtonPrimary colorFrom="#2EC6DF" colorTo="#1A2980" to="/demo">
                         AGENDA UNA DEMO
@@ -149,7 +149,6 @@ const Header = () => {
 
                     {/* Links del menú móvil */}
                     <nav className="flex flex-col gap-4 pt-20 px-8 text-lg text-primary font-semibold uppercase">
-                        <Link to="/nosotros" className="py-2 border-b border-gray-100 hover:text-cyan-500 transition-colors" onClick={toggleMenu}>Nosotros</Link>
                         
                         {/* Dropdown Sistema - Mobile */}
                         <div className="border-b border-gray-100">
@@ -226,6 +225,8 @@ const Header = () => {
                                 </div>
                             </div>
                         </div>
+
+                        <Link to="/nosotros" className="py-2 border-b border-gray-100 hover:text-cyan-500 transition-colors" onClick={toggleMenu}>Nosotros</Link>
 
                         <Link to="/contacto" className="py-2 border-b border-gray-100 hover:text-cyan-500 transition-colors" onClick={toggleMenu}>Contacto</Link>
                         
