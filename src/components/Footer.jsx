@@ -36,9 +36,11 @@ const Footer = () => {
 			<div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-12">
 				<div className="flex flex-col lg:flex-row gap-8 lg:gap-12 xl:gap-16 items-center lg:justify-between">
 					{/* Logo Section */}
-					<div className="flex justify-center lg:justify-start mb-0 lg:mb-0 shrink-0">
-						<img src="/img/logo_vertical.png" alt="Logo Footer" className="w-40 md:w-52 lg:w-48 xl:w-56" />
-					</div>
+					<Link to="/">
+						<div className="flex justify-center lg:justify-start mb-0 lg:mb-0 shrink-0">
+							<img src="/img/logo_vertical.png" alt="Logo Footer" className="md:w-52 lg:w-48 xl:w-56" />
+						</div>
+					</Link>
 
 					{/* Links Section */}
 					<div className="w-full lg:flex-1 lg:flex lg:gap-8 xl:gap-12 text-white lg:justify-end">
@@ -76,10 +78,10 @@ const Footer = () => {
 							<li className="mb-2 flex items-center gap-2">
 								<img className="w-4" src="/img/icono_mail.png" alt="Icono Mail" />
 								<a
-									href="mailto:proyectos@selectperu1.com"
+									href="mailto:selectperu1@gmail.com"
 									className="hover:underline"
 								>
-									proyectos@selectperu1.com
+									selectperu1@gmail.com
 								</a>
 							</li>
 							<li className="mb-2 flex items-center gap-2">
