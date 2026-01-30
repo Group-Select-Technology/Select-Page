@@ -78,7 +78,7 @@ const Destacadas = () => {
                 <div className="flex justify-center">
                     {categoriaActiva === 'farmacia' ? (
                         <ButtonPrimary
-                            to="/sistema"
+                            to="/sistema/farma"
                             colorFrom={"#33D5FF"}
                             colorTo={"#1D98B7"}
                             className={"uppercase mx-auto mt-12 mb-16 px-8 py-3 text-sm sm:text-base"}
@@ -87,7 +87,7 @@ const Destacadas = () => {
                         </ButtonPrimary>
                     ) : (
                         <ButtonPrimary
-                            to="/sistema"
+                            to="/sistema/pos"
                             colorFrom={"#17359d"}
                             colorTo={"#17359d"}
                             className={"uppercase mx-auto mt-12 mb-16 px-8 py-3 text-sm sm:text-base"}
