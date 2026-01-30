@@ -50,7 +50,7 @@ const Canales = () => {
             {/* Lista de asesores */}
             <div className='p-8 flex flex-col gap-4'>
               {asesores.map((asesor) => (
-                <a key={asesor.id} href={asesor.link} target="_blank" rel="noopener noreferrer" className='flex items-center gap-4 group cursor-pointer hover:bg-gray-50 rounded-xl transition-all duration-300'>
+                <a key={asesor.id} href={`https://wa.me/51${asesor.numero}?text=¡Hola! Quiero más información sobre el sistema que brinda Select Technology.`} target="_blank" rel="noopener noreferrer" className='flex items-center gap-4 group cursor-pointer hover:bg-gray-50 rounded-xl transition-all duration-300'>
                   <div className='w-7 h-7 flex-shrink-0'>
                     <img 
                       src="/img/logo_whatsapp.svg" 

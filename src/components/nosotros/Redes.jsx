@@ -10,7 +10,7 @@ const Redes = () => {
 
         <div className='flex justify-center items-center gap-6 sm:gap-8'>
           <a 
-            href="https://facebook.com" 
+            href="https://www.facebook.com/select.techpe?locale=es_LA" 
             target="_blank" 
             rel="noopener noreferrer"
             className='hover:scale-110 transition-transform duration-300'
@@ -23,7 +23,7 @@ const Redes = () => {
           </a>
 
           <a 
-            href="https://instagram.com" 
+            href="https://www.instagram.com/select.techpe/" 
             target="_blank" 
             rel="noopener noreferrer"
             className='hover:scale-110 transition-transform duration-300'
@@ -36,7 +36,7 @@ const Redes = () => {
           </a>
 
           <a 
-            href="https://tiktok.com" 
+            href="https://www.tiktok.com/@select.techpe" 
             target="_blank" 
             rel="noopener noreferrer"
             className='hover:scale-110 transition-transform duration-300'

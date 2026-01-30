@@ -61,7 +61,7 @@ const IntroPlanes = () => {
             <div className='mt-16 mb-10 mx-8 md:mx-16 lg:mx-32 xl:mx-48'>
                 {/* Header */}
                 <div className="text-center mb-10">
-                    <h2 className={`font-bold lg:mx-96 text-4xl xl:text-5xl mb-5 uppercase ${tipo === "farma" ? "text-fourthary" : "text-primary"}`}>{title}</h2>
+                    <h2 className={`font-bold lg:mx-32 2xl:mx-96 text-4xl xl:text-5xl mb-5 uppercase ${tipo === "farma" ? "text-fourthary" : "text-primary"}`}>{title}</h2>
                     <p className='text-gray-600 text-base md:text-lg max-w-2xl mx-auto'>{description}</p>
                 </div>
 

@@ -230,11 +230,11 @@ const Header = () => {
 
                         <Link to="/contacto" className="py-2 border-b border-gray-100 hover:text-cyan-500 transition-colors" onClick={toggleMenu}>Contacto</Link>
                         
-                        <div className="pt-4">
-                            <ButtonPrimary colorFrom="#2EC6DF" colorTo="#1A2980" onClick={toggleMenu} to="/demo">
+                        <Link to="/demo" className="pt-4">
+                            <ButtonPrimary colorFrom="#2EC6DF" colorTo="#1A2980" onClick={toggleMenu}>
                                 AGENDA UNA DEMO
                             </ButtonPrimary>
-                        </div>
+                        </Link>
                     </nav>
                 </div>
 
