@@ -59,11 +59,15 @@ const Footer = () => {
 
 					<FooterAccordion title="Soporte">
 						<ul className="pl-0 lg:mt-2 mb-4">
-							<li>+51 987 654 321</li>
+							<li>
+								<a href="tel:+51923195683">+51 923 195 683</a>
+							</li>
 						</ul>
 						<h3 className="uppercase font-bold text-lg mb-1">Cobranzas</h3>
 						<ul className="pl-0">
-							<li>+51 987 654 321</li>
+							<li>
+								<a href="tel:+51923195683">+51 923 195 683</a>
+							</li>
 						</ul>
 					</FooterAccordion>
 
@@ -71,18 +75,26 @@ const Footer = () => {
 						<ul className="pl-0 lg:mt-2">
 							<li className="mb-2 flex items-center gap-2">
 								<img className="w-4" src="/img/icono_mail.png" alt="Icono Mail" />
-								<span>proyectos@selectperu1.com</span>
+								<a
+									href="mailto:proyectos@selectperu1.com"
+									className="hover:underline"
+								>
+									proyectos@selectperu1.com
+								</a>
 							</li>
 							<li className="mb-2 flex items-center gap-2">
 								<img className="w-4" src="/img/icono_wsp.png" alt="Icono WhatsApp" />
-								<span>+51 923 195 683</span>
+								<a href="https://wa.me/51923195683" target="_blank"
+  							rel="noopener noreferrer">+51 923 195 683</a>
 							</li>
 							<li className="mb-2 flex items-center gap-2">
 								<img className="w-3" src="/img/icono_ubicacion.png" alt="Icono Ubicación" />
-								<span>
-									Cal. Francisco Bolognesi <br />
-									Nro. 105 Urb. Lima - Independencia
-								</span>
+								<a href="https://www.google.com/maps?q=-12.066943665654088,-77.03799989972579" target="_blank"
+								rel="noopener noreferrer"
+								className="hover:underline">
+									República de Chile 295 <br />
+									Cercado de Lima - Lima
+								</a>
 							</li>
 						</ul>
 					</FooterAccordion>
