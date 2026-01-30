@@ -228,8 +228,8 @@ const DemoForm = () => {
             </div>
 
             {/* Contenido */}
-            <div className="relative z-10 container mx-auto px-4">
-                <div className="flex flex-col lg:flex-row items-center justify-around gap-8 lg:gap-12">
+            <div className="relative z-10 w-full max-w-7xl mx-auto px-4 md:px-8">
+                <div className="flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-20">
 
                     {/* Lado izquierdo - Texto */}
                     <div className="text-white lg:w-5/12">
