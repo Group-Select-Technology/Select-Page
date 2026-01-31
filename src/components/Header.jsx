@@ -139,6 +139,7 @@ const Header = () => {
                     transform transition-transform duration-300 ease-in-out
                     ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}
                 `}>
+
                     {/* Botón cerrar */}
                     <button
                         onClick={toggleMenu}
@@ -152,7 +153,8 @@ const Header = () => {
 
                     {/* Links del menú móvil */}
                     <nav className="flex flex-col gap-4 pt-20 px-8 text-lg text-primary font-semibold uppercase">
-
+                        
+                        <Link to="/" className="py-2 border-b border-gray-100 hover:text-cyan-500 transition-colors" onClick={toggleMenu}>Inicio</Link>
                         {/* Dropdown Sistema - Mobile */}
                         <div className="border-b border-gray-100">
                             <button
