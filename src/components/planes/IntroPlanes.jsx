@@ -58,7 +58,7 @@ const IntroPlanes = () => {
             <div className={`hidden lg:block absolute top-48 -right-36 w-64 h-96 rounded-full opacity-35 blur-3xl z-0 ${tipo === "farma" ? "bg-fourthary" : "bg-terciary"}`}></div>
             <div className={`hidden lg:block absolute top-48 -left-36 w-64 h-96 rounded-full opacity-35 blur-3xl z-0 ${tipo === "farma" ? "bg-fourthary" : "bg-terciary"}`}></div>
 
-            <div className='mt-16 mb-10 mx-8 md:mx-16 lg:mx-32 xl:mx-48'>
+            <div className='mt-16 mb-10 mx-8 md:mx-16 xl:mx-26 2xl:mx-48'>
                 {/* Header */}
                 <div className="text-center mb-10">
                     <h2 className={`font-bold lg:mx-32 2xl:mx-96 text-4xl xl:text-5xl mb-5 uppercase ${tipo === "farma" ? "text-fourthary" : "text-primary"}`}>{title}</h2>
@@ -66,7 +66,7 @@ const IntroPlanes = () => {
                 </div>
 
                 {/* Controles de moneda y período */}
-                <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6 lg:mb-24 lg:mt-12 lg:mr-96 lg:gap-52">
+                <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6 lg:mb-24 lg:mt-12 lg:mr-96 lg:gap-30 xl:gap-52">
                     {/* Toggle Moneda - A la izquierda */}
                     <div className="flex items-center gap-2 border-gray-200 border-2 rounded-full p-1">
                         <button
@@ -137,7 +137,7 @@ const IntroPlanes = () => {
                 </div>
 
                 {/* Grid de planes */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0 lg:gap-6 items-stretch xl:mx-32">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0 lg:gap-6 items-stretch mx-0 xl:mx-32">
                     {tiers?.map((tier) => (
                         <PlanCard
                             key={tier.id}
