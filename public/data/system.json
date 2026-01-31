@@ -5,10 +5,11 @@
     "description": "El sistema perfecto para tu botica, farmacia y/o droguería",
     "image": "img/selectfarma.png",
     "features": [
-      "Control de Lotes y Vencimientos",
-      "Facturación Directa SUNAT",
-      "Gestión de Stock Crítico",
-      "Gestión de Stock Crítico"
+      "Búsqueda Personalizada de Productos",
+      "Control de Inventario",
+      "Múltiples Precios (unidad, blister, caja)",
+      "Notas de ventas ilimitadas",
+      "Más de 40 reportes de gestión"
     ]
   },
   {
@@ -17,10 +18,11 @@
     "description": "El sistema ideal para tu rubro, textileria o market",
     "image": "img/selectpos.png",
     "features": [
-      "Gestión de Pedidos y Mesas",
-      "Facturación Electrónica SUNAT",
-      "Control de Inventario de Insumos",
-      "Reportes de Ventas y Consumo"
+      "Estilo de venta personalizada",
+      "Control de Inventario",
+      "Punto de Venta con Imagenes",
+      "Dashboard de ventas y metricas",
+      "Más de 40 reportes de gestión"
     ]
   }
 ]
