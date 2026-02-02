@@ -60,9 +60,6 @@ const Destacadas = () => {
                     <h2 className="text-primary font-bold text-2xl sm:text-3xl lg:text-4xl mb-3 leading-tight uppercase text-center">
                         {getTitulo()}
                     </h2>
-                    <p className="text-center text-lg">
-                        Monitorea tu stock en tiempo real. Recibe alertas
-                    </p>
                 </div>
 
                 <div className={`w-full max-w-7xl mx-auto px-4 sm:px-8 transition-all duration-300 ${animating ? 'opacity-0 translate-y-4' : 'opacity-100 translate-y-0'}`}>

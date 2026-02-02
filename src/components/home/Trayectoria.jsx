@@ -1,12 +1,26 @@
-import React from 'react'
 
 const Trayectoria = () => {
     const logos = [
-        "img/probando.png",
-        "img/probando.png",
-        "img/probando.png",
-        "img/probando.png",
-        "img/probando.png"
+        "/img/trayectoria/icono-1.png",
+        "/img/trayectoria/icono-2.png",
+        "/img/trayectoria/icono-3.png",
+        "/img/trayectoria/icono-4.png",
+        "/img/trayectoria/icono-5.png",
+        "/img/trayectoria/icono-6.png",
+        "/img/trayectoria/icono-7.png",
+        "/img/trayectoria/icono-8.png",
+        "/img/trayectoria/icono-9.png",
+        "/img/trayectoria/icono-10.png",
+        "/img/trayectoria/icono-11.png",
+        "/img/trayectoria/icono-12.png",
+        "/img/trayectoria/icono-13.png",
+        "/img/trayectoria/icono-14.png",
+        "/img/trayectoria/icono-15.png",
+        "/img/trayectoria/icono-16.png",
+        "/img/trayectoria/icono-17.png",
+        "/img/trayectoria/icono-18.png",
+        "/img/trayectoria/icono-19.png",
+        "/img/trayectoria/icono-20.png"
     ];
 
     return (
@@ -55,7 +69,7 @@ const Trayectoria = () => {
                                     key={`left-1-${index}`} 
                                     src={logo} 
                                     alt={`Cliente ${index + 1}`} 
-                                    className='h-12 w-auto mx-4 sm:mx-6 md:mx-8 object-contain grayscale hover:grayscale-0 transition-all duration-300'
+                                    className='h-12 w-auto mx-4 object-contain grayscale hover:grayscale-0 transition-all duration-300'
                                 />
                             ))}
                             {/* Duplicamos para efecto infinito */}
@@ -64,7 +78,7 @@ const Trayectoria = () => {
                                     key={`left-2-${index}`} 
                                     src={logo} 
                                     alt={`Cliente ${index + 1}`} 
-                                    className='h-12 w-auto mx-4 sm:mx-6 md:mx-8 object-contain grayscale hover:grayscale-0 transition-all duration-300'
+                                    className='h-12 w-auto mx-4 object-contain grayscale hover:grayscale-0 transition-all duration-300'
                                 />
                             ))}
                         </div>
@@ -78,7 +92,7 @@ const Trayectoria = () => {
                                     key={`right-1-${index}`} 
                                     src={logo} 
                                     alt={`Cliente ${index + 1}`} 
-                                    className='h-12  w-auto mx-4 sm:mx-6 md:mx-8 object-contain grayscale hover:grayscale-0 transition-all duration-300'
+                                    className='h-12  w-auto mx-4 object-contain grayscale hover:grayscale-0 transition-all duration-300'
                                 />
                             ))}
                             {/* Duplicamos para efecto infinito */}
@@ -87,7 +101,7 @@ const Trayectoria = () => {
                                     key={`right-2-${index}`} 
                                     src={logo} 
                                     alt={`Cliente ${index + 1}`} 
-                                    className='h-12 w-auto mx-4 sm:mx-6 md:mx-8 object-contain grayscale hover:grayscale-0 transition-all duration-300'
+                                    className='h-12 w-auto mx-4 object-contain grayscale hover:grayscale-0 transition-all duration-300'
                                 />
                             ))}
                         </div>
