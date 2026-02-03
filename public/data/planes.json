@@ -56,7 +56,7 @@
                         },
                         "anual": {
                             "soles": 990,
-                            "dolares": 280
+                            "dolares": 290
                         }
                     },
                     "features": [
@@ -84,11 +84,11 @@
                     "prices": {
                         "mensual": {
                             "soles": 149,
-                            "dolares": 28
+                            "dolares": 44
                         },
                         "anual": {
                             "soles": 1490,
-                            "dolares": 280
+                            "dolares": 442
                         }
                     },
                     "features": [
@@ -159,7 +159,7 @@
                         },
                         "anual": {
                             "soles": 990,
-                            "dolares": 280
+                            "dolares": 290
                         }
                     },
                     "features": [
@@ -195,11 +195,11 @@
                     "prices": {
                         "mensual": {
                             "soles": 119,
-                            "dolares": 28
+                            "dolares": 35
                         },
                         "anual": {
                             "soles": 1190,
-                            "dolares": 280
+                            "dolares": 350
                         }
                     },
                     "features": [

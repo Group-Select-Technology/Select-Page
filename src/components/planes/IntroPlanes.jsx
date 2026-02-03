@@ -66,7 +66,7 @@ const IntroPlanes = () => {
                 </div>
 
                 {/* Controles de moneda y período */}
-                <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6 lg:mb-24 lg:mt-12 lg:mr-96 lg:gap-30 xl:gap-52">
+                <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6 lg:mt-12 lg:mr-96 lg:gap-30 xl:gap-52">
                     {/* Toggle Moneda - A la izquierda */}
                     <div className="flex items-center gap-2 border-gray-200 border-2 rounded-full p-1">
                         <button
@@ -76,10 +76,12 @@ const IntroPlanes = () => {
                                     ? 'text-white shadow-md'
                                     : 'text-gray-400 hover:text-secondary'
                                 }`}
-                            style={moneda === 'soles' 
-                                ? { background: tipo === 'farma' 
-                                    ? 'linear-gradient(90deg, #2ec6df, #34B1D1)' 
-                                    : 'linear-gradient(90deg, #17359d, #486de1)' } 
+                            style={moneda === 'soles'
+                                ? {
+                                    background: tipo === 'farma'
+                                        ? 'linear-gradient(90deg, #2ec6df, #34B1D1)'
+                                        : 'linear-gradient(90deg, #17359d, #486de1)'
+                                }
                                 : {}}
                         >
                             S/
@@ -91,10 +93,12 @@ const IntroPlanes = () => {
                                     ? 'text-white shadow-md'
                                     : 'text-gray-400 hover:text-secondary'
                                 }`}
-                            style={moneda === 'dolares' 
-                                ? { background: tipo === 'farma' 
-                                    ? 'linear-gradient(90deg, #17359d, #486de1)' 
-                                    : 'linear-gradient(90deg, #2ec6df, #34B1D1)' } 
+                            style={moneda === 'dolares'
+                                ? {
+                                    background: tipo === 'farma'
+                                        ? 'linear-gradient(90deg, #17359d, #486de1)'
+                                        : 'linear-gradient(90deg, #2ec6df, #34B1D1)'
+                                }
                                 : {}}
                         >
                             $
@@ -110,10 +114,12 @@ const IntroPlanes = () => {
                                     ? 'text-white shadow-md'
                                     : 'bg-transparent text-gray-500 hover:text-secondary'
                                 }`}
-                            style={periodo === 'mensual' 
-                                ? { background: tipo === 'farma' 
-                                    ? 'linear-gradient(90deg, #2ec6df, #34B1D1)' 
-                                    : 'linear-gradient(90deg, #17359d, #486de1)' } 
+                            style={periodo === 'mensual'
+                                ? {
+                                    background: tipo === 'farma'
+                                        ? 'linear-gradient(90deg, #2ec6df, #34B1D1)'
+                                        : 'linear-gradient(90deg, #17359d, #486de1)'
+                                }
                                 : {}}
                         >
                             MENSUAL
@@ -125,16 +131,20 @@ const IntroPlanes = () => {
                                     ? 'text-white shadow-md'
                                     : 'bg-transparent text-gray-500 hover:text-secondary'
                                 }`}
-                            style={periodo === 'anual' 
-                                ? { background: tipo === 'farma' 
-                                    ? 'linear-gradient(90deg, #17359d, #486de1)' 
-                                    : 'linear-gradient(90deg, #2ec6df, #34B1D1)' } 
+                            style={periodo === 'anual'
+                                ? {
+                                    background: tipo === 'farma'
+                                        ? 'linear-gradient(90deg, #17359d, #486de1)'
+                                        : 'linear-gradient(90deg, #2ec6df, #34B1D1)'
+                                }
                                 : {}}
                         >
                             ANUAL
                         </button>
                     </div>
+
                 </div>
+                <p className='text-center mt-10 mb-5 lg:mb-14 text-gray-500'>Consulta nuestras tarifas internacionales mediante WhatsApp.</p>
 
                 {/* Grid de planes */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0 lg:gap-6 items-stretch mx-0 xl:mx-32">
