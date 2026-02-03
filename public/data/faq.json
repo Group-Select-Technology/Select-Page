@@ -1,44 +1,62 @@
 [
   {
     "id": 1,
-    "pregunta": "¿El sistema es difícil de usar o no sé mucho de computación?",
-    "respuesta": "No te preocupes, Select está diseñado para ser muy intuitivo. La mayoría de usuarios aprenden a usarlo en menos de 2 horas. Además, ofrecemos capacitación personalizada para que tú y tu equipo se sientan cómodos desde el primer día.",
+    "pregunta": "¿Qué negocios o empresas pueden emitir boletas y facturas electrónicas?",
+    "respuesta": "Pueden emitir cualquier empresa o negocio, estén obligados o no. Incluye Régimen Único Simplificado, Régimen Especial, Régimen MYPE Tributario y Régimen General, siempre que cuenten con un Certificado Digital Tributario (CDT).",
     "mostrarEnHome": true
   },
   {
     "id": 2,
-    "pregunta": "¿Qué pasa si se cae el internet, puedo seguir vendiendo?",
-    "respuesta": "¡Sí! Select funciona incluso sin conexión a internet. Puedes seguir registrando ventas y todos los cambios se sincronizarán automáticamente cuando la conexión se restablezca. Tu negocio nunca se detiene.",
-    "mostrarEnHome": true
+    "pregunta": "¿Por qué hay que utilizar los comprobantes electrónicos?",
+    "respuesta": "La facturación electrónica es más económica, ordenada y rápida que la facturación manual. Además, SUNAT brinda beneficios tributarios a los negocios que adoptan voluntariamente este sistema.",
+    "mostrarEnHome": false
   },
   {
     "id": 3,
-    "pregunta": "¿Incluye la facturación electrónica y declaración a SUNAT?",
-    "respuesta": "Absolutamente. Select está completamente integrado con SUNAT para facturación electrónica. Genera boletas, facturas, notas de crédito y más, todo cumpliendo con las normativas peruanas. Tus declaraciones estarán siempre listas y organizadas.",
+    "pregunta": "¿Es necesario contar con un Certificado Digital?",
+    "respuesta": "Sí. El Certificado Digital Tributario (CDT) permite vincular el sistema con SUNAT y garantiza la validez de cada comprobante emitido. Nosotros validamos y gestionamos su activación ante SUNAT.",
     "mostrarEnHome": true
   },
   {
     "id": 4,
-    "pregunta": "¿Mi información actual se puede migrar al nuevo sistema?",
-    "respuesta": "Sí, contamos con un equipo especializado en migración de datos. Nos encargamos de transferir toda tu información de manera segura: productos, clientes, historial de ventas y más. El proceso es transparente y te acompañamos en cada paso.",
-    "mostrarEnHome": false
+    "pregunta": "¿Mi información está segura con ustedes?",
+    "respuesta": "Sí. Invertimos en la seguridad de nuestros clientes mediante respaldos en servidores internacionales y estándares de seguridad implementados durante más de 6 años, garantizando la protección de su información.",
+    "mostrarEnHome": true
   },
   {
     "id": 5,
-    "pregunta": "¿El soporte técnico tiene algún costo adicional?",
-    "respuesta": "El soporte técnico está incluido en todos nuestros planes. Contamos con un equipo disponible para resolver tus dudas y problemas de manera rápida. Además, ofrecemos actualizaciones constantes sin costo extra.",
-    "mostrarEnHome": false
+    "pregunta": "¿Qué está incluido en la adquisición del software?",
+    "respuesta": "Incluye la asignación de dominio y hosting, una licencia de activación, actualizaciones gratuitas conforme a SUNAT, soporte técnico ilimitado y capacitación.",
+    "mostrarEnHome": true
   },
   {
     "id": 6,
-    "pregunta": "¿El sistema se actualiza con los cambios de SUNAT?",
-    "respuesta": "Sí, nuestro equipo de desarrollo está constantemente monitoreando las actualizaciones y cambios en las regulaciones de SUNAT. Todas las actualizaciones necesarias se implementan automáticamente para que siempre estés cumpliendo con la normativa vigente.",
+    "pregunta": "¿Debo considerar otros costos adicionales?",
+    "respuesta": "Además del costo de implementación del software, se debe considerar la mensualidad o anualidad según el plan seleccionado.",
     "mostrarEnHome": false
   },
   {
     "id": 7,
-    "pregunta": "¿El sistema es difícil de usar o no sé mucho de computación?",
-    "respuesta": "No te preocupes, Select está diseñado para ser muy intuitivo. La mayoría de usuarios aprenden a usarlo en menos de 2 horas. Además, ofrecemos capacitación personalizada para que tú y tu equipo se sientan cómodos desde el primer día.",
+    "pregunta": "Si ya utilizo otro sistema, ¿puedo empezar con ustedes sin problemas?",
+    "respuesta": "Sí. Nos encargamos de continuar con el correlativo de sus comprobantes electrónicos y podemos importar su listado de productos desde un archivo Excel.",
+    "mostrarEnHome": false
+  },
+  {
+    "id": 8,
+    "pregunta": "¿Cuánto demora la instalación del sistema de facturación?",
+    "respuesta": "La configuración del sistema demora aproximadamente 2 horas y la capacitación general 1 hora adicional. El sistema es amigable, fácil y eficiente para su negocio.",
+    "mostrarEnHome": false
+  },
+  {
+    "id": 9,
+    "pregunta": "¿Cómo funciona el soporte técnico?",
+    "respuesta": "Luego de la capacitación, se brinda acceso al chat de soporte donde especialistas atienden consultas de lunes a viernes de 8:30 a 18:30 y sábados y feriados de 9:00 a 14:00.",
+    "mostrarEnHome": false
+  },
+  {
+    "id": 10,
+    "pregunta": "¿Cuándo inicia mi período de suscripción?",
+    "respuesta": "El período de suscripción inicia al finalizar la instalación, configuración y capacitación. El pago se realiza de forma mensual o anual según el plan contratado.",
     "mostrarEnHome": false
   }
 ]
