@@ -48,9 +48,8 @@ const Header = () => {
     }, [lastScrollY])
 
     return (
-        <header className={`py-7 bg-[#f9fafb] lg:fixed lg:top-0 lg:left-0 lg:right-0 lg:z-40 lg:transition-transform lg:duration-300 lg:ease-in-out ${
-            isVisible ? 'lg:translate-y-0' : 'lg:-translate-y-full'
-        }`}>
+        <header className={`py-7 bg-[#f9fafb] lg:fixed lg:top-0 lg:left-0 lg:right-0 lg:z-40 lg:transition-transform lg:duration-300 lg:ease-in-out ${isVisible ? 'lg:translate-y-0' : 'lg:-translate-y-full'
+            }`}>
             <div className="container mx-auto px-4 flex justify-between items-center">
                 <Link to="/">
                     <img src="/img/logo_full.png" alt="Logo" className="p-0 m-0 w-48" />
@@ -70,6 +69,8 @@ const Header = () => {
                 {/* Navegación desktop */}
                 <nav className="hidden lg:flex gap-10 text-lg items-center text-primary font-semibold uppercase">
                     {/* Dropdown Sistema */}
+                    <Link to="/" className="hover:underline">Inicio</Link>
+
                     <div className="relative group">
                         <button className="hover:underline flex items-center gap-1 bg-transparent border-none cursor-pointer text-primary text-lg font-semibold uppercase">
                             Sistema
@@ -77,6 +78,8 @@ const Header = () => {
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                             </svg>
                         </button>
+
+
                         <div className="absolute top-full left-0 mt-2 w-auto min-w-max bg-white shadow-lg rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 border border-gray-100">
                             <div className="py-4 px-5">
                                 <div className="font-bold text-black text-sm mb-3 tracking-wide">SISTEMA</div>
@@ -136,6 +139,7 @@ const Header = () => {
                     transform transition-transform duration-300 ease-in-out
                     ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}
                 `}>
+
                     {/* Botón cerrar */}
                     <button
                         onClick={toggleMenu}
@@ -150,17 +154,18 @@ const Header = () => {
                     {/* Links del menú móvil */}
                     <nav className="flex flex-col gap-4 pt-20 px-8 text-lg text-primary font-semibold uppercase">
                         
+                        <Link to="/" className="py-2 border-b border-gray-100 hover:text-cyan-500 transition-colors" onClick={toggleMenu}>Inicio</Link>
                         {/* Dropdown Sistema - Mobile */}
                         <div className="border-b border-gray-100">
-                            <button 
+                            <button
                                 onClick={() => setIsSistemaOpen(!isSistemaOpen)}
                                 className="w-full py-2 flex items-center justify-between hover:text-cyan-500 transition-colors text-left"
                             >
                                 <span className="font-semibold uppercase">Sistema</span>
-                                <svg 
-                                    className={`w-5 h-5 transition-transform duration-200 ${isSistemaOpen ? 'rotate-180' : ''}`} 
-                                    fill="none" 
-                                    stroke="currentColor" 
+                                <svg
+                                    className={`w-5 h-5 transition-transform duration-200 ${isSistemaOpen ? 'rotate-180' : ''}`}
+                                    fill="none"
+                                    stroke="currentColor"
                                     viewBox="0 0 24 24"
                                 >
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
@@ -168,16 +173,16 @@ const Header = () => {
                             </button>
                             <div className={`overflow-hidden transition-all duration-300 ${isSistemaOpen ? 'max-h-48 mb-3' : 'max-h-0'}`}>
                                 <div className="pl-4 space-y-2">
-                                    <Link 
-                                        to="/sistema/farma" 
+                                    <Link
+                                        to="/sistema/farma"
                                         className="block py-2 px-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
                                         onClick={toggleMenu}
                                     >
                                         <div className="font-bold text-fourthary text-sm">SELECT FARMA</div>
                                         <div className="text-xs text-gray-500 mt-0.5">Farmacias, boticas o droguería</div>
                                     </Link>
-                                    <Link 
-                                        to="/sistema/pos" 
+                                    <Link
+                                        to="/sistema/pos"
                                         className="block py-2 px-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
                                         onClick={toggleMenu}
                                     >
@@ -190,15 +195,15 @@ const Header = () => {
 
                         {/* Dropdown Planes - Mobile */}
                         <div className="border-b border-gray-100">
-                            <button 
+                            <button
                                 onClick={() => setIsPlanesOpen(!isPlanesOpen)}
                                 className="w-full py-2 flex items-center justify-between hover:text-cyan-500 transition-colors text-left"
                             >
                                 <span className="font-semibold uppercase">Planes</span>
-                                <svg 
-                                    className={`w-5 h-5 transition-transform duration-200 ${isPlanesOpen ? 'rotate-180' : ''}`} 
-                                    fill="none" 
-                                    stroke="currentColor" 
+                                <svg
+                                    className={`w-5 h-5 transition-transform duration-200 ${isPlanesOpen ? 'rotate-180' : ''}`}
+                                    fill="none"
+                                    stroke="currentColor"
                                     viewBox="0 0 24 24"
                                 >
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
@@ -206,16 +211,16 @@ const Header = () => {
                             </button>
                             <div className={`overflow-hidden transition-all duration-300 ${isPlanesOpen ? 'max-h-48 mb-3' : 'max-h-0'}`}>
                                 <div className="pl-4 space-y-2">
-                                    <Link 
-                                        to="/planes/farma" 
+                                    <Link
+                                        to="/planes/farma"
                                         className="block py-2 px-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
                                         onClick={toggleMenu}
                                     >
                                         <div className="font-bold text-fourthary text-sm">SELECT FARMA</div>
                                         <div className="text-xs text-gray-500 mt-0.5">Farmacias, boticas o droguería</div>
                                     </Link>
-                                    <Link 
-                                        to="/planes/pos" 
+                                    <Link
+                                        to="/planes/pos"
                                         className="block py-2 px-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
                                         onClick={toggleMenu}
                                     >
@@ -229,7 +234,7 @@ const Header = () => {
                         <Link to="/nosotros" className="py-2 border-b border-gray-100 hover:text-cyan-500 transition-colors" onClick={toggleMenu}>Nosotros</Link>
 
                         <Link to="/contacto" className="py-2 border-b border-gray-100 hover:text-cyan-500 transition-colors" onClick={toggleMenu}>Contacto</Link>
-                        
+
                         <Link to="/demo" className="pt-4">
                             <ButtonPrimary colorFrom="#2EC6DF" colorTo="#1A2980" onClick={toggleMenu}>
                                 AGENDA UNA DEMO

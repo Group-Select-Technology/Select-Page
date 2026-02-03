@@ -9,15 +9,15 @@ const Hero = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const images = [
-        "img/banner_1.png",
-        "img/banner_1.png",
-        "img/banner_1.png",
+        "/img/banners/banner-1.png",
+        "/img/banners/banner-2.png",
+        "/img/banners/banner-3.png",
     ];
 
     const imagesMobile = [
-        "img/prueba3.png",
-        "img/prueba3.png",
-        "img/prueba3.png",
+        "/img/banners/banner-1.png",
+        "/img/banners/banner-2.png",
+        "/img/banners/banner-3.png",
     ];
 
     useEffect(() => {

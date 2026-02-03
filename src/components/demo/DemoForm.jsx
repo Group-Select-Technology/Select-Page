@@ -147,7 +147,7 @@ const DemoForm = () => {
 
         // Codificar mensaje para URL
         const mensajeCodificado = encodeURIComponent(mensaje);
-        const numeroWhatsApp = '51955310060';
+        const numeroWhatsApp = '51923195683';
         const urlWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${mensajeCodificado}`;
 
         window.open(urlWhatsApp, '_blank');

@@ -62,13 +62,13 @@ const Footer = () => {
 					<FooterAccordion title="Soporte">
 						<ul className="pl-0 lg:mt-2 mb-4">
 							<li>
-								<a href="tel:+51923195683">+51 923 195 683</a>
+								<a href="https://wa.me/51936267774" target='_blank'>+51 936 267 774</a>
 							</li>
 						</ul>
 						<h3 className="uppercase font-bold text-lg mb-1">Cobranzas</h3>
 						<ul className="pl-0">
 							<li>
-								<a href="tel:+51923195683">+51 923 195 683</a>
+								<a href="https://wa.me/51904720983" target='_blank'>+51 904 720 983</a>
 							</li>
 						</ul>
 					</FooterAccordion>
