@@ -1,126 +1,6 @@
 [
     {
         "id": 1,
-        "title": "Compras Sugeridas",
-        "description": "Optimiza tu inversión con pedidos inteligentes. Analizamos tu historial de ventas para sugerirte qué productos reponer, evitando el sobrestock y asegurando que nunca te falte lo que más vendes.",
-        "image": "img/seccion_destacada_1.png",
-        "isHighlighted": true,
-        "category": "farmacia",
-        "detailed": [
-            {
-                "title": "Compras Sugeridas Inteligentes",
-                "description": "No vuelvas a quedarte sin stock ni a sobre-stockearte. El sistema analiza tu rotación de inventario y te sugiere exactamente qué productos comprar, en qué cantidad y con qué prioridad. Toma decisiones de compra basadas en datos reales, no en suposiciones.",
-                "img": "/img/secciones/imagen-1.png"
-            },
-            {
-                "title": "Análisis de Ventas por Producto",
-                "description": "Visualiza el comportamiento de venta de cada medicamento con gráficos detallados por período. Conoce las unidades vendidas, el promedio diario, los días sin venta y la rentabilidad generada. Toda la información que necesitas para negociar mejor con tus proveedores y maximizar tus ganancias.",
-                "img": "/img/secciones/imagen-2.png"
-            }
-        ]
-    },
-    {
-        "id": 2,
-        "title": "Gestión de Pedidos",
-        "description": "Conecta tus sucursales con el almacén en tiempo real. Registra pedidos de clientes en tienda y envíalos a preparación al instante, eliminando errores de comunicación y acelerando la fabricación.",
-        "image": "img/seccion_destacada_1.png",
-        "isHighlighted": true,
-        "category": "generales",
-        "detailed": [
-            {
-                "title": "Pedidos con Seguimiento Completo",
-                "description": "Registra pedidos de tus clientes con fechas de entrega, montos y estados de pago: no pagado, parcial o pagado. Agrega campos personalizables como tallas o medidas según tu rubro. Mantén a tus clientes informados y nunca pierdas el control de una entrega pendiente.",
-                "img": "/img/secciones/pedidos-1.png"
-            },
-            {
-                "title": "Adelantos, Saldos y Entregas en un Solo Lugar",
-                "description": "Registra el adelanto que deja tu cliente, lleva el saldo pendiente y marca la fecha comprometida de entrega. Filtra los pedidos por estado para saber cuáles están listos, cuáles faltan cobrar y cuáles están vencidos. Cuando entregas, conviertes el pedido en venta final con toda la información ya cargada.",
-                "img": "/img/secciones/pedidos-2.png"
-            }
-        ]
-    },
-    {
-        "id": 3,
-        "title": "Compras XML",
-        "description": "Automatiza el ingreso de mercadería procesando tus facturas electrónicas. Carga archivos XML de proveedores para actualizar tu inventario y precios de costo en segundos, sin errores manuales.",
-        "image": "img/seccion_destacada_1.png",
-        "isHighlighted": true,
-        "category": "farmacia",
-        "detailed": [
-            {
-                "title": "Vinculación Inteligente de Productos",
-                "description": "Cuando importas un XML, el sistema compara cada producto del proveedor con tu catálogo existente y te sugiere las coincidencias más probables. Si un medicamento viene con un nombre distinto al que tú manejas, lo detecta por similitud y te permite vincularlo para futuras compras automáticas.",
-                "img": "/img/secciones/imagen-3.png"
-            },
-            {
-                "title": "Importación Automática desde XML del Proveedor",
-                "description": "Olvídate de registrar compras manualmente. Sube el XML de tu proveedor y el sistema reconoce cada producto, lo vincula con tu inventario existente y registra la compra en segundos. Si un producto es nuevo, te sugiere coincidencias inteligentes para que no dupliques registros.",
-                "img": "/img/secciones/imagen-4.png"
-            }
-        ]
-    },
-    {
-        "id": 4,
-        "title": "Medicamentos PreCargados",
-        "description": "Ahorra semanas de trabajo con nuestra base de datos lista para usar. Incluye más de 1500 productos farmacéuticos con nombres, concentraciones, lotes y laboratorios ya configurados para empezar a vender de inmediato.",
-        "image": "img/seccion_destacada_1.png",
-        "isHighlighted": true,
-        "category": "farmacia",
-        "detailed": [
-            {
-                "title": "Diccionario Farmacéutico Completo",
-                "description": "Ahorra semanas de trabajo con nuestra base de datos lista para usar. Incluye más de 1500 productos farmacéuticos con nombres, concentraciones, lotes y laboratorios ya configurados para empezar a vender de inmediato.",
-                "img": "/img/secciones/productos-1.png"
-            },
-            {
-                "title": "Configuración Express",
-                "description": "Solo necesitas asignar tu stock y precio; nosotros ya hicimos el trabajo pesado de catalogación para cada una de tus sucursales.",
-                "img": "/img/secciones/productos-2.png"
-            }
-        ]
-    },
-    {
-        "id": 5,
-        "title": "Transferencias entre Sucursales",
-        "description": "Mueve mercadería de forma segura y controlada entre tus locales. Equilibra tu stock enviando productos de una sucursal a otra según la demanda, manteniendo un historial detallado de cada movimiento.",
-        "image": "img/seccion_destacada_1.png",
-        "isHighlighted": true,
-        "category": "generales",
-        "detailed": [
-            {
-                "title": "Mueve Mercadería entre Sucursales sin Perder el Rastro",
-                "description": "Transfiere productos de una sucursal a otra con un documento que registra quién envía, quién recibe, qué productos se mueven y en qué cantidades. El stock de origen se descuenta y el de destino se incrementa automáticamente. Si un local tiene exceso y otro tiene faltante, equilibra tu inventario en minutos.",
-                "img": "/img/seccion_destacada_1.png"
-            },
-            {
-                "title": "Conecta entre Todos tus Locales",
-                "description": "Consulta en tiempo real el stock disponible en cada sucursal desde cualquier punto. Cuando detectes que un producto se vende más en un local que en otro, genera la transferencia directamente y ambos almacenes se actualizarán. Cada movimiento queda documentado con fecha, hora, responsable y motivo para una trazabilidad completa.",
-                "img": "/img/seccion_destacada_1.png"
-            }
-        ]
-    },
-    {
-        "id": 6,
-        "title": "Reportes avanzados de Compras",
-        "description": "Toma decisiones basadas en datos reales. Analiza tus costos históricos, compara precios entre proveedores y obtén una visión clara de tus márgenes de ganancia para negociar mejores condiciones.",
-        "image": "img/seccion_destacada_1.png",
-        "isHighlighted": true,
-        "category": "generales",
-        "detailed": [
-            {
-                "title": "Histórico de Variación de Precios",
-                "description": "Identifica tendencias de alza en tus proveedores para anticiparte y proteger tu rentabilidad.",
-                "img": "/img/seccion_destacada_1.png"
-            },
-            {
-                "title": "Análisis de Rentabilidad por Proveedor",
-                "description": "Descubre con quién ganas más dinero analizando descuentos y bonificaciones acumuladas.",
-                "img": "/img/seccion_destacada_1.png"
-            }
-        ]
-    },
-    {
-        "id": 7,
         "title": "Agilidad Operativa",
         "description": "Maximiza la velocidad de atención y gestión interna eliminando la dependencia del mouse. Nuestro sistema está diseñado para una operatividad fluida mediante atajos inteligentes que agilizan cada proceso crítico.",
         "image": "img/seccion_productividad.png",
@@ -140,7 +20,67 @@
         ]
     },
     {
-        "id": 8,
+        "id": 2,
+        "title": "Medicamentos PreCargados",
+        "description": "Ahorra semanas de trabajo con nuestra base de datos lista para usar. Incluye más de 1500 productos farmacéuticos con nombres, concentraciones, lotes y laboratorios ya configurados para empezar a vender de inmediato.",
+        "image": "img/seccion_destacada_1.png",
+        "isHighlighted": true,
+        "category": "farmacia",
+        "detailed": [
+            {
+                "title": "Diccionario Farmacéutico Completo",
+                "description": "Ahorra semanas de trabajo con nuestra base de datos lista para usar. Incluye más de 1500 productos farmacéuticos con nombres, concentraciones, lotes y laboratorios ya configurados para empezar a vender de inmediato.",
+                "img": "/img/secciones/productos-1.png"
+            },
+            {
+                "title": "Configuración Express",
+                "description": "Solo necesitas asignar tu stock y precio; nosotros ya hicimos el trabajo pesado de catalogación para cada una de tus sucursales.",
+                "img": "/img/secciones/productos-2.png"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "title": "Compras Sugeridas",
+        "description": "Optimiza tu inversión con pedidos inteligentes. Analizamos tu historial de ventas para sugerirte qué productos reponer, evitando el sobrestock y asegurando que nunca te falte lo que más vendes.",
+        "image": "/img/secciones/imagen-1.png",
+        "isHighlighted": true,
+        "category": "farmacia",
+        "detailed": [
+            {
+                "title": "Compras Sugeridas Inteligentes",
+                "description": "No vuelvas a quedarte sin stock ni a sobre-stockearte. El sistema analiza tu rotación de inventario y te sugiere exactamente qué productos comprar, en qué cantidad y con qué prioridad. Toma decisiones de compra basadas en datos reales, no en suposiciones.",
+                "img": "/img/secciones/imagen-1.png"
+            },
+            {
+                "title": "Análisis de Ventas por Producto",
+                "description": "Visualiza el comportamiento de venta de cada medicamento con gráficos detallados por período. Conoce las unidades vendidas, el promedio diario, los días sin venta y la rentabilidad generada. Toda la información que necesitas para negociar mejor con tus proveedores y maximizar tus ganancias.",
+                "img": "/img/secciones/imagen-2.png"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "title": "Compras XML",
+        "description": "Automatiza el ingreso de mercadería procesando tus facturas electrónicas. Carga archivos XML de proveedores para actualizar tu inventario y precios de costo en segundos, sin errores manuales.",
+        "image": "img/seccion_destacada_1.png",
+        "isHighlighted": false,
+        "category": "farmacia",
+        "detailed": [
+            {
+                "title": "Vinculación Inteligente de Productos",
+                "description": "Cuando importas un XML, el sistema compara cada producto del proveedor con tu catálogo existente y te sugiere las coincidencias más probables. Si un medicamento viene con un nombre distinto al que tú manejas, lo detecta por similitud y te permite vincularlo para futuras compras automáticas.",
+                "img": "/img/secciones/imagen-3.png"
+            },
+            {
+                "title": "Importación Automática desde XML del Proveedor",
+                "description": "Olvídate de registrar compras manualmente. Sube el XML de tu proveedor y el sistema reconoce cada producto, lo vincula con tu inventario existente y registra la compra en segundos. Si un producto es nuevo, te sugiere coincidencias inteligentes para que no dupliques registros.",
+                "img": "/img/secciones/imagen-4.png"
+            }
+        ]
+    },
+    {
+        "id": 5,
         "title": "Nuevo Punto de Venta",
         "description": "Optimiza la venta por unidades o pastillas individuales sin perder el control de tus cajas cerradas. El sistema recalcula automáticamente el stock restante en todas las presentaciones.",
         "image": "img/seccion_destacada_1.png",
@@ -160,7 +100,7 @@
         ]
     },
     {
-        "id": 9,
+        "id": 6,
         "title": "Búsqueda por Sustancia Activa",
         "description": "Ayuda a tus clientes a encontrar alternativas económicas. Encuentra medicamentos no solo por marca, sino por su componente genérico para ofrecer opciones de bioequivalencia.",
         "image": "img/seccion_destacada_1.png",
@@ -176,6 +116,66 @@
                 "title": "Comparativa de Precios",
                 "description": "Visualiza en una sola pantalla los precios de la marca líder frente a los genéricos disponibles.",
                 "img": "/img/secciones/productos-2.png"
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "title": "Gestión de Pedidos",
+        "description": "Conecta tus sucursales con el almacén en tiempo real. Registra pedidos de clientes en tienda y envíalos a preparación al instante, eliminando errores de comunicación y acelerando la fabricación.",
+        "image": "img/seccion_destacada_1.png",
+        "isHighlighted": true,
+        "category": "generales",
+        "detailed": [
+            {
+                "title": "Pedidos con Seguimiento Completo",
+                "description": "Registra pedidos de tus clientes con fechas de entrega, montos y estados de pago: no pagado, parcial o pagado. Agrega campos personalizables como tallas o medidas según tu rubro. Mantén a tus clientes informados y nunca pierdas el control de una entrega pendiente.",
+                "img": "/img/secciones/pedidos-1.png"
+            },
+            {
+                "title": "Adelantos, Saldos y Entregas en un Solo Lugar",
+                "description": "Registra el adelanto que deja tu cliente, lleva el saldo pendiente y marca la fecha comprometida de entrega. Filtra los pedidos por estado para saber cuáles están listos, cuáles faltan cobrar y cuáles están vencidos. Cuando entregas, conviertes el pedido en venta final con toda la información ya cargada.",
+                "img": "/img/secciones/pedidos-2.png"
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "title": "Transferencias entre Sucursales",
+        "description": "Mueve mercadería de forma segura y controlada entre tus locales. Equilibra tu stock enviando productos de una sucursal a otra según la demanda, manteniendo un historial detallado de cada movimiento.",
+        "image": "img/seccion_destacada_1.png",
+        "isHighlighted": true,
+        "category": "generales",
+        "detailed": [
+            {
+                "title": "Mueve Mercadería entre Sucursales sin Perder el Rastro",
+                "description": "Transfiere productos de una sucursal a otra con un documento que registra quién envía, quién recibe, qué productos se mueven y en qué cantidades. El stock de origen se descuenta y el de destino se incrementa automáticamente. Si un local tiene exceso y otro tiene faltante, equilibra tu inventario en minutos.",
+                "img": "/img/seccion_destacada_1.png"
+            },
+            {
+                "title": "Conecta entre Todos tus Locales",
+                "description": "Consulta en tiempo real el stock disponible en cada sucursal desde cualquier punto. Cuando detectes que un producto se vende más en un local que en otro, genera la transferencia directamente y ambos almacenes se actualizarán. Cada movimiento queda documentado con fecha, hora, responsable y motivo para una trazabilidad completa.",
+                "img": "/img/seccion_destacada_1.png"
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "title": "Reportes avanzados de Compras",
+        "description": "Toma decisiones basadas en datos reales. Analiza tus costos históricos, compara precios entre proveedores y obtén una visión clara de tus márgenes de ganancia para negociar mejores condiciones.",
+        "image": "img/seccion_destacada_1.png",
+        "isHighlighted": true,
+        "category": "generales",
+        "detailed": [
+            {
+                "title": "Histórico de Variación de Precios",
+                "description": "Identifica tendencias de alza en tus proveedores para anticiparte y proteger tu rentabilidad.",
+                "img": "/img/seccion_destacada_1.png"
+            },
+            {
+                "title": "Análisis de Rentabilidad por Proveedor",
+                "description": "Descubre con quién ganas más dinero analizando descuentos y bonificaciones acumuladas.",
+                "img": "/img/seccion_destacada_1.png"
             }
         ]
     },
