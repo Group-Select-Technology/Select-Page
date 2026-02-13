@@ -7,6 +7,7 @@ import Trayectoria from '../components/home/Trayectoria'
 import Preguntas from "../components/home/Preguntas"
 import { CategoriaProvider } from '../context/CategoriaContext'
 import WhatsappIcon from '../components/common/WhatsappIcon'
+import Alertas from '../components/home/Alertas'
 
 const Home = () => {
     return (
@@ -14,6 +15,7 @@ const Home = () => {
             <Hero />
             <Rubros />
             <Destacadas />
+            <Alertas />
             <Beneficios />
             <Planes />
             <Trayectoria />
