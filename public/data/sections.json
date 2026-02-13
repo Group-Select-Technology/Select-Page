@@ -8,14 +8,14 @@
         "category": "farmacia",
         "detailed": [
             {
-                "title": "Monitoreo de Lotes y Vencimientos",
-                "description": "Controla cada producto por su registro sanitario y fecha de expiración. El sistema te avisa antes de que pierdas dinero.",
-                "img": "/img/seccion_destacada_1.png"
+                "title": "Compras Sugeridas Inteligentes",
+                "description": "No vuelvas a quedarte sin stock ni a sobre-stockearte. El sistema analiza tu rotación de inventario y te sugiere exactamente qué productos comprar, en qué cantidad y con qué prioridad. Toma decisiones de compra basadas en datos reales, no en suposiciones.",
+                "img": "/img/secciones/imagen-1.png"
             },
             {
-                "title": "Alertas de Stock Mínimo",
-                "description": "Nunca te quedes sin los medicamentos más solicitados. Recibe alertas de reposición automáticas.",
-                "img": "/img/seccion_destacada_1.png"
+                "title": "Análisis de Ventas por Producto",
+                "description": "Visualiza el comportamiento de venta de cada medicamento con gráficos detallados por período. Conoce las unidades vendidas, el promedio diario, los días sin venta y la rentabilidad generada. Toda la información que necesitas para negociar mejor con tus proveedores y maximizar tus ganancias.",
+                "img": "/img/secciones/imagen-2.png"
             }
         ]
     },
@@ -24,18 +24,18 @@
         "title": "Gestión de Pedidos",
         "description": "Conecta tus sucursales con el almacén en tiempo real. Registra pedidos de clientes en tienda y envíalos a preparación al instante, eliminando errores de comunicación y acelerando la fabricación.",
         "image": "img/seccion_destacada_1.png",
-                "isHighlighted": true,
+        "isHighlighted": true,
         "category": "generales",
         "detailed": [
             {
-                "title": "Sincronización en Tiempo Real",
-                "description": "Visualiza el estado de cada pedido desde que se toma en caja hasta que sale de almacén.",
-                "img": "/img/seccion_destacada_1.png"
+                "title": "Pedidos con Seguimiento Completo",
+                "description": "Registra pedidos de tus clientes con fechas de entrega, montos y estados de pago: no pagado, parcial o pagado. Agrega campos personalizables como tallas o medidas según tu rubro. Mantén a tus clientes informados y nunca pierdas el control de una entrega pendiente.",
+                "img": "/img/secciones/pedidos-1.png"
             },
             {
-                "title": "Reducción de Tiempos de Espera",
-                "description": "Optimiza el flujo de trabajo interno para que el cliente reciba su producto mucho más rápido.",
-                "img": "/img/seccion_destacada_1.png"
+                "title": "Adelantos, Saldos y Entregas en un Solo Lugar",
+                "description": "Registra el adelanto que deja tu cliente, lleva el saldo pendiente y marca la fecha comprometida de entrega. Filtra los pedidos por estado para saber cuáles están listos, cuáles faltan cobrar y cuáles están vencidos. Cuando entregas, conviertes el pedido en venta final con toda la información ya cargada.",
+                "img": "/img/secciones/pedidos-2.png"
             }
         ]
     },
@@ -44,40 +44,38 @@
         "title": "Compras XML",
         "description": "Automatiza el ingreso de mercadería procesando tus facturas electrónicas. Carga archivos XML de proveedores para actualizar tu inventario y precios de costo en segundos, sin errores manuales.",
         "image": "img/seccion_destacada_1.png",
-        
         "isHighlighted": true,
         "category": "farmacia",
         "detailed": [
             {
-                "title": "Carga Masiva Automática",
-                "description": "Importa cientos de productos y sus costos actuales simplemente arrastrando el archivo XML.",
-                "img": "/img/seccion_destacada_1.png"
+                "title": "Vinculación Inteligente de Productos",
+                "description": "Cuando importas un XML, el sistema compara cada producto del proveedor con tu catálogo existente y te sugiere las coincidencias más probables. Si un medicamento viene con un nombre distinto al que tú manejas, lo detecta por similitud y te permite vincularlo para futuras compras automáticas.",
+                "img": "/img/secciones/imagen-3.png"
             },
             {
-                "title": "Precisión en Precios de Costo",
-                "description": "Evita errores humanos al digitar precios, asegurando que tus márgenes de ganancia sean exactos.",
-                "img": "/img/seccion_destacada_1.png"
+                "title": "Importación Automática desde XML del Proveedor",
+                "description": "Olvídate de registrar compras manualmente. Sube el XML de tu proveedor y el sistema reconoce cada producto, lo vincula con tu inventario existente y registra la compra en segundos. Si un producto es nuevo, te sugiere coincidencias inteligentes para que no dupliques registros.",
+                "img": "/img/secciones/imagen-4.png"
             }
         ]
     },
     {
         "id": 4,
         "title": "Medicamentos PreCargados",
-        "description": "Ahorra semanas de trabajo con nuestra base de datos lista para usar. Incluye miles de productos farmacéuticos con nombres, concentraciones y laboratorios ya configurados para empezar a vender de inmediato.",
+        "description": "Ahorra semanas de trabajo con nuestra base de datos lista para usar. Incluye más de 1500 productos farmacéuticos con nombres, concentraciones, lotes y laboratorios ya configurados para empezar a vender de inmediato.",
         "image": "img/seccion_destacada_1.png",
-        
         "isHighlighted": true,
         "category": "farmacia",
         "detailed": [
             {
                 "title": "Diccionario Farmacéutico Completo",
-                "description": "Accede a una base de datos con nombres genéricos y comerciales actualizados constantemente.",
-                "img": "/img/seccion_destacada_1.png"
+                "description": "Ahorra semanas de trabajo con nuestra base de datos lista para usar. Incluye más de 1500 productos farmacéuticos con nombres, concentraciones, lotes y laboratorios ya configurados para empezar a vender de inmediato.",
+                "img": "/img/secciones/productos-1.png"
             },
             {
                 "title": "Configuración Express",
-                "description": "Solo necesitas asignar tu stock y precio; nosotros ya hicimos el trabajo pesado de catalogación.",
-                "img": "/img/seccion_destacada_1.png"
+                "description": "Solo necesitas asignar tu stock y precio; nosotros ya hicimos el trabajo pesado de catalogación para cada una de tus sucursales.",
+                "img": "/img/secciones/productos-2.png"
             }
         ]
     },
@@ -86,18 +84,17 @@
         "title": "Transferencias entre Sucursales",
         "description": "Mueve mercadería de forma segura y controlada entre tus locales. Equilibra tu stock enviando productos de una sucursal a otra según la demanda, manteniendo un historial detallado de cada movimiento.",
         "image": "img/seccion_destacada_1.png",
-        
         "isHighlighted": true,
         "category": "generales",
         "detailed": [
             {
-                "title": "Control de Tránsito",
-                "description": "Rastrea la mercadería desde que sale de la sucursal de origen hasta que es recibida en destino.",
+                "title": "Mueve Mercadería entre Sucursales sin Perder el Rastro",
+                "description": "Transfiere productos de una sucursal a otra con un documento que registra quién envía, quién recibe, qué productos se mueven y en qué cantidades. El stock de origen se descuenta y el de destino se incrementa automáticamente. Si un local tiene exceso y otro tiene faltante, equilibra tu inventario en minutos.",
                 "img": "/img/seccion_destacada_1.png"
             },
             {
-                "title": "Balance de Inventarios",
-                "description": "Evita que falte stock en un local cuando tienes excedentes en otro, maximizando tus ventas.",
+                "title": "Conecta entre Todos tus Locales",
+                "description": "Consulta en tiempo real el stock disponible en cada sucursal desde cualquier punto. Cuando detectes que un producto se vende más en un local que en otro, genera la transferencia directamente y ambos almacenes se actualizarán. Cada movimiento queda documentado con fecha, hora, responsable y motivo para una trazabilidad completa.",
                 "img": "/img/seccion_destacada_1.png"
             }
         ]
@@ -124,41 +121,41 @@
     },
     {
         "id": 7,
-        "title": "Control de Psicotrópicos",
-        "description": "Gestiona medicamentos controlados bajo normativas legales estrictas. Genera reportes automáticos de ingresos y salidas para cumplir con las auditorías de salud sin complicaciones manuales.",
-        "image": "img/seccion_destacada_1.png",
-        "isHighlighted": false,
+        "title": "Agilidad Operativa",
+        "description": "Maximiza la velocidad de atención y gestión interna eliminando la dependencia del mouse. Nuestro sistema está diseñado para una operatividad fluida mediante atajos inteligentes que agilizan cada proceso crítico.",
+        "image": "img/seccion_productividad.png",
+        "isHighlighted": true,
         "category": "farmacia",
         "detailed": [
             {
-                "title": "Libro de Control Digital",
-                "description": "Mantén un registro digitalizado de cada receta retenida y el médico que la prescribe.",
-                "img": "/img/seccion_destacada_1.png"
+                "title": "Navegación Global Instantánea",
+                "description": "Accede a módulos clave como Productos, Transferencias entre sucursales o Ventas. Usa teclas rápidas para saltar entre secciones sin navegar por menús complejos.",
+                "img": "/img/secciones/tecla-rapida-1.png"
             },
             {
-                "title": "Cuadre de Balances Mensuales",
-                "description": "Genera el balance de sustancias controladas con un solo clic, listo para presentar a la autoridad.",
-                "img": "/img/seccion_destacada_1.png"
+                "title": "Punto de Venta (POS) High-Speed",
+                "description": "Realiza ventas completas usando solo las flechas y el teclado numérico. Selecciona productos, vincula clientes, añade servicios y alterna entre listas de precios con una mano, manteniendo el flujo de atención constante.",
+                "img": "/img/secciones/tecla-rapida-2.png"
             }
         ]
     },
     {
         "id": 8,
-        "title": "Venta por Fraccionamiento",
+        "title": "Nuevo Punto de Venta",
         "description": "Optimiza la venta por unidades o pastillas individuales sin perder el control de tus cajas cerradas. El sistema recalcula automáticamente el stock restante en todas las presentaciones.",
         "image": "img/seccion_destacada_1.png",
         "isHighlighted": false,
         "category": "farmacia",
         "detailed": [
             {
-                "title": "Conversión Automática de Unidades",
-                "description": "Define cuántas unidades trae cada caja y deja que el sistema maneje el desglose por ti.",
-                "img": "/img/seccion_destacada_1.png"
+                "title": "Terminal de Venta Ágil y Autónomo.",
+                "description": "Optimiza la atención en el mostrador con una interfaz diseñada para la velocidad. Este nuevo sistema te permite realizar aperturas y cierres de caja con facilidad y procesar transacciones de forma intuitiva. Además, garantiza la continuidad de tu negocio con el modo offline (disponible según tu plan), permitiendo que sigas vendiendo incluso cuando no hay conexión a internet.",
+                "img": "/img/secciones/imagen-9.png"
             },
             {
-                "title": "Precios Diferenciados",
-                "description": "Configura márgenes distintos para la venta por blister o por unidad de forma independiente.",
-                "img": "/img/seccion_destacada_1.png"
+                "title": "Dashboard de Análisis y Rendimiento",
+                "description": "Transforma tus datos en decisiones estratégicas mediante una visión 360° de tu negocio. Accede a información detallada de ventas por local y monitorea el desempeño individual de tus vendedores en tiempo real. Identifica rápidamente tus productos más vendidos y analiza tendencias mediante comparativas mensuales para impulsar el crecimiento de tu empresa.",
+                "img": "/img/secciones/imagen-10.png"
             }
         ]
     },
@@ -173,32 +170,32 @@
             {
                 "title": "Filtro de Genéricos",
                 "description": "Localiza rápidamente todos los productos que comparten el mismo principio activo en tu inventario.",
-                "img": "/img/seccion_destacada_1.png"
+                "img": "/img/secciones/productos-2.png"
             },
             {
                 "title": "Comparativa de Precios",
                 "description": "Visualiza en una sola pantalla los precios de la marca líder frente a los genéricos disponibles.",
-                "img": "/img/seccion_destacada_1.png"
+                "img": "/img/secciones/productos-2.png"
             }
         ]
     },
     {
         "id": 10,
-        "title": "Gestión de Múltiples Cajas",
+        "title": "Gestión de Caja y Caja Bóveda",
         "description": "Administra el flujo de efectivo de varios puntos de venta de forma independiente. Realiza cierres de caja parciales y finales con total transparencia y seguridad.",
         "image": "img/seccion_destacada_1.png",
         "isHighlighted": false,
         "category": "generales",
         "detailed": [
             {
-                "title": "Arqueo de Caja Detallado",
-                "description": "Desglose por método de pago (efectivo, tarjeta, billeteras digitales) para evitar descuadres.",
-                "img": "/img/seccion_destacada_1.png"
+                "title": "Control Total de Caja y Caja Bóveda",
+                "description": "Abre y cierra caja con control detallado de efectivo y tarjeta. Transfiere fondos entre cajas operativas y centraliza tu dinero en la caja bóveda. Al final del día, genera reportes precisos de ingresos, egresos y cuadre de caja para que cada centavo esté donde debe estar.",
+                "img": "/img/secciones/productos-2.png"
             },
             {
-                "title": "Permisos por Cajero",
-                "description": "Controla quién puede realizar anulaciones, descuentos o aperturas de cajón.",
-                "img": "/img/seccion_destacada_1.png"
+                "title": "Múltiples Cajas, Un Solo Control",
+                "description": " Si tienes más de un punto de cobro, cada cajero trabaja con su propia caja independiente. La caja bóveda recibe y distribuye fondos entre todas ellas. Al cerrar turno, el sistema compara el monto esperado contra el monto real y te indica si hay sobrantes o faltantes con detalle exacto.",
+                "img": "/img/secciones/productos-2.png"
             }
         ]
     },

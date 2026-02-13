@@ -20,9 +20,12 @@ const IntroSistema = ({sistema}) => {
                     <p className='text-base text-center mb-2 lg:mx-16 xl:mx-96'>
                         {description}
                     </p>
+                    <div className='text-center text-base text-gray-500 mt-5'>
+                    <p>Recuerda que Select Farma y Select Pos comparten secciones y funcionalidades clave para optimizar tu gestión.</p>
+                </div>
                 </div>
                 <div className='my-8'>
-                    <img src={image} alt={title} className='mx-auto' />
+                    <img src={image} alt={title} className='mx-auto w-full max-w-xl' />
                 </div>
             </div>
         </section>

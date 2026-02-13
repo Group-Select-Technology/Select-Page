@@ -8,10 +8,10 @@ const iconos = {
     "Medicamentos PreCargados": "/img/iconos/medicamentos-precargados.svg",
     "Transferencias entre Sucursales": "/img/iconos/transferencias-sucursales.svg",
     "Reportes avanzados de Compras": "/img/iconos/reportes-compras.svg",
-    "Control de Psicotrópicos": "/img/iconos/control-psicotropicos.svg",
-    "Venta por Fraccionamiento": "/img/iconos/venta-fraccionamiento.svg",
+    "Agilidad Operativa": "/img/iconos/teclas-rapidas.svg",
+    "Nuevo Punto de Venta": "/img/iconos/venta-fraccionamiento.svg",
     "Búsqueda por Sustancia Activa": "/img/iconos/busqueda-sustancia.svg",
-    "Gestión de Múltiples Cajas": "/img/iconos/gestion-cajas.svg",
+    "Gestión de Caja y Caja Bóveda": "/img/iconos/gestion-cajas.svg",
     "Programa de Lealtad y Puntos": "/img/iconos/programa-lealtad.svg",
     "Kardex de Inventario Integral": "/img/iconos/kardex-inventario.svg",
 };
@@ -22,6 +22,7 @@ const iconoDefault = "/img/iconos/default.svg";
 const SeccionCard = ({ tipo, secciones, seccionSeleccionada, onSeleccionSeccion }) => {
     const [animating, setAnimating] = useState(false);
     const [currentDetailed, setCurrentDetailed] = useState(seccionSeleccionada?.detailed || []);
+    const [modalImage, setModalImage] = useState(null); // Estado para el modal de imagen
 
     // Colores según el tipo
     const colorPrimario = tipo === "farma" ? "bg-fourthary" : "bg-primary";
@@ -49,6 +50,14 @@ const SeccionCard = ({ tipo, secciones, seccionSeleccionada, onSeleccionSeccion 
 
     const obtenerIcono = (titulo) => {
         return iconos[titulo] || iconoDefault;
+    };
+
+    const openModal = (detalle) => {
+        setModalImage(detalle);
+    };
+
+    const closeModal = () => {
+        setModalImage(null);
     };
 
     return (
@@ -115,10 +124,10 @@ const SeccionCard = ({ tipo, secciones, seccionSeleccionada, onSeleccionSeccion 
                                 <div className="flex items-start gap-2 mb-2">
                                     <span className={`${textoPrimario} text-xl mt-1`}>•</span>
                                     <div>
-                                        <h4 className={`${textoPrimario} font-bold text-lg md:text-xl`}>
+                                        <h4 className={`${textoPrimario} font-bold text-lg md:text-2xl md:mb-3`}>
                                             {detalle.title}
                                         </h4>
-                                        <p className="text-gray-700 text-base md:text-lg leading-relaxed">
+                                        <p className="text-gray-700 text-base 2xl:text-lg leading-relaxed">
                                             {detalle.description}
                                         </p>
                                     </div>
@@ -126,15 +135,64 @@ const SeccionCard = ({ tipo, secciones, seccionSeleccionada, onSeleccionSeccion 
                             </div>
 
                             {/* Imagen */}
-                            <div className="flex-1 flex justify-center">
+                            <div className="flex-1 flex justify-center items-center">
                                 <img
                                     src={detalle.img}
                                     alt={detalle.title}
-                                    className="rounded-xl shadow-lg max-w-full h-auto max-h-64 md:max-h-80 object-contain"
+                                    onClick={() => openModal(detalle)}
+                                    className="rounded-xl shadow-lg max-w-full max-h-56 md:max-h-72 object-contain cursor-pointer
+                                               transition-transform duration-300 hover:scale-105 hover:shadow-2xl
+                                               animate-pulse-shadow"
                                 />
                             </div>
                         </div>
                     ))}
+                </div>
+            )}
+
+            {/* Modal para imagen ampliada */}
+            {modalImage && (
+                <div 
+                    className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-90 p-4 md:p-8"
+                    onClick={closeModal}
+                >
+                    <div 
+                        className="relative bg-white rounded-xl shadow-2xl max-w-6xl w-auto max-h-[92vh] overflow-hidden flex flex-col"
+                        onClick={(e) => e.stopPropagation()}
+                    >
+                        {/* Botón cerrar */}
+                        <button
+                            onClick={closeModal}
+                            className="absolute top-3 right-3 text-white bg-black bg-opacity-50 hover:bg-opacity-70 
+                                     text-2xl font-bold z-10 w-9 h-9 flex items-center justify-center rounded-full 
+                                     transition-all duration-200"
+                        >
+                            ×
+                        </button>
+
+                        {/* Header con título */}
+                        <div className="bg-gradient-to-r from-gray-50 to-white px-6 py-4 border-b border-gray-200">
+                            <h3 className={`${textoPrimario} font-bold text-lg md:text-xl text-center`}>
+                                {modalImage.title}
+                            </h3>
+                        </div>
+
+                        {/* Imagen - área principal */}
+                        <div className="flex justify-center items-center p-4 md:p-6 bg-gray-50 overflow-auto">
+                            <img
+                                src={modalImage.img}
+                                alt={modalImage.title}
+                                className="rounded-lg shadow-lg max-w-full h-auto max-h-[65vh] object-contain"
+                            />
+                        </div>
+
+                        {/* Footer con descripción */}
+                        <div className="bg-white px-6 py-4 border-t border-gray-200">
+                            <p className="text-gray-700 text-sm md:text-base leading-relaxed text-center">
+                                {modalImage.description}
+                            </p>
+                        </div>
+                    </div>
                 </div>
             )}
         </div>
