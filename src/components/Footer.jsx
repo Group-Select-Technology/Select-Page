@@ -117,7 +117,7 @@ const Footer = () => {
 
 				{/* 3. Texto a la Derecha */}
 				<div className="flex-1 text-center md:text-right mt-2 md:mt-0">
-					<span className='text-blue-200 text-sm'>Developed By {"<ERA/>"}</span>
+					<span className='text-blue-900 text-sm'>Developed By {"<ERA/>"}</span>
 				</div>
 			</div>
 		</div>
