@@ -131,6 +131,8 @@ const Header = () => {
                     <ButtonPrimary colorFrom="#2EC6DF" colorTo="#1A2980" to="/demo">
                         AGENDA UNA DEMO
                     </ButtonPrimary>
+
+                    <Link to="/planes/farma" className="w-10"><img src="/img/icono-peru.png" alt="Icono Perú" /></Link>
                 </nav>
 
                 {/* Menú móvil desplegable */}
