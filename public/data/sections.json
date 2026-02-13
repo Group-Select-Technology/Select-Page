@@ -3,7 +3,7 @@
         "id": 1,
         "title": "Agilidad Operativa",
         "description": "Maximiza la velocidad de atención y gestión interna eliminando la dependencia del mouse. Nuestro sistema está diseñado para una operatividad fluida mediante atajos inteligentes que agilizan cada proceso crítico.",
-        "image": "img/seccion_productividad.png",
+        "image": "/img/secciones/tecla-rapida-2.png",
         "isHighlighted": true,
         "category": "farmacia",
         "detailed": [
@@ -23,7 +23,7 @@
         "id": 2,
         "title": "Medicamentos PreCargados",
         "description": "Ahorra semanas de trabajo con nuestra base de datos lista para usar. Incluye más de 1500 productos farmacéuticos con nombres, concentraciones, lotes y laboratorios ya configurados para empezar a vender de inmediato.",
-        "image": "img/seccion_destacada_1.png",
+        "image": "/img/secciones/productos-1.png",
         "isHighlighted": true,
         "category": "farmacia",
         "detailed": [
@@ -101,21 +101,21 @@
     },
     {
         "id": 6,
-        "title": "Búsqueda por Sustancia Activa",
+        "title": "Búsqueda por Principio Activo",
         "description": "Ayuda a tus clientes a encontrar alternativas económicas. Encuentra medicamentos no solo por marca, sino por su componente genérico para ofrecer opciones de bioequivalencia.",
-        "image": "img/seccion_destacada_1.png",
+        "image": "/img/secciones/principio-activo-1.png",
         "isHighlighted": false,
         "category": "farmacia",
         "detailed": [
             {
                 "title": "Filtro de Genéricos",
                 "description": "Localiza rápidamente todos los productos que comparten el mismo principio activo en tu inventario.",
-                "img": "/img/secciones/productos-2.png"
+                "img": "/img/secciones/principio-activo-1.png"
             },
             {
                 "title": "Comparativa de Precios",
                 "description": "Visualiza en una sola pantalla los precios de la marca líder frente a los genéricos disponibles.",
-                "img": "/img/secciones/productos-2.png"
+                "img": "/img/secciones/principio-activo-2.png"
             }
         ]
     },
@@ -123,7 +123,7 @@
         "id": 7,
         "title": "Gestión de Pedidos",
         "description": "Conecta tus sucursales con el almacén en tiempo real. Registra pedidos de clientes en tienda y envíalos a preparación al instante, eliminando errores de comunicación y acelerando la fabricación.",
-        "image": "img/seccion_destacada_1.png",
+        "image": "/img/secciones/pedidos-1.png",
         "isHighlighted": true,
         "category": "generales",
         "detailed": [
@@ -143,100 +143,61 @@
         "id": 8,
         "title": "Transferencias entre Sucursales",
         "description": "Mueve mercadería de forma segura y controlada entre tus locales. Equilibra tu stock enviando productos de una sucursal a otra según la demanda, manteniendo un historial detallado de cada movimiento.",
-        "image": "img/seccion_destacada_1.png",
+        "image": "/img/secciones/transferencias-1.png",
         "isHighlighted": true,
         "category": "generales",
         "detailed": [
             {
                 "title": "Mueve Mercadería entre Sucursales sin Perder el Rastro",
-                "description": "Transfiere productos de una sucursal a otra con un documento que registra quién envía, quién recibe, qué productos se mueven y en qué cantidades. El stock de origen se descuenta y el de destino se incrementa automáticamente. Si un local tiene exceso y otro tiene faltante, equilibra tu inventario en minutos.",
-                "img": "/img/seccion_destacada_1.png"
+                "description": "Transfiere productos de una sucursal a otra con un documento que registra quién envía, quién recibe, qué productos se mueven y en qué cantidades. El stock de origen se descuenta y el de destino se incrementa despúes de ser aceptado. Si un local tiene exceso y otro tiene faltante, equilibra tu inventario en minutos.",
+                "img": "/img/secciones/transferencias-1.png"
             },
             {
-                "title": "Conecta entre Todos tus Locales",
-                "description": "Consulta en tiempo real el stock disponible en cada sucursal desde cualquier punto. Cuando detectes que un producto se vende más en un local que en otro, genera la transferencia directamente y ambos almacenes se actualizarán. Cada movimiento queda documentado con fecha, hora, responsable y motivo para una trazabilidad completa.",
-                "img": "/img/seccion_destacada_1.png"
+                "title": "Control de Stock en Tránsito y Cancelación Segura",
+                "description": "Gestiona tus movimientos con total seguridad: al iniciar una transferencia, el stock se descuenta del origen y queda 'en tránsito', sin afectar el destino hasta su recepción oficial. Si la operación se cancela o rechaza, el sistema devuelve los productos al inventario inicial automáticamente, evitando descuadres y asegurando que el stock de destino no se altere prematuramente.",
+                "img": "/img/secciones/transferencias-2.png"
             }
         ]
     },
     {
         "id": 9,
-        "title": "Reportes avanzados de Compras",
+        "title": "Dashboard Ejecutivo",
         "description": "Toma decisiones basadas en datos reales. Analiza tus costos históricos, compara precios entre proveedores y obtén una visión clara de tus márgenes de ganancia para negociar mejores condiciones.",
         "image": "img/seccion_destacada_1.png",
-        "isHighlighted": true,
+        "isHighlighted": false,
         "category": "generales",
         "detailed": [
             {
-                "title": "Histórico de Variación de Precios",
-                "description": "Identifica tendencias de alza en tus proveedores para anticiparte y proteger tu rentabilidad.",
-                "img": "/img/seccion_destacada_1.png"
+                "title": "Panel de Control con Métricas en Tiempo Real",
+                "description": " Visualiza el estado completo de tu negocio en una sola pantalla. Ventas del día, del mes, metas alcanzadas, ingresos por forma de pago y accesos directos a cada módulo. Establece objetivos mensuales y observa tu progreso con indicadores visuales que te motivan a vender más.",
+                "img": "/img/secciones/dashboard-1.png"
             },
             {
-                "title": "Análisis de Rentabilidad por Proveedor",
-                "description": "Descubre con quién ganas más dinero analizando descuentos y bonificaciones acumuladas.",
-                "img": "/img/seccion_destacada_1.png"
+                "title": "Metas Mensuales con Seguimiento Visual",
+                "description": "Define tu meta de ventas del mes y el dashboard te muestra en un medidor animado qué porcentaje llevas alcanzado. Compara el rendimiento contra meses anteriores, identifica tus productos estrella y detecta los días de mayor movimiento para planificar mejor tu operación.",
+                "img": "/img/secciones/dashboard-1.png"
             }
         ]
     },
     {
         "id": 10,
         "title": "Gestión de Caja y Caja Bóveda",
-        "description": "Administra el flujo de efectivo de varios puntos de venta de forma independiente. Realiza cierres de caja parciales y finales con total transparencia y seguridad.",
-        "image": "img/seccion_destacada_1.png",
-        "isHighlighted": false,
+        "description": "Administra el flujo de efectivo de varios puntos de venta de forma independiente. Realiza cierres de caja y transfiere los fondos con total transparencia y seguridad.",
+        "image": "/img/secciones/boveda-1.png",
+        "isHighlighted": true,
         "category": "generales",
         "detailed": [
             {
                 "title": "Control Total de Caja y Caja Bóveda",
                 "description": "Abre y cierra caja con control detallado de efectivo y tarjeta. Transfiere fondos entre cajas operativas y centraliza tu dinero en la caja bóveda. Al final del día, genera reportes precisos de ingresos, egresos y cuadre de caja para que cada centavo esté donde debe estar.",
-                "img": "/img/secciones/productos-2.png"
+                "img": "/img/secciones/boveda-1.png"
             },
             {
                 "title": "Múltiples Cajas, Un Solo Control",
                 "description": " Si tienes más de un punto de cobro, cada cajero trabaja con su propia caja independiente. La caja bóveda recibe y distribuye fondos entre todas ellas. Al cerrar turno, el sistema compara el monto esperado contra el monto real y te indica si hay sobrantes o faltantes con detalle exacto.",
-                "img": "/img/secciones/productos-2.png"
-            }
-        ]
-    },
-    {
-        "id": 11,
-        "title": "Programa de Lealtad y Puntos",
-        "description": "Fideliza a tus clientes premiando sus compras. Configura sistemas de acumulación de puntos canjeables por descuentos o productos específicos en futuras visitas.",
-        "image": "img/seccion_destacada_1.png",
-        "isHighlighted": false,
-        "category": "generales",
-        "detailed": [
-            {
-                "title": "Base de Datos de Clientes",
-                "description": "Registra el historial de consumo para ofrecer promociones personalizadas según sus hábitos.",
-                "img": "/img/seccion_destacada_1.png"
-            },
-            {
-                "title": "Canje Automatizado",
-                "description": "El sistema descuenta automáticamente los puntos al aplicar beneficios en el checkout.",
-                "img": "/img/seccion_destacada_1.png"
-            }
-        ]
-    },
-    {
-        "id": 12,
-        "title": "Kardex de Inventario Integral",
-        "description": "Mantén una auditoría permanente de cada producto. Visualiza el historial completo de entradas, salidas, devoluciones y ajustes de stock con fecha, hora y responsable.",
-        "image": "img/seccion_destacada_1.png",
-        "isHighlighted": false,
-        "category": "generales",
-        "detailed": [
-            {
-                "title": "Rastreabilidad Total",
-                "description": "Identifica exactamente dónde y cuándo se originó una diferencia de inventario.",
-                "img": "/img/seccion_destacada_1.png"
-            },
-            {
-                "title": "Valorización de Almacén",
-                "description": "Calcula el valor de tu mercadería actual utilizando métodos como el Promedio Ponderado.",
-                "img": "/img/seccion_destacada_1.png"
+                "img": "/img/secciones/boveda-2.png"
             }
         ]
     }
+    
 ]
