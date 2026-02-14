@@ -4,7 +4,7 @@ const WhatsAppIcon = () => {
   const mensaje = encodeURIComponent("¡Hola! Quiero más información sobre el sistema que brinda Select Technology.");
   return (
     <a 
-      href={`https://wa.me/51955310060?text=${mensaje}`}
+      href={`https://wa.me/51904720983?text=${mensaje}`}
       target="_blank" 
       rel="noopener noreferrer"
       className="fixed bottom-4 right-4 md:bottom-6 md:right-6 z-50 flex items-center gap-3 group focus:outline-none"
