@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "title": "Básico",
+        "title": "Empresarial",
         "description": "Obtén las herramientas esenciales para gestionar tu negocio de manera eficiente y optimizada.",
         "category": "farmacia",
         "isHighlighted": false,
@@ -15,7 +15,7 @@
     },
     {
         "id": 2,
-        "title": "Emprendedor",
+        "title": "Ejecutivo",
         "description": "Disfruta de funciones adicionales diseñadas para impulsar el crecimiento de tu empresa.",
         "image": "img/seccion_destacada_1.png",
         "category": "farmacia",
@@ -30,7 +30,7 @@
     },
     {
         "id": 3,
-        "title": "Ejecutivo",
+        "title": "Corporativo",
         "description": "Disfruta de herramientas y funciones avanzadas para gestionar tu empresa a gran escala.",
         "image": "img/seccion_destacada_1.png",
         "category": "farmacia",
