@@ -14,7 +14,7 @@ const Ayuda = () => {
 
                 <div className="flex justify-center mb-8">
                     <a
-                        href="https://wa.me/51987654321"
+                        href="https://wa.me/51923195683"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-block"
