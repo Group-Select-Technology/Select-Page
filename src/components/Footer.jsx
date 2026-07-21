@@ -38,7 +38,7 @@ const Footer = () => {
 					{/* Logo Section */}
 					<Link to="/">
 						<div className="flex justify-center lg:justify-start mb-0 lg:mb-0 shrink-0">
-							<img src="/img/logo_vertical.png" alt="Logo Footer" className="md:w-52 lg:w-48 xl:w-56" />
+							<img src="/img/logo_vertical.png" alt="Logo Footer" className="w-32" />
 						</div>
 					</Link>
 
